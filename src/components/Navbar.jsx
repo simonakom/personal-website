@@ -94,13 +94,13 @@ export default function Navbar({ isDarkMode }) {
                 </ul>
                 <div className='flex gap-5 text-3xl mt-36 icons'>
                     <a href="https://github.com/simonakom">
-                        <FaGithub className={`transition-transform transform hover:scale-110 ${isDarkMode ? 'hover:text-[#8f9eea]' : 'hover:text-[#4646b9]'}`} />
+                        <FaGithub className={`transition-transform transform hover:scale-110 icon ${isDarkMode ? 'hover:text-[#8f9eea]' : 'hover:text-[#4646b9]'}`} />
                     </a>
                     <a href="https://www.linkedin.com/in/simona-komarovska-a70376185/">
-                        <FaLinkedin className={`transition-transform transform hover:scale-110 ${isDarkMode ? 'hover:text-[#8f9eea]' : 'hover:text-[#4646b9]'}`} />
+                        <FaLinkedin className={`transition-transform transform hover:scale-110 icon ${isDarkMode ? 'hover:text-[#8f9eea]' : 'hover:text-[#4646b9]'}`} />
                     </a>
                     <a href="mailto:simonak399@gmail.com">
-                        <MdEmail className={`transition-transform transform hover:scale-110 ${isDarkMode ? 'hover:text-[#8f9eea]' : 'hover:text-[#4646b9]'}`} />
+                        <MdEmail className={`transition-transform transform hover:scale-110 icon ${isDarkMode ? 'hover:text-[#8f9eea]' : 'hover:text-[#4646b9]'}`} />
                     </a>
                 </div>
             </nav>

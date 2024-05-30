@@ -13,8 +13,9 @@
         width: 100% !important
     }
     .switch {
-        position: fixed;
-        right: 30px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
     }
     .space {
         margin-top: -100px !important;
