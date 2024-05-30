@@ -51,7 +51,7 @@ import rentify from '../assets/images/projects/rentify.png';
                 <h1 className="font-bold text-3xl mb-10">All Projects</h1>
 {/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
                 <div className={`sticky top-[-20px] z-50 ${isDarkMode ? 'bg-[#0f172b]' : 'bg-[#e4e5e9]'}`}>
-                     <p className={`my-10 py-2 text-center border-t-2 border-b-2 font-medium ${isDarkMode ? 'border-[#8f9eea3e] text-[#8f9eea]' : 'border-[#4646b93f] text-[#4d4db9]'}`}> Landing pagesss</p>
+                     <p className={`my-10 py-2 text-center border-t-2 border-b-2 font-medium ${isDarkMode ? 'border-[#8f9eea3e] text-[#8f9eea]' : 'border-[#4646b93f] text-[#4d4db9]'}`}> Landing pages</p>
                 </div>
     
                 <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4  gap-10'>
@@ -63,7 +63,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Spotify landing page</b></p>
                             <p className='mb-1'> Build with <b className='font-bold'>react</b>, <b className='font-bold'>tailwind</b>, <br /><b className='font-bold'>css</b></p>
                             <a href="https://github.com/simonakom/spotify-app">
-                                <b className={`text-sm px-2 py-1 mt-5 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 mt-5 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -75,7 +75,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Netflix landing page</b></p>
                             <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>, <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
                             <a href="https://github.com/simonakom/netflix-page">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -87,7 +87,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Travlog landing page</b></p>
                             <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>, <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
                             <a href="https://github.com/simonakom/travlog-landing-page">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -99,7 +99,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Abstract landing page</b></p>
                             <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>, <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
                             <a href="https://github.com/simonakom/abstract-landing-page">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -111,7 +111,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Collab landing page</b></p>
                             <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>, <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
                             <a href="https://github.com/simonakom/collab-landing-page">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -123,7 +123,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Sneaker landing page</b></p>
                             <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>css</b>, <br /><b className='font-bold'>html</b></p>
                             <a href="https://github.com/simonakom/sneaker-eshop-page">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -135,7 +135,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Christmas shop</b></p>
                             <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>css</b>, <br /><b className='font-bold'>html</b></p>
                             <a href="https://github.com/simonakom/sample-page">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -153,7 +153,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Kolt</b> scooters</p>
                             <p className='mb-1'> Build with <b className='font-bold'>react vite</b>, <b className='font-bold'>tailwind</b>, <b className='font-bold'>css</b>, <b className='font-bold'>localStorage</b></p>
                             <a href="https://github.com/simonakom/kolt-scooters-app">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -165,7 +165,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Data-table</b> of products</p>
                             <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>,  <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
                             <a href="https://github.com/simonakom/data-table-app">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -177,7 +177,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Data-table</b> of people</p>
                             <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>,  <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
                             <a href="https://github.com/simonakom/crud-people-data-table">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -195,7 +195,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Coctails</b> receipe app</p>
                             <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>,  <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
                             <a href="https://github.com/simonakom/coctails-api">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -207,7 +207,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Dogs</b> photo</p>
                             <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>,  <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
                             <a href="https://github.com/simonakom/dogs-api">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -219,7 +219,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Poeple</b> selector</p>
                             <p className='mb-1'> Build with <b className='font-bold'>react vite</b>, <b className='font-bold'>tailwind</b>, <b className='font-bold'>css</b>, <b className='font-bold'>localStorage</b></p>
                             <a href="https://github.com/simonakom/people-selector">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -231,7 +231,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Jokes</b> by Chuck Norris</p>
                             <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>css</b>, <br /><b className='font-bold'>html</b></p>
                             <a href="https://github.com/simonakom/chuck-norris-jokes">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -249,7 +249,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Google</b> timer & stopwatch</p>
                             <p className='mb-1'> Build with <b className='font-bold'>react vite</b>, <b className='font-bold'>tailwind</b>, <br /><b className='font-bold'>css</b></p>
                             <a href="https://github.com/simonakom/google-timer-stopwatch">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -261,7 +261,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Birthday</b> countdown</p>
                             <p className='mb-1'> Build with <b className='font-bold'>react vite</b>, <b className='font-bold'>tailwind</b>, <br /><b className='font-bold'>css</b></p>
                             <a href="https://github.com/simonakom/birthday-countdown">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -273,7 +273,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>To-do</b> app</p>
                             <p className='mb-1'> Build with <b className='font-bold'>react vite</b>, <b className='font-bold'>tailwind</b>, <b className='font-bold'>css</b>, <b className='font-bold'>localStorage</b></p>
                             <a href="https://github.com/simonakom/todo-list">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -285,7 +285,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Color</b> picker</p>
                             <p className='mb-1'> Build with <b className='font-bold'>react</b>, <b className='font-bold'>tailwind</b>, <b className='font-bold'>css</b>, <b className='font-bold'>localStorage</b></p>
                             <a href="https://github.com/simonakom/color-picker">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -297,7 +297,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Tip</b> counter</p>
                             <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>,  <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
                             <a href="https://github.com/simonakom/tip-counter">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -309,7 +309,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>BMI</b> calculator</p>
                             <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>, <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
                             <a href="https://github.com/simonakom/bmi-calculator">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -321,7 +321,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Password</b> generator</p>
                             <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>,  <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
                             <a href="https://github.com/simonakom/password-generator">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -333,7 +333,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Password</b> checker</p>
                             <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>,  <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
                             <a href="https://github.com/simonakom/check-password-strength?tab=readme-ov-file">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -345,7 +345,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Guessing</b> game!</p>
                             <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>,  <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
                             <a href="https://github.com/simonakom/guessing-number-game?tab=readme-ov-file">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -357,7 +357,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Palindrome</b> app</p>
                             <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>,  <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
                             <a href="https://github.com/simonakom/palindrome-app">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -369,7 +369,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Calculator</b></p>
                             <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>, <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
                             <a href="https://github.com/simonakom/calculator">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -381,7 +381,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Quiz</b></p>
                             <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>,  <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
                             <a href="https://github.com/simonakom/quiz">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -393,7 +393,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Vowel</b> counter</p>
                             <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
                             <a href="https://github.com/simonakom/vocals-counter?tab=readme-ov-file">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -411,7 +411,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Rentify</b> pc rent platform</p>
                             <p className='mb-1'> Build with <b className='font-bold'>node.js</b>, <b className='font-bold'>nginx</b>, <b className='font-bold'>mySQL</b>, <b className='font-bold'>react vite</b>, <b className='font-bold'>tailwind</b>, <b className='font-bold'>css</b></p> 
                             <a href="https://github.com/simonakom/pc-rent-platform">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -423,7 +423,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>PulpCinemaHub</b> app</p>
                             <p className='mb-1'> Build with <b className='font-bold'>node.js</b>, <b className='font-bold'>MongoDB</b>, <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>, <b className='font-bold'>tailwind</b>, <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
                             <a href="https://github.com/simonakom/forum-app">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -435,7 +435,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>To-do</b> app</p>
                             <p className='mb-1'> Build with <b className='font-bold'>node.js</b>, <b className='font-bold'>nginx</b>, <b className='font-bold'>bootstrap</b>, <b className='font-bold'>css</b>,<b className='font-bold'>html</b></p>
                             <a href="https://github.com/simonakom/todo-list-app">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -453,7 +453,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Contact form</b></p>
                             <p className='mb-1'> Build with <b className='font-bold'>html</b>, <b className='font-bold'>css</b></p>
                             <a href="https://github.com/simonakom/contact-form">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -465,7 +465,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Registration form</b></p>
                             <p className='mb-1'> Build with <b className='font-bold'>html</b>, <b className='font-bold'>css</b></p>
                             <a href="https://github.com/simonakom/contact-form">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -477,7 +477,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Shopping Cart</b></p>
                             <p className='mb-1'> Build with <b className='font-bold'>html</b>, <b className='font-bold'>bootstrap</b>, <b className='font-bold'>css</b></p>
                             <a href="https://github.com/simonakom/shopping-cart">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -489,7 +489,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>2048 Game</b></p>
                             <p className='mb-1'> Build with <b className='font-bold'>html</b>, <b className='font-bold'>bootstrap</b>, <b className='font-bold'>css</b></p>
                             <a href="https://github.com/simonakom/2048-game">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -501,7 +501,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Invoice</b></p>
                             <p className='mb-1'> Build with <b className='font-bold'>html</b>, <b className='font-bold'>css</b></p>
                             <a href="https://github.com/simonakom/invoice">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -513,7 +513,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Calendar</b></p>
                             <p className='mb-1'> Build with <b className='font-bold'>html</b>, <b className='font-bold'>css</b></p>
                             <a href="https://github.com/simonakom/calendar?tab=readme-ov-file">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>

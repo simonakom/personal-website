@@ -34,6 +34,7 @@
 .header .nav-item a:hover {
     padding-left: 70px; 
 }
+
 @media screen and (max-width:1023px) {
     .header {
         position: relative;
@@ -69,5 +70,23 @@
     .header .nav-item a.active,
     .header .nav-item a:hover {
         padding-left: 80px; 
+    }
+}
+
+@media screen and (max-width:400px) {
+    .name {
+        font-size: 38px !important;
+    }
+    .title {
+        font-size: 24px !important;
+    }
+    .subtitle {
+        font-size: 19px !important;
+    }
+    nav a{
+        font-size: 16px;
+    }
+    .icons {
+        font-size: 40px !important;
     }
 }

@@ -22,7 +22,7 @@ export default function Experience ({isDarkMode}) {
     return (
         <div className='experience' id="experience">
             <p className='my-16 ms-10 text-lg'>Some <b className="font-bold">technologies</b> I&apos;ve worked with:</p>
-            <div className='text-justify pb-24 px-10 ms-10 grid grid-cols-3 gap-6'>
+            <div className='text-justify pb-24 px-10 ms-5 grid grid-cols-3 gap-6'>
                 <div>
                     <img src={js} alt="js" className='w-[60px] rounded-xl' />
                     <p className='mt-1'>JavaScript</p>

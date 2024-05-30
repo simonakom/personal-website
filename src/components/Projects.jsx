@@ -46,7 +46,7 @@ export default function Projects({isDarkMode}) {
                         <p className={`text-[16px] ${isDarkMode ? 'text-[#8f9eea]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>Netfix</b> Landing page</p>
                         <div className="mt-1">
                             <a href="https://github.com/simonakom/netflix-page?tab=readme-ov-file">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -59,7 +59,7 @@ export default function Projects({isDarkMode}) {
                         <p className={`text-[16px] ${isDarkMode ? 'text-[#8f9eea]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>Spotify</b> Landing Page</p>
                         <div className="mt-1">
                             <a href="https://github.com/simonakom/spotify-app">               
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -72,7 +72,7 @@ export default function Projects({isDarkMode}) {
                         <p className={`text-[16px] ${isDarkMode ? 'text-[#8f9eea]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>Coctails receipe</b><br /> API app</p>
                         <div className="mt-1">
                             <a href="https://github.com/simonakom/coctails-api">               
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -85,7 +85,7 @@ export default function Projects({isDarkMode}) {
                         <p className={`text-[16px] ${isDarkMode ? 'text-[#8f9eea]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>Google timer & stopwatch</b><br />React app </p> 
                         <div className="mt-4">
                             <a href="https://github.com/simonakom/google-timer-stopwatch">               
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -98,7 +98,7 @@ export default function Projects({isDarkMode}) {
                         <p className={`text-[16px] ${isDarkMode ? 'text-[#8f9eea]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>Kolt</b> CRUD app</p>
                         <div className="mt-1">
                             <a href="https://github.com/simonakom/kolt-scooters-app">               
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -111,7 +111,7 @@ export default function Projects({isDarkMode}) {
                         <p className={`text-[16px] ${isDarkMode ? 'text-[#8f9eea]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>Data-table</b> CRUD app</p>
                         <div className="mt-1">
                             <a href="https://github.com/simonakom/data-table-app">               
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -124,7 +124,7 @@ export default function Projects({isDarkMode}) {
                         <p className={`text-[16px] ${isDarkMode ? 'text-[#8f9eea]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>BMI calculator</b> <br />Javascript app</p> 
                         <div className="mt-4">
                             <a href="https://github.com/simonakom/bmi-calculator">               
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -137,7 +137,7 @@ export default function Projects({isDarkMode}) {
                         <p className={`text-[16px] ${isDarkMode ? 'text-[#8f9eea]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>Contact form</b><br /> CSS project</p>
                         <div className="mt-1">
                             <a href="https://github.com/simonakom/contact-form">               
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -150,7 +150,7 @@ export default function Projects({isDarkMode}) {
                         <p className={`text-[16px] ${isDarkMode ? 'text-[#8f9eea]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>Rentify: pc rent platform</b><br /> Fullstack project</p> 
                         <div className="mt-4">
                             <a href="https://github.com/simonakom/pc-rent-platform">               
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -163,7 +163,7 @@ export default function Projects({isDarkMode}) {
                         <p className={`text-[16px] ${isDarkMode ? 'text-[#8f9eea]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>PulpCinemaHub</b><br /> Fullstack project</p> 
                         <div className="mt-4">
                             <a href="https://github.com/simonakom/forum-app">               
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>

@@ -45,9 +45,9 @@ export default function Navbar({ isDarkMode }) {
     return (
         <div className={`header p-10 ${isDarkMode ? '' : 'light-mode'}`}>
             <div className='mt-14'>
-                <p className={`text-5xl ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}>Simona Komarovska</p>
-                <p className='text-2xl mt-2'>Junior Frontend Developer & UX Enthusiast</p>
-                <p className='text-xl mt-3 presentation'>I build responsive, engaging, and user-friendly digital experiences.</p>
+                <p className={`text-5xl name ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}>Simona Komarovska</p>
+                <p className='text-2xl mt-2 title'>Junior Frontend Developer & UX Enthusiast</p>
+                <p className='text-xl mt-3 presentation subtitle'>I build responsive, engaging, and user-friendly digital experiences.</p>
             </div>
             <nav className='navbar mt-10 cursor-pointer text-xl'>
                 <ul>
