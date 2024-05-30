@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+    background-color:#0f172b !important;
+}
+.container {
+    width: 1300px;
+}
+
+@media screen and (max-width:1023px) {
+    .width{
+        width: 100% !important
+    }
+    .switch {
+        position: fixed;
+        right: 30px;
+    }
+    .testtt {
+        margin-top: -100px !important;
+    }
+    
+}
