@@ -73,7 +73,7 @@ export default function Experience ({isDarkMode}) {
                 </div>
                 <div>
                     <img src={postman} alt="postman" className='w-[60px] rounded-xl' />
-                    <p className='mt-1'>Postman</p>
+                    <p className='mt-2'>Postman</p>
                 </div>
                 <div>
                     <img src={jira} alt="jira" className='h-[55px] w-[60px] rounded-xl' />
@@ -84,14 +84,13 @@ export default function Experience ({isDarkMode}) {
                     <p className='mt-2'>Confluence</p>
                 </div>
                 <div>
-                    <img src={photoshop} alt="photoshop" className='w-[50px] rounded-xl' />
-                    <p className='mt-1'>Photoshop</p>
-                </div>
-                <div>
                     <img src={office} alt="office" className='w-[50px] rounded-xl mt-3' />
                     <p className='mt-4'>MS package</p>
                 </div>
-           
+                <div>
+                    <img src={photoshop} alt="photoshop" className='w-[50px] rounded-xl' />
+                    <p className='mt-1'>Photoshop</p>
+                </div>
                 <div>
                     <img src={salesforce} alt="salesforce" className='w-[50px] rounded-xl mt-2' />
                     <p className='mt-2'>SalesForce</p>

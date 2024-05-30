@@ -56,7 +56,7 @@ export default function Navbar({ isDarkMode }) {
                             to="about" 
                             spy={true} 
                             smooth={true} 
-                            offset={30} 
+                            offset={-5} 
                             duration={500} 
                             >About
                         </Link>
@@ -66,7 +66,7 @@ export default function Navbar({ isDarkMode }) {
                             to="experience" 
                             spy={true} 
                             smooth={true} 
-                            offset={-60} 
+                            offset={-150} 
                             duration={500} 
                             >Experience
                         </Link>
@@ -76,7 +76,7 @@ export default function Navbar({ isDarkMode }) {
                             to="skills" 
                             spy={true} 
                             smooth={true} 
-                            offset={10} 
+                            offset={-130} 
                             duration={500} 
                             >Skills
                         </Link>
@@ -86,7 +86,7 @@ export default function Navbar({ isDarkMode }) {
                             to="projects" 
                             spy={true} 
                             smooth={true} 
-                            offset={-40} 
+                            offset={-150} 
                             duration={500} 
                             >Projects
                         </Link>
