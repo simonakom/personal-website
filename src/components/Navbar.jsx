@@ -11,13 +11,13 @@ export default function Navbar({ isDarkMode }) {
     useEffect(() => {
         function handleScroll() {
             const aboutSection = document.getElementById('about');
-            const skillsSection = document.getElementById('skills'); // Add skills section reference
+            const skillsSection = document.getElementById('skills'); 
             const experienceSection = document.getElementById('experience');
             const projectsSection = document.getElementById('projects');
     
             if (aboutSection && experienceSection && projectsSection && skillsSection) {
                 const aboutOffsetTop = aboutSection.offsetTop;
-                const skillsOffsetTop = skillsSection.offsetTop; // Calculate offset top for skills section
+                const skillsOffsetTop = skillsSection.offsetTop; 
                 const experienceOffsetTop = experienceSection.offsetTop;
                 const projectsOffsetTop = projectsSection.offsetTop;
                 const scrollTop = window.scrollY;
@@ -49,7 +49,6 @@ export default function Navbar({ isDarkMode }) {
                 <p className='text-2xl mt-2'>Junior Frontend Developer & UX Enthusiast</p>
                 <p className='text-xl mt-3 presentation'>I build responsive, engaging, and user-friendly digital experiences.</p>
             </div>
-            
             <nav className='navbar mt-10 cursor-pointer text-xl'>
                 <ul>
                     <li className={`nav-item pt-7 ${fixedSection === 'about' ? 'fixed about' : ''}`}>
@@ -57,7 +56,7 @@ export default function Navbar({ isDarkMode }) {
                             to="about" 
                             spy={true} 
                             smooth={true} 
-                            offset={0} 
+                            offset={30} 
                             duration={500} 
                             >About
                         </Link>
@@ -67,7 +66,7 @@ export default function Navbar({ isDarkMode }) {
                             to="experience" 
                             spy={true} 
                             smooth={true} 
-                            offset={0} 
+                            offset={-60} 
                             duration={500} 
                             >Experience
                         </Link>
@@ -77,7 +76,7 @@ export default function Navbar({ isDarkMode }) {
                             to="skills" 
                             spy={true} 
                             smooth={true} 
-                            offset={0} 
+                            offset={10} 
                             duration={500} 
                             >Skills
                         </Link>
@@ -87,7 +86,7 @@ export default function Navbar({ isDarkMode }) {
                             to="projects" 
                             spy={true} 
                             smooth={true} 
-                            offset={0} 
+                            offset={-40} 
                             duration={500} 
                             >Projects
                         </Link>

@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { FaAnglesRight } from "react-icons/fa6";
+import { FaAnglesLeft } from "react-icons/fa6";
 import netflix from '../assets/images/projects/netflix.png';
 import spotify from '../assets/images/projects/spotify.png';
 import kolt from '../assets/images/projects/kolt.png';
@@ -11,22 +12,31 @@ import bmi from '../assets/images/projects/bmi.png';
 import contact from '../assets/images/projects/contact.png';
 import rentify from '../assets/images/projects/rentify.png';
 import cinema from '../assets/images/projects/cinema.png';
-import Simona from './Simona'; 
-import './Simona.css';
-
+import Modal from './Modal'; 
+import './Projects.css';
 
 export default function Projects({isDarkMode}) {
-
     const [showModal, setShowModal] = useState(false);
+    const modalRef = useRef(null);
 
     const toggleModal = () => {
         setShowModal(!showModal);
+        if (!showModal) {
+            document.body.classList.add('modal-open');
+        } else {
+            document.body.classList.remove('modal-open');
+        }
     };
 
+    const closeModal = (e) => {
+        if (modalRef.current === e.target) {
+            toggleModal();
+        }
+    };
 
     return (
         <div className='projects' id="projects">
-            <p className='my-10 ms-10 text-lg font-bold text-center'>Projects:</p>
+            <p className='mt-16 mb-14 ms-10 text-lg font-bold text-center'>Projects</p>
             <div className='text-justify pb-24 px-10 flex flex-col items-center'>
                 <div className='mb-12 text-center'>
                     <a href="https://simonakom.github.io/netflix-page/index.html">
@@ -159,26 +169,23 @@ export default function Projects({isDarkMode}) {
                     </div>
                 </div>
             </div>
-
-       
-            <p className='mb-20 text-lg font-bold flex items-center justify-center cursor-pointer group hover:underline decoration-[#8f9eea]' onClick={toggleModal}>
-                <span className='ml-2 transition-transform transform group-hover:translate-x-1 group-hover:scale-110'><FaAnglesRight />View Full Project Archive</span>
+            <p className='mb-20 text-lg font-bold flex items-center justify-center cursor-pointer group hover:underline decoration-[#8f9eea] text-center' onClick={toggleModal}>
+                <span className='transition-transform transform group-hover:translate-x-1 group-hover:scale-105'>View Full Project Archive <FaAnglesRight className="inline" /></span>
             </p>
-
-
             {/* Modal */}
             {showModal && (
-             <div className="modal-overlay">
-             <div className="modal">
-                 <div className="modal-content">
-                     <Simona onClose={toggleModal} />
-                 </div>
-             </div>
-         </div>
-        )}
-
-
-             <div className="mx-10 mb-5 text-sm text-slate-500">@ Portfolio coded in Visual Studio Code & crafted with React vite and Tailwind CSS by me :)</div>
+                <div className="modal-overlay" ref={modalRef} onClick={closeModal}>
+                    <div className={`modal ${isDarkMode ? 'bg-[#0f172b]' : 'bg-[#e4e5e9]'}`}>
+                        <div className="modal-content">
+                            <button className="modal-close-btn text-3xl" onClick={toggleModal}>
+                                <FaAnglesLeft />
+                            </button>
+                            <Modal onClose={toggleModal} isDarkMode={isDarkMode} />
+                        </div>
+                    </div>
+                </div>
+            )}
+            <div className="mx-10 mb-5 text-sm text-slate-500">@ Portfolio coded in Visual Studio Code & crafted with React vite and Tailwind CSS by me :)</div>
         </div>
     )
 }
