@@ -1,6 +1,5 @@
 .header {
     position: fixed;
-    transition: position 0.3s ease, top 0.3s ease, backdrop-filter 0.3s ease;
 }
 .presentation {
     max-width: 70%;
@@ -38,7 +37,6 @@
 @media screen and (max-width:1023px) {
     .header {
         position: relative;
-        transition: position 0.3s ease, top 0.3s ease, backdrop-filter 0.3s ease;
     }
     .nav-item.fixed {
         backdrop-filter: blur(5px); 
@@ -57,5 +55,27 @@
     }
     .icons {
         margin-top: 50px !important;
+    }
+
+
+
+
+
+
+
+
+    .header .nav-item a {
+        padding-left:70px;
+    }
+    .header .nav-item a::before {
+        width: 50px;
+    }
+    .header .nav-item a.active::before,
+    .header .nav-item a:hover::before {
+        width: 50px;
+    }
+    .header .nav-item a.active,
+    .header .nav-item a:hover {
+        padding-left: 80px; 
     }
 }
