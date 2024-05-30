@@ -12,7 +12,7 @@ export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
-    document.body.style.backgroundColor = isDarkMode ? '#0f172b' : '#d9dce9';
+    document.body.style.backgroundColor = isDarkMode ? '#0f172b' : '#eef0f7';
   }, [isDarkMode]);
 
   const toggleBackground = () => {
@@ -20,7 +20,7 @@ export default function App() {
   };
 
   return (
-    <div className={`container mx-auto px-10 ${isDarkMode ? 'bg-[#0f172b] text-[#cbd5e7] font-thin' : 'bg-[#d9dce9] text-[#272828ef] font-light'} ${isDarkMode ? '' : 'light-mode'}`}>
+    <div className={`container mx-auto px-10 ${isDarkMode ? 'bg-[#0f172b] text-[#cbd5e7] font-thin' : 'bg-[#d3d4d8] text-[#272828ef] font-light'} ${isDarkMode ? '' : 'light-mode'}`}>
       <div className="flex flex-col lg:flex-row">
         <div className='test width w-[100%] md:w-1/2 font-light mt-5 me-14'>
           <Navbar isDarkMode={isDarkMode} />

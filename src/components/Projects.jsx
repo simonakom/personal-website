@@ -1,6 +1,8 @@
+import { FaAnglesRight } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
+
+
 import PropTypes from 'prop-types';
-// import { FaAnglesRight } from "react-icons/fa6";
-// import { Link } from 'react-router-dom';
 import netflix from '../assets/images/projects/netflix.png';
 import spotify from '../assets/images/projects/spotify.png';
 import kolt from '../assets/images/projects/kolt.png';
@@ -148,14 +150,25 @@ export default function Projects({isDarkMode}) {
                     </div>
                 </div>
             </div>
-            {/* <p className='mb-20 text-lg font-bold flex items-center justify-center cursor-pointer group hover:underline decoration-[#8f9eea]'>
-                <Link to="/full-project-archive">View Full Project Archive</Link>
-                <span className='ml-2 transition-transform transform group-hover:translate-x-1 group-hover:scale-110'><FaAnglesRight /></span>
-             </p> */}
-             <div className="mx-10 mb-5 text-sm text-slate-500">@ Portfolio coded in Visual Studio Code & crafted with React vite and Tailwind CSS by me :)</div>
-        </div>
-    )
+
+       
+      {/* Add a link to the full project archive */}
+      <Link
+        to="/full-projects-archive"
+        className="mb-20 text-lg font-bold flex items-center justify-center cursor-pointer group hover:underline decoration-[#8f9eea]"
+      >
+        <span className="ml-2 transition-transform transform group-hover:translate-x-1 group-hover:scale-110">
+          <FaAnglesRight /> View Full Project Archive
+        </span>
+      </Link>
+
+
+      
+    </div>
+  );
 }
+
+
 Projects.propTypes = {
     isDarkMode: PropTypes.bool.isRequired,
 };
