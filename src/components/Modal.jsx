@@ -247,7 +247,7 @@ import rentify from '../assets/images/projects/rentify.png';
                         </a>
                         <div className='mt-2'> 
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Google</b> timer & stopwatch</p>
-                            <p className='mb-1'> Build with <b className='font-bold'>react vite</b>, <b className='font-bold'>tailwind</b>, <b className='font-bold'>css</b></p>
+                            <p className='mb-1'> Build with <b className='font-bold'>react vite</b>, <b className='font-bold'>tailwind</b>, <br /><b className='font-bold'>css</b></p>
                             <a href="https://github.com/simonakom/google-timer-stopwatch">
                                 <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
                             </a>
@@ -259,7 +259,7 @@ import rentify from '../assets/images/projects/rentify.png';
                         </a>
                         <div className='mt-2'> 
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Birthday</b> countdown</p>
-                            <p className='mb-1'> Build with <b className='font-bold'>react vite</b>, <b className='font-bold'>tailwind</b>, <b className='font-bold'>css</b></p>
+                            <p className='mb-1'> Build with <b className='font-bold'>react vite</b>, <b className='font-bold'>tailwind</b>, <br /><b className='font-bold'>css</b></p>
                             <a href="https://github.com/simonakom/birthday-countdown">
                                 <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
                             </a>
@@ -409,7 +409,7 @@ import rentify from '../assets/images/projects/rentify.png';
                         </a>
                         <div className='mt-2'> 
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>Rentify</b> pc rent platform</p>
-                            <p className='mb-1'> Build with <b className='font-bold'>node.js</b>, <b className='font-bold'>nginx</b>, <b className='font-bold'>mySQL</b>, <b className='font-bold'>react vite</b>, <b className='font-bold'>tailwind</b>,<br /><b className='font-bold'>css</b></p> 
+                            <p className='mb-1'> Build with <b className='font-bold'>node.js</b>, <b className='font-bold'>nginx</b>, <b className='font-bold'>mySQL</b>, <b className='font-bold'>react vite</b>, <b className='font-bold'>tailwind</b>, <b className='font-bold'>css</b></p> 
                             <a href="https://github.com/simonakom/pc-rent-platform">
                                 <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
                             </a>
@@ -433,7 +433,7 @@ import rentify from '../assets/images/projects/rentify.png';
                         </a>
                         <div className='mt-2'> 
                             <p className={`text-[20px] ${isDarkMode ? 'text-[#8f9eea]' : 'text-[#4646b9]'}`}><b>To-do</b> app</p>
-                            <p className='mb-1'> Build with <b className='font-bold'>node.js</b>, <b className='font-bold'>nginx</b>, <b className='font-bold'>bootstrap</b>, <b className='font-bold'>css</b>,<br /><b className='font-bold'>html</b></p>
+                            <p className='mb-1'> Build with <b className='font-bold'>node.js</b>, <b className='font-bold'>nginx</b>, <b className='font-bold'>bootstrap</b>, <b className='font-bold'>css</b>,<b className='font-bold'>html</b></p>
                             <a href="https://github.com/simonakom/todo-list-app">
                                 <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github link</b>
                             </a>
