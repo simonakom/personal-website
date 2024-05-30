@@ -36,7 +36,7 @@ export default function Projects({isDarkMode}) {
 
     return (
         <div className='projects' id="projects">
-            <p className='mt-16 mb-14 ms-10 text-lg font-bold text-center'>Projects</p>
+            <p className='mt-16 mb-14 ms-10 text-lg font-bold'>Projects:</p>
             <div className='text-justify pb-24 px-10 flex flex-col items-center'>
                 <div className='mb-12 text-center'>
                     <a href="https://simonakom.github.io/netflix-page/index.html">
