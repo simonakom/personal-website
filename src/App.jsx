@@ -12,7 +12,9 @@ export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
-    document.body.style.backgroundColor = isDarkMode ? '#0f172b' : '#e4e5e9';
+    document.body.style.background = isDarkMode
+      ? 'radial-gradient(circle, rgba(46,45,45,1) 60%, rgba(19,19,19,1)'
+      : 'radial-gradient(circle, rgba(246,244,246,1) 70%, rgba(207,205,207,1) 100%)';
   }, [isDarkMode]);
 
   const toggleBackground = () => {
@@ -20,7 +22,7 @@ export default function App() {
   };
 
   return (
-    <div className={`container mx-auto px-1 sm:px-20 ${isDarkMode ? 'bg-[#0f172b] text-[#cbd5e7] font-thin' : 'bg-[#e4e5e9] text-[#272828ef] font-light'} ${isDarkMode ? '' : 'light-mode'}`}>
+    <div className={`container mx-auto px-1 sm:px-20 ${isDarkMode ? 'text-[#cbd5e7] font-thin' : 'text-[#272828ef] font-light'}`}>
       <div className="flex flex-col lg:flex-row">
         <div className='test width w-[100%] md:w-1/2 font-light mt-5 me-14'>
           <Navbar isDarkMode={isDarkMode} />
@@ -35,7 +37,7 @@ export default function App() {
           <Switch 
             onChange={toggleBackground} 
             checked={isDarkMode} 
-            onColor={isDarkMode ? "#8f9eea" : "#0c1323"}
+            onColor={isDarkMode ? "#79afdc" : "#0c1323"}
             uncheckedIcon={<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', fontSize: 18, color: 'black', paddingRight: 2 }}><IoMoonOutline /></div>}
             checkedIcon={<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', fontSize: 18, color: 'white', paddingLeft: 3 }}><MdOutlineWbSunny /></div>}
           />

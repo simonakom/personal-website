@@ -43,139 +43,161 @@ export default function Projects({isDarkMode}) {
                         <img src={netflix} alt="netflix" className='w-[400px] rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                     </a>
                     <div className='flex gap-5 mt-5 justify-center'> 
-                        <p className={`text-[16px] ${isDarkMode ? 'text-[#8f9eea]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>Netfix</b> Landing page</p>
+                        <p className={`text-[16px] ${isDarkMode ? 'text-[#79afdc]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>Netfix</b> Landing page</p>
                         <div className="mt-1">
                             <a href="https://github.com/simonakom/netflix-page?tab=readme-ov-file">
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#79afdc] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
+                    <br />    
+                    <hr className={`${isDarkMode ? 'border-[#747c83]' : 'border-[#bcbcc5]'} border-t-2`} />
                 </div>
                 <div className='mb-12 text-center'>
                     <a href="https://simonakom.github.io/spotify-app/build/index.html">
                         <img src={spotify} alt="spotify" className='w-[400px] rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                     </a>
                     <div className='flex gap-5 mt-5 justify-center'> 
-                        <p className={`text-[16px] ${isDarkMode ? 'text-[#8f9eea]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>Spotify</b> Landing Page</p>
+                        <p className={`text-[16px] ${isDarkMode ? 'text-[#79afdc]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>Spotify</b> Landing Page</p>
                         <div className="mt-1">
                             <a href="https://github.com/simonakom/spotify-app">               
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#79afdc] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
+                    <br />    
+                    <hr className={`${isDarkMode ? 'border-[#747c83]' : 'border-[#bcbcc5]'} border-t-2`} />
                 </div>
                 <div className='mb-12 text-center'>
                     <a href="https://simonakom.github.io/coctails-api/coctails.html">
                         <img src={coctails} alt="coctails" className='w-[400px] rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                     </a>
                     <div className='flex gap-5 mt-5 justify-center'> 
-                        <p className={`text-[16px] ${isDarkMode ? 'text-[#8f9eea]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>Coctails receipe</b><br /> API app</p>
+                        <p className={`text-[16px] ${isDarkMode ? 'text-[#79afdc]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>Coctails receipe</b><br /> API app</p>
                         <div className="mt-1">
                             <a href="https://github.com/simonakom/coctails-api">               
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#79afdc] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
+                    <br />    
+                    <hr className={`${isDarkMode ? 'border-[#747c83]' : 'border-[#bcbcc5]'} border-t-2`} />
                 </div>
                 <div className='mb-12 text-center'>
                     <a href="https://simonakom.github.io/google-timer-stopwatch/dist/index.html">
                         <img src={timer} alt="timer" className='w-[400px] rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                     </a>
                     <div className='flex gap-5 mt-5 justify-center'> 
-                        <p className={`text-[16px] ${isDarkMode ? 'text-[#8f9eea]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>Google timer & stopwatch</b><br />React app </p> 
+                        <p className={`text-[16px] ${isDarkMode ? 'text-[#79afdc]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>Google timer & stopwatch</b><br />React app </p> 
                         <div className="mt-4">
                             <a href="https://github.com/simonakom/google-timer-stopwatch">               
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#79afdc] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
+                    <br />    
+                    <hr className={`${isDarkMode ? 'border-[#747c83]' : 'border-[#bcbcc5]'} border-t-2`} />
                 </div>
                 <div className='mb-12 text-center'>
                     <a href="https://simonakom.github.io/kolt-scooters-app/dist/index.html">
                         <img src={kolt} alt="kolt" className='w-[400px] rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                     </a>
                     <div className='flex gap-5 mt-5 justify-center'> 
-                        <p className={`text-[16px] ${isDarkMode ? 'text-[#8f9eea]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>Kolt</b> CRUD app</p>
+                        <p className={`text-[16px] ${isDarkMode ? 'text-[#79afdc]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>Kolt</b> CRUD app</p>
                         <div className="mt-1">
                             <a href="https://github.com/simonakom/kolt-scooters-app">               
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#79afdc] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
+                    <br />    
+                    <hr className={`${isDarkMode ? 'border-[#747c83]' : 'border-[#bcbcc5]'} border-t-2`} />
                 </div>
                 <div className='mb-12 text-center'>
                     <a href="https://simonakom.github.io/data-table-app/admin.html">
                         <img src={product} alt="product" className='w-[400px] rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                     </a>
                     <div className='flex gap-5 mt-5 justify-center'> 
-                        <p className={`text-[16px] ${isDarkMode ? 'text-[#8f9eea]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>Data-table</b> CRUD app</p>
+                        <p className={`text-[16px] ${isDarkMode ? 'text-[#79afdc]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>Data-table</b> CRUD app</p>
                         <div className="mt-1">
                             <a href="https://github.com/simonakom/data-table-app">               
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#79afdc] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
+                    <br />    
+                    <hr className={`${isDarkMode ? 'border-[#747c83]' : 'border-[#bcbcc5]'} border-t-2`} />
                 </div>
                 <div className='mb-12 text-center'>
                     <a href="https://simonakom.github.io/bmi-calculator/index.html">
                         <img src={bmi} alt="bmi" className='w-[400px] rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                     </a>
                     <div className='flex gap-5 mt-5 justify-center'> 
-                        <p className={`text-[16px] ${isDarkMode ? 'text-[#8f9eea]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>BMI calculator</b> <br />Javascript app</p> 
+                        <p className={`text-[16px] ${isDarkMode ? 'text-[#79afdc]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>BMI calculator</b> <br />Javascript app</p> 
                         <div className="mt-4">
                             <a href="https://github.com/simonakom/bmi-calculator">               
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#79afdc] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
+                    <br />    
+                    <hr className={`${isDarkMode ? 'border-[#747c83]' : 'border-[#bcbcc5]'} border-t-2`} />
                 </div>
                 <div className='mb-12 text-center'>
                     <a href="https://simonakom.github.io/contact-form/contact-form-responsive.html">
                         <img src={contact} alt="contact" className='w-[400px] rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                     </a>
                     <div className='flex gap-5 mt-5 justify-center'> 
-                        <p className={`text-[16px] ${isDarkMode ? 'text-[#8f9eea]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>Contact form</b><br /> CSS project</p>
+                        <p className={`text-[16px] ${isDarkMode ? 'text-[#79afdc]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>Contact form</b><br /> CSS project</p>
                         <div className="mt-1">
                             <a href="https://github.com/simonakom/contact-form">               
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#79afdc] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
+                    <br />    
+                    <hr className={`${isDarkMode ? 'border-[#747c83]' : 'border-[#bcbcc5]'} border-t-2`} />
                 </div>
                 <div className='mb-12 text-center'>
                     <a href="https://github.com/simonakom/pc-rent-platform">
                         <img src={rentify} alt="rentify" className='w-[400px] rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                     </a>
                     <div className='flex gap-5 mt-5 justify-center'> 
-                        <p className={`text-[16px] ${isDarkMode ? 'text-[#8f9eea]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>Rentify: pc rent platform</b><br /> Fullstack project</p> 
+                        <p className={`text-[16px] ${isDarkMode ? 'text-[#79afdc]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>Rentify: pc rent platform</b><br /> Fullstack project</p> 
                         <div className="mt-4">
                             <a href="https://github.com/simonakom/pc-rent-platform">               
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#79afdc] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
+                    <br />    
+                    <hr className={`${isDarkMode ? 'border-[#747c83]' : 'border-[#bcbcc5]'} border-t-2`} />
                 </div>
                 <div className='mb-2 text-center'>
                     <a href="https://github.com/simonakom/forum-app">
                         <img src={cinema} alt="cinema" className='w-[400px] rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                     </a>
                     <div className='flex gap-5 mt-5 justify-center'> 
-                        <p className={`text-[16px] ${isDarkMode ? 'text-[#8f9eea]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>PulpCinemaHub</b><br /> Fullstack project</p> 
+                        <p className={`text-[16px] ${isDarkMode ? 'text-[#79afdc]' : ' text-[#4d4db9]'}`}><b className='text-[20px]'>PulpCinemaHub</b><br /> Fullstack project</p> 
                         <div className="mt-4">
                             <a href="https://github.com/simonakom/forum-app">               
-                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#8f9eea] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
+                                <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#79afdc] text-black' : 'bg-[#4646b9] text-white'}`}>Github</b>
                             </a>
                         </div>
                     </div>
+                    <br />    
+                    <hr className={`${isDarkMode ? 'border-[#747c83]' : 'border-[#bcbcc5]'} border-t-2`} />
                 </div>
             </div>
-            <p className='mb-20 text-lg font-bold flex items-center justify-center cursor-pointer group hover:underline decoration-[#8f9eea] text-center' onClick={toggleModal}>
-                <span className='transition-transform transform group-hover:translate-x-1 group-hover:scale-105'>View Full Project Archive <FaAnglesRight className="inline" /></span>
+            <p className={`mb-20 text-lg font-bold flex items-center justify-center cursor-pointer group hover:underline ${isDarkMode ? 'decoration-[#79afdc]' : 'decoration-[#4646b9]'} group`} onClick={toggleModal}>
+                <span className='transition-transform transform group-hover:translate-x-1 group-hover:scale-105'>
+                    View Full Project Archive <FaAnglesRight className="inline" />
+                </span>
             </p>
             {/* Modal */}
             {showModal && (
                 <div className="modal-overlay" ref={modalRef} onClick={closeModal}>
-                    <div className={`modal ${isDarkMode ? 'bg-[#0f172b]' : 'bg-[#e4e5e9]'}`}>
+                    <div className={`modal ${isDarkMode ? 'bg-[#161616]' : 'bg-[#d3d2d4]'}`}>
                         <div className="modal-content">
                             <button className="modal-close-btn text-3xl" onClick={toggleModal}>
                                 <FaAnglesLeft />
