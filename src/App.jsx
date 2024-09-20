@@ -12,9 +12,13 @@ export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
+    //background gradient
     document.body.style.background = isDarkMode
-      ? 'radial-gradient(circle, rgba(46,45,45,1) 60%, rgba(19,19,19,1)'
-      : 'radial-gradient(circle, rgba(246,244,246,1) 70%, rgba(207,205,207,1) 100%)';
+      ? 'radial-gradient(circle, #0e0e33 60%, #030319)'
+      : 'radial-gradient(circle, #e6e3e3 50%, #c7d0ec)';
+    document.body.style.backgroundColor = isDarkMode 
+      ? '#030319' 
+      : '#c7d0ec'; 
   }, [isDarkMode]);
 
   const toggleBackground = () => {
