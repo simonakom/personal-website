@@ -14,11 +14,11 @@ export default function App() {
   useEffect(() => {
     //background gradient
     document.body.style.background = isDarkMode
-      ? 'radial-gradient(circle, #0e0e33 60%, #030319)'
-      : 'radial-gradient(circle, #e6e3e3 50%, #c7d0ec)';
+      ? 'radial-gradient(circle, #0f172a 80%, #080b19)'
+      : 'radial-gradient(circle, #e6e3e3 80%, #c0c4d0)';
     document.body.style.backgroundColor = isDarkMode 
-      ? '#030319' 
-      : '#c7d0ec'; 
+      ? '#080b19' 
+      : '#c0c4d0'; 
   }, [isDarkMode]);
 
   const toggleBackground = () => {

@@ -7,7 +7,7 @@
 .header .nav-item a {
     position: relative;
     transition: padding-left 0.3s ease;
-    padding-left: 45px;
+    padding-left: 55px;
 }
 .header .nav-item a::before {
     content: '';
@@ -15,12 +15,12 @@
     bottom: 10px;
     left: 0;
     height: 3px; 
-    background-color: #79afdc; 
+    background-color: #b1d7f3; 
     box-shadow: 0px 0px 5px rgba(172, 207, 216, 0.539);
     transition: width 0.3s ease-in-out;
     border-radius: 200px;
     cursor: pointer;
-    width: 30px;
+    width: 40px;
 }
 .header.light-mode .nav-item a::before {
     background-color: #4646b9;
@@ -89,4 +89,104 @@
     .icon {
         font-size: 30px !important;
     }
+}
+
+/* animation */
+.inline-elements {
+    display: flex; 
+    align-items: center;
+}
+.slider {
+    color: #cbd5e7;
+    font-size: 20px;
+    text-align: center;
+}
+.slide {
+    overflow: hidden;
+    height: 40px;
+}
+.slide div div{
+    display: inline-block;
+    color: rgb(154, 132, 241);
+    padding: 5px;
+    margin-bottom: 45px;
+}
+.slide div:nth-child(1) div{
+    color: rgb(28, 138, 241);
+}
+.slide div:nth-child(2) div{
+    color: rgb(28, 238, 241);
+}
+.slide div:nth-child(1){
+    animation: animate 6s linear infinite;
+}
+@keyframes animate {
+    0% { margin-top: 0; }         /* "responsive" visible */
+    5% { margin-top: 0; }        /* "responsive" stays */
+    33% { margin-top: -75px; }    /* transition to "engaging" */
+    38% { margin-top: -75px; }    /* "engaging" stays */
+    66% { margin-top: -155px; }    /* transition to "user-friendly" */
+    71% { margin-top: -155px; }    /* "user-friendly" stays */
+    99.99% { margin-top: -155px; }  /* Reset transition */
+    100% { margin-top: 0; }       /* Back to "responsive" */
+}
+
+
+
+
+/* animation - text typing */
+
+.wrapper {
+    display: inline-flex;
+}
+.wrapper .dynamic-txts{
+    margin-top: 1px;
+    margin-left: 10px;
+    height: 20px;
+    line-height: 17px;
+    overflow: hidden;
+}
+.dynamic-txts li{
+    margin-right: 8px;
+    list-style: none;
+    position: relative;
+    top: 3px;
+    animation: slide 6s steps(3) infinite;
+}
+@keyframes slide {
+    100%{
+        top: -60px;
+    }
+}
+.first-response {    
+    margin-top: -1px;
+    margin-bottom: 6px;
+}
+.second-response {
+    margin-top: -2px;
+    margin-bottom: 4px;
+}
+.dynamic-txts li span{
+    position: relative;
+}
+.dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #0b1020;
+    border-left: 1px solid rgb(51, 132, 134);
+    animation: typing 2s steps(10) infinite;
+}
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -15px 0 15px;
+    }
+}
+.header.light-mode .dynamic-txts li span::after {
+    background: #d1d1d9; 
+    border-left: 1px solid #7827a3;
+    font-weight: 600;
 }

@@ -45,9 +45,33 @@ export default function Navbar({ isDarkMode }) {
     return (
         <div className={`header p-10 ${isDarkMode ? '' : 'light-mode'}`}>
             <div className='mt-14'>
-                <p className={`text-5xl name ${isDarkMode ? 'text-[#79afdc]' : 'text-[#4646b9]'}`}>Simona Komarovska</p>
-                <p className='text-2xl mt-2 title'>Junior Front-end & QA engineer</p>
-                <p className='text-xl mt-3 presentation subtitle'>I build responsive, engaging, and user-friendly digital experiences</p>
+                <p className={`text-5xl name ${isDarkMode ? 'text-[#ffffff]' : 'text-[#4646b9]'}`}>Simona Komarovska</p>
+                <p className='text-2xl my-2 title'> Front-end & QA engineer</p>
+
+
+
+                <div className='inline-elements slider'>
+                I build
+                    <div className='slide'>
+                        <div><div>responsive</div></div>
+                        <div><div>engaging</div></div>
+                        <div><div>user-friendly</div></div>
+                    </div>
+                digital experiences
+                </div>
+
+                <div className={`wrapper ${isDarkMode ? '' : 'light-mode'}`}>
+                    <div className={`static-txt ${isDarkMode ? 'text-[#ffffff]' : 'text-[#272828ef]'}`}>I build</div>
+                    <ul className={`dynamic-txts ${isDarkMode ? 'text-[#13b5b5ef]' : 'text-[#7827a3]'}`}>
+                        <li className='first-response'><span>responsive</span></li>
+                        <li className='second-response'><span>engaging</span></li>
+                        <li><span>user-friendly</span></li>
+                    </ul>
+                    <div className={`digital-experience ${isDarkMode ? 'text-[#ffffff]' : 'text-[#272828ef]'}`}>digital experiences</div>
+                </div>
+
+
+
             </div>
             <nav className='navbar mt-10 cursor-pointer text-xl'>
                 <ul>
