@@ -51,7 +51,7 @@ export default function Navbar({ isDarkMode }) {
                         <li className='first-response'><span>Front-end & QA engineer</span></li>
                     </ul>
                 </div>
-                <div className={`inline-elements slider mb-20 ${isDarkMode ? 'text-[#cbd5e7]' : 'text-[#272828ef]'}`}>
+                <div className={`inline-elements slider mb-19 ${isDarkMode ? 'text-[#cbd5e7]' : 'text-[#272828ef]'}`}>
                     I build
                         <div className={`slide ${isDarkMode ? 'text-[#79afdc]' : 'text-[#182f7d]'}`}>
                             <div><div>responsive</div></div>
@@ -104,7 +104,7 @@ export default function Navbar({ isDarkMode }) {
                         </Link>
                     </li>
                 </ul>
-                <div className='flex gap-5 text-3xl mt-36 icons'>
+                <div className='flex gap-5 text-3xl mt-16 icons'>
                     <a href="https://github.com/simonakom">
                         <FaGithub className={`transition-transform transform hover:scale-110 icon ${isDarkMode ? 'hover:text-[#79afdc]' : 'hover:text-[#4646b9]'}`} />
                     </a>
