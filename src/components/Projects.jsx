@@ -197,7 +197,7 @@ export default function Projects({isDarkMode}) {
             {/* Modal */}
             {showModal && (
                 <div className="modal-overlay" ref={modalRef} onClick={closeModal}>
-                    <div className={`modal ${isDarkMode ? 'bg-[#161616]' : 'bg-[#d3d2d4]'}`}>
+                    <div className={`modal ${isDarkMode ? 'bg-[#0f172a]' : 'bg-[#c0c4d0]'}`}>
                         <div className="modal-content">
                             <button className="modal-close-btn text-3xl" onClick={toggleModal}>
                                 <FaAnglesLeft />

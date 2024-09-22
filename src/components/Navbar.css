@@ -73,11 +73,11 @@
     }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:425px) {
     .name {
         font-size: 38px !important;
     }
-    .title {
+    .position-title {
         font-size: 24px !important;
     }
     .subtitle {
@@ -89,82 +89,65 @@
     .icon {
         font-size: 30px !important;
     }
-}
-
-/* animation */
-.inline-elements {
-    display: flex; 
-    align-items: center;
-}
-.slider {
-    color: #cbd5e7;
-    font-size: 20px;
-    text-align: center;
-}
-.slide {
-    overflow: hidden;
-    height: 40px;
-}
-.slide div div{
-    display: inline-block;
-    color: rgb(154, 132, 241);
-    padding: 5px;
-    margin-bottom: 45px;
-}
-.slide div:nth-child(1) div{
-    color: rgb(28, 138, 241);
-}
-.slide div:nth-child(2) div{
-    color: rgb(28, 238, 241);
-}
-.slide div:nth-child(1){
-    animation: animate 6s linear infinite;
-}
-@keyframes animate {
-    0% { margin-top: 0; }         /* "responsive" visible */
-    5% { margin-top: 0; }        /* "responsive" stays */
-    33% { margin-top: -75px; }    /* transition to "engaging" */
-    38% { margin-top: -75px; }    /* "engaging" stays */
-    66% { margin-top: -155px; }    /* transition to "user-friendly" */
-    71% { margin-top: -155px; }    /* "user-friendly" stays */
-    99.99% { margin-top: -155px; }  /* Reset transition */
-    100% { margin-top: 0; }       /* Back to "responsive" */
-}
-
-
-
-
-/* animation - text typing */
-
-.wrapper {
-    display: inline-flex;
-}
-.wrapper .dynamic-txts{
-    margin-top: 1px;
-    margin-left: 10px;
-    height: 20px;
-    line-height: 17px;
-    overflow: hidden;
-}
-.dynamic-txts li{
-    margin-right: 8px;
-    list-style: none;
-    position: relative;
-    top: 3px;
-    animation: slide 6s steps(3) infinite;
-}
-@keyframes slide {
-    100%{
-        top: -60px;
+    .inline-elements {
+        display: flex; 
+        flex-direction: column;
+        margin-top: 80px;
+        margin-bottom: 100px;
     }
 }
-.first-response {    
-    margin-top: -1px;
-    margin-bottom: 6px;
+
+@media screen and (max-width:315px) {
+    .dynamic-txts li span::after{
+        height: 50% !important;
+    }
 }
-.second-response {
-    margin-top: -2px;
-    margin-bottom: 4px;
+
+/* gradient animation */
+.gradient-dark {
+    font-size: 10px;
+    background: repeating-linear-gradient(-45deg, 
+    rgb(74, 74, 77) 0%,         
+    rgb(220, 220, 220) 14.28%,     
+    rgba(255, 255, 255, 0.731) 28.56%,     
+    rgb(173, 204, 244) 42.84%,     
+    rgb(117, 125, 148) 57.14%,       
+    #ecf1fd 71.42%,       
+    #22345f 85.7%,      
+    #16223e 100%);    
+    background-size: 600vw 600vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: slide 10s linear infinite forwards;
+}
+.gradient-light {
+    background: repeating-linear-gradient(-45deg, 
+    rgb(67, 66, 66) 0%,         
+    rgb(220, 220, 220) 14.28%,     
+    rgba(150, 150, 159, 0.731) 28.56%,     
+    rgb(122, 160, 210) 42.84%,     
+    rgb(80, 94, 136) 57.14%,       
+    #2e4c92 71.42%,       
+    #c0c4d0 85.7%,      
+    #94a0c0 100%);    
+    background-size: 600vw 600vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: slide 10s linear infinite forwards;
+}
+@keyframes slide {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 600vw;
+    }
+}
+
+/* text-typing animation */
+.wrapper .dynamic-txts{
+    line-height: 25px;
+    font-size: 21px;
 }
 .dynamic-txts li span{
     position: relative;
@@ -175,9 +158,9 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background: #0b1020;
-    border-left: 1px solid rgb(51, 132, 134);
-    animation: typing 2s steps(10) infinite;
+    background: #0f172a;
+    border-left: 1px solid rgb(177, 173, 245);
+    animation: typing 3s steps(20) infinite;
 }
 @keyframes typing {
     100%{
@@ -186,7 +169,39 @@
     }
 }
 .header.light-mode .dynamic-txts li span::after {
-    background: #d1d1d9; 
-    border-left: 1px solid #7827a3;
+    background: #c0c4d0;
+    border-left: 1px solid #1c1cbd;
     font-weight: 600;
+}
+
+/* text-scroll animation */
+.inline-elements {
+    display: flex; 
+    align-items: center;
+}
+.slider {
+    font-size: 20px;
+    text-align: center;
+}
+.slide {
+    overflow: hidden;
+    height: 40px;
+}
+.slide div div{
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 45px;
+}
+.slide div:nth-child(1){
+    animation: animate 6s linear infinite;
+}
+@keyframes animate {
+    0% { margin-top: 0; }        
+    5% { margin-top: 0; }       
+    33% { margin-top: -75px; }    
+    38% { margin-top: -75px; }    
+    66% { margin-top: -155px; }    
+    71% { margin-top: -155px; }   
+    99.99% { margin-top: -155px; } 
+    100% { margin-top: 0; }      
 }

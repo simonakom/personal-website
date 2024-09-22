@@ -45,33 +45,21 @@ export default function Navbar({ isDarkMode }) {
     return (
         <div className={`header p-10 ${isDarkMode ? '' : 'light-mode'}`}>
             <div className='mt-14'>
-                <p className={`text-5xl name ${isDarkMode ? 'text-[#ffffff]' : 'text-[#4646b9]'}`}>Simona Komarovska</p>
-                <p className='text-2xl my-2 title'> Front-end & QA engineer</p>
-
-
-
-                <div className='inline-elements slider'>
-                I build
-                    <div className='slide'>
-                        <div><div>responsive</div></div>
-                        <div><div>engaging</div></div>
-                        <div><div>user-friendly</div></div>
-                    </div>
-                digital experiences
-                </div>
-
-                <div className={`wrapper ${isDarkMode ? '' : 'light-mode'}`}>
-                    <div className={`static-txt ${isDarkMode ? 'text-[#ffffff]' : 'text-[#272828ef]'}`}>I build</div>
-                    <ul className={`dynamic-txts ${isDarkMode ? 'text-[#13b5b5ef]' : 'text-[#7827a3]'}`}>
-                        <li className='first-response'><span>responsive</span></li>
-                        <li className='second-response'><span>engaging</span></li>
-                        <li><span>user-friendly</span></li>
+                <p className={`text-5xl mb-4 name ${isDarkMode ? 'gradient-dark' : 'gradient-light'}`}>Simona Komarovska</p>
+                <div className={`mb-16 my-2 position-title wrapper ${isDarkMode ? '' : 'light-mode'}`}>
+                    <ul className={`dynamic-txts ${isDarkMode ? 'text-[#d3dfefef]' : 'text-[#272828ef]'}`}>
+                        <li className='first-response'><span>Front-end & QA engineer</span></li>
                     </ul>
-                    <div className={`digital-experience ${isDarkMode ? 'text-[#ffffff]' : 'text-[#272828ef]'}`}>digital experiences</div>
                 </div>
-
-
-
+                <div className={`inline-elements slider mb-20 ${isDarkMode ? 'text-[#cbd5e7]' : 'text-[#272828ef]'}`}>
+                    I build
+                        <div className={`slide ${isDarkMode ? 'text-[#79afdc]' : 'text-[#182f7d]'}`}>
+                            <div><div>responsive</div></div>
+                            <div><div>engaging</div></div>
+                            <div><div>user-friendly</div></div>
+                        </div>
+                    digital experiences
+                </div>
             </div>
             <nav className='navbar mt-10 cursor-pointer text-xl'>
                 <ul>

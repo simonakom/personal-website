@@ -14,10 +14,10 @@ export default function App() {
   useEffect(() => {
     //background gradient
     document.body.style.background = isDarkMode
-      ? 'radial-gradient(circle, #0f172a 80%, #080b19)'
-      : 'radial-gradient(circle, #e6e3e3 80%, #c0c4d0)';
+      ? '#0f172a'
+      : '#c0c4d0';
     document.body.style.backgroundColor = isDarkMode 
-      ? '#080b19' 
+      ? '#0f172a' 
       : '#c0c4d0'; 
   }, [isDarkMode]);
 
@@ -41,7 +41,7 @@ export default function App() {
           <Switch 
             onChange={toggleBackground} 
             checked={isDarkMode} 
-            onColor={isDarkMode ? "#79afdc" : "#0c1323"}
+            onColor={isDarkMode ? "#5f89ac" : "#0c1323"}
             uncheckedIcon={<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', fontSize: 18, color: 'black', paddingRight: 2 }}><IoMoonOutline /></div>}
             checkedIcon={<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', fontSize: 18, color: 'white', paddingLeft: 3 }}><MdOutlineWbSunny /></div>}
           />
