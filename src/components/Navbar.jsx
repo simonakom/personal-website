@@ -45,15 +45,15 @@ export default function Navbar({ isDarkMode }) {
     return (
         <div className={`header p-10 ${isDarkMode ? '' : 'light-mode'}`}>
             <div className='mt-14'>
-                <p className={`text-5xl mb-4 name ${isDarkMode ? 'gradient-dark' : 'gradient-light'}`}>Simona Komarovska</p>
+                <p className={`text-5xl mb-4 name ${isDarkMode ? 'text-[#cbd5e7]' : 'text-[#3a3a9d]'}`}>Simona Komarovska</p>
                 <div className={`mb-16 my-2 position-title wrapper ${isDarkMode ? '' : 'light-mode'}`}>
                     <ul className={`dynamic-txts ${isDarkMode ? 'text-[#d3dfefef]' : 'text-[#272828ef]'}`}>
-                        <li className='first-response'><span>Front-end & QA engineer</span></li>
+                        <li className='first-response'><span>Full-stack & QA Engineer</span></li>
                     </ul>
                 </div>
                 <div className={`inline-elements slider mb-19 ${isDarkMode ? 'text-[#cbd5e7]' : 'text-[#272828ef]'}`}>
                     I build
-                        <div className={`slide ${isDarkMode ? 'text-[#79afdc]' : 'text-[#182f7d]'}`}>
+                        <div className={`slide ${isDarkMode ? 'text-[#79afdc]' : 'text-[#2f2fb4]'}`}>
                             <div><div>responsive</div></div>
                             <div><div>engaging</div></div>
                             <div><div>user-friendly</div></div>
@@ -106,13 +106,13 @@ export default function Navbar({ isDarkMode }) {
                 </ul>
                 <div className='flex gap-5 text-3xl mt-16 icons'>
                     <a href="https://github.com/simonakom">
-                        <FaGithub className={`transition-transform transform hover:scale-110 icon ${isDarkMode ? 'hover:text-[#79afdc]' : 'hover:text-[#4646b9]'}`} />
+                        <FaGithub className={`transition-transform transform hover:scale-110 icon ${isDarkMode ? 'hover:text-[#79afdc]' : 'hover:text-[#3a3a9d]'}`} />
                     </a>
                     <a href="https://www.linkedin.com/in/simona-komarovska-a70376185/">
-                        <FaLinkedin className={`transition-transform transform hover:scale-110 icon ${isDarkMode ? 'hover:text-[#79afdc]' : 'hover:text-[#4646b9]'}`} />
+                        <FaLinkedin className={`transition-transform transform hover:scale-110 icon ${isDarkMode ? 'hover:text-[#79afdc]' : 'hover:text-[#3a3a9d]'}`} />
                     </a>
                     <a href="mailto:simonak399@gmail.com">
-                        <MdEmail className={`transition-transform transform hover:scale-110 icon ${isDarkMode ? 'hover:text-[#79afdc]' : 'hover:text-[#4646b9]'}`} />
+                        <MdEmail className={`transition-transform transform hover:scale-110 icon ${isDarkMode ? 'hover:text-[#79afdc]' : 'hover:text-[#3a3a9d]'}`} />
                     </a>
                 </div>
             </nav>
