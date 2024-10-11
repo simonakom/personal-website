@@ -179,7 +179,7 @@ export default function Projects({isDarkMode}) {
                     <br />    
                 </div>
             </div>
-            <p className={`mb-20 text-lg font-bold flex items-center justify-center cursor-pointer group hover:underline ${isDarkMode ? 'decoration-[#79afdc]' : 'decoration-[#3a3a9d]'} group`} onClick={toggleModal}>
+            <p className={`mb-20 text-lg font-bold flex items-center justify-center cursor-pointer ${isDarkMode ? 'hover:text-gray-200' : 'hover:text-[#3a3a9d]'} group`} onClick={toggleModal}>
                 <span className='transition-transform transform group-hover:translate-x-1 group-hover:scale-105'>
                     View Full Project Archive <FaAnglesRight className="inline" />
                 </span>
