@@ -6,6 +6,7 @@ import Navbar from './components/Navbar'
 import About from './components/About'
 import Skills from './components/Skills'
 import Experience from './components/Experience'
+import QAProjects from './components/QAProjects'
 import Projects from './components/Projects'
 
 export default function App() {
@@ -35,6 +36,7 @@ export default function App() {
           <About isDarkMode={isDarkMode}/>
           <Experience isDarkMode={isDarkMode}/>
           <Skills isDarkMode={isDarkMode}/>
+          <QAProjects isDarkMode={isDarkMode}/>
           <Projects isDarkMode={isDarkMode}/>
         </div>
         <div className="mt-5 switch">

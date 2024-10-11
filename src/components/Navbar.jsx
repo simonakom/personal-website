@@ -13,12 +13,14 @@ export default function Navbar({ isDarkMode }) {
             const aboutSection = document.getElementById('about');
             const skillsSection = document.getElementById('skills'); 
             const experienceSection = document.getElementById('experience');
+            const qaprojectsSection = document.getElementById('qaprojects');
             const projectsSection = document.getElementById('projects');
-    
+
             if (aboutSection && experienceSection && projectsSection && skillsSection) {
                 const aboutOffsetTop = aboutSection.offsetTop;
                 const skillsOffsetTop = skillsSection.offsetTop; 
                 const experienceOffsetTop = experienceSection.offsetTop;
+                const qaprojectsOffsetTop = qaprojectsSection.offsetTop;
                 const projectsOffsetTop = projectsSection.offsetTop;
                 const scrollTop = window.scrollY;
                 const screenWidth = window.innerWidth;
@@ -29,6 +31,8 @@ export default function Navbar({ isDarkMode }) {
                     setFixedSection('skills');
                 } else if (scrollTop >= experienceOffsetTop && scrollTop < projectsOffsetTop && screenWidth <= 1024) {
                     setFixedSection('experience');
+                } else if (scrollTop >= qaprojectsOffsetTop && screenWidth <= 1024) {
+                    setFixedSection('projects');
                 } else if (scrollTop >= projectsOffsetTop && screenWidth <= 1024) {
                     setFixedSection('projects');
                 } else {
@@ -93,6 +97,16 @@ export default function Navbar({ isDarkMode }) {
                             >Skills
                         </Link>
                     </li>
+                    <li className={`nav-item pt-7 ${fixedSection === 'projects' ? 'fixed projects' : ''}`}>
+                        <Link 
+                            to="qaprojects" 
+                            spy={true} 
+                            smooth={true} 
+                            offset={-150} 
+                            duration={500} 
+                            >QA Projects
+                        </Link>
+                    </li>
                     <li className={`nav-item py-7 ${fixedSection === 'projects' ? 'fixed projects' : ''}`}>
                         <Link 
                             to="projects" 
@@ -100,7 +114,7 @@ export default function Navbar({ isDarkMode }) {
                             smooth={true} 
                             offset={-150} 
                             duration={500} 
-                            >Projects
+                            >Dev Projects
                         </Link>
                     </li>
                 </ul>
