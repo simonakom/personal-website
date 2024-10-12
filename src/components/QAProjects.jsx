@@ -11,10 +11,11 @@ export default function Projects({isDarkMode}) {
     return (
         <div className='qaprojects' id="qaprojects">
             <p className='mt-16 mb-10 ms-10 text-lg font-bold'>QA Projects:</p>
+
             <div className='flex mb-2 items-center justify-between'>
                 <div className='flex items-center gap-3'>
                     <img src={postman} alt="postman" className='w-[35px] rounded-full' />
-                    <p>Postma/Newman automated API tests (scripts) + CI of <b className='text-[#ffffff]'>e-shop</b></p>
+                    <p>Postma/Newman automated API tests (scripts) + CI of  <b className={`${isDarkMode ? 'text-[#ffffff]]' : ' text-[#000000]'}`}>e-shop</b></p>
                 </div>
                 <div className='flex items-center gap-3'>
                     <FaAngleDoubleRight />
@@ -26,7 +27,7 @@ export default function Projects({isDarkMode}) {
             <div className='flex mb-2 items-center justify-between'>
                 <div className='flex items-center gap-3'>
                     <img src={cypress} alt="postman" className='w-[35px] rounded-full' />
-                    <p>Cypress automated tests + CI of <b className='text-[#ffffff]'>e-shop</b></p>
+                    <p>Cypress automated tests + CI of <b className={`${isDarkMode ? 'text-[#ffffff]]' : ' text-[#000000]'}`}>e-shop</b></p>
                 </div>
                 <div className='flex items-center gap-3'>
                     <FaAngleDoubleRight />
@@ -38,7 +39,7 @@ export default function Projects({isDarkMode}) {
             <div className='flex mb-2 items-center justify-between'>
                 <div className='flex items-center gap-3'>
                     <img src={cypress} alt="postman" className='w-[35px] rounded-full' />
-                    <p>Cypress automated tests + CI of <b className='text-[#ffffff]'>to-do app</b></p>
+                    <p>Cypress automated tests + CI of <b className={`${isDarkMode ? 'text-[#ffffff]]' : ' text-[#000000]'}`}>to-do app</b></p>
                 </div>
                 <div className='flex items-center gap-3'>
                     <FaAngleDoubleRight />
@@ -50,7 +51,7 @@ export default function Projects({isDarkMode}) {
             <div className='flex mb-2 items-center justify-between'>
                 <div className='flex items-center gap-3'>
                     <img src={cypress} alt="postman" className='w-[35px] rounded-full' />
-                    <p>Cypress automated tests of <b className='text-[#ffffff]'>registration form</b></p> 
+                    <p>Cypress automated tests of <b className={`${isDarkMode ? 'text-[#ffffff]]' : ' text-[#000000]'}`}>registration form</b></p>
                 </div>
                 <div className='flex items-center gap-3'>
                     <FaAngleDoubleRight />
@@ -62,7 +63,7 @@ export default function Projects({isDarkMode}) {
             <div className='flex mb-2 items-center justify-between'>
                 <div className='flex items-center gap-3'>
                     <img src={postman} alt="postman" className='w-[35px] rounded-full' />
-                    <p>Postman/Neman automated tests (scripts) of CRUD API built with PostgressSQL, Node.js and Express for managing <b className='text-[#ffffff]'> movies and actors</b></p>    
+                    <p>Postman/Neman automated tests (scripts) of CRUD API built with PostgressSQL, Node.js and Express for managing <b className={`${isDarkMode ? 'text-[#ffffff]]' : ' text-[#000000]'}`}>movies and actors</b></p>
                 </div>
                 <div className='flex items-center gap-3'>
                     <FaAngleDoubleRight />
@@ -74,7 +75,7 @@ export default function Projects({isDarkMode}) {
             <div className='flex mb-2 items-center justify-between'>
                 <div className='flex items-center gap-3'>
                     <img src={postman} alt="postman" className='w-[35px] rounded-full' />
-                    <p>Postman simple test of CRUD API built with Node.js and Express for managing <b className='text-[#ffffff]'> movies and actors</b></p>
+                    <p>Postman simple test of CRUD API built with Node.js and Express for managing <b className={`${isDarkMode ? 'text-[#ffffff]]' : ' text-[#000000]'}`}>movies and actors</b></p>
                 </div>
                 <div className='flex items-center gap-3'>
                     <FaAngleDoubleRight />
@@ -86,7 +87,7 @@ export default function Projects({isDarkMode}) {
             <div className='flex mb-2 items-center justify-between'>
                 <div className='flex items-center gap-3'>
                     <img src={postman} alt="postman" className='w-[35px] rounded-full' />
-                    <p>Postman simple test of CRUD API built with Node.js and Express for managing <b className='text-[#ffffff]'>shops</b></p>
+                    <p>Postman simple test of CRUD API built with Node.js and Express for managing <b className={`${isDarkMode ? 'text-[#ffffff]]' : ' text-[#000000]'}`}>shops</b></p>
                 </div>
                 <div className='flex items-center gap-3'>
                     <FaAngleDoubleRight />
@@ -98,7 +99,7 @@ export default function Projects({isDarkMode}) {
             <div className='flex mb-2 items-center justify-between'>
                 <div className='flex items-center gap-3'>
                     <img src={jest} alt="jest" className='w-[40px] rounded-full' />
-                    <p>Unit tests with Jest, covering a variety of common  <b className='text-[#ffffff]'>algorithmic problems</b>  and <b className='text-[#ffffff]'> mathematical functions </b></p>
+                    <p>Unit tests with Jest, covering a variety of common <b className={`${isDarkMode ? 'text-[#ffffff]' : 'text-[#000000]'}`}>algorithmic problems</b> and <b className={`${isDarkMode ? 'text-[#ffffff]' : 'text-[#000000]'}`}>mathematical functions</b></p>
                 </div>
                 <div className='flex items-center gap-3'>
                     <FaAngleDoubleRight />
@@ -107,7 +108,7 @@ export default function Projects({isDarkMode}) {
                     </a>
                 </div>
             </div>
-        <hr className={`border-t-1 mt-10 ${isDarkMode ? 'border-[#cbd5e7]' : 'border-[#26265f]' }`} />
+            <hr className={`border-t-1 mt-20 ${isDarkMode ? 'border-[#cbd5e7]' : 'border-[#878788]' }`} />
         </div>
     )
 }

@@ -7,7 +7,6 @@ import { MdAutoFixHigh } from "react-icons/md";
 export default function Skills ({isDarkMode}) {
     return (
         <div className='skills' id="skills">
-            <hr />
             <p className='mt-16 mb-10 ms-10 text-lg font-bold'>Skills:</p>
             <div className='text-justify flex flex-col gap-5 pb-20 px-10'>
                 <div className="flex gap-5">
@@ -27,7 +26,7 @@ export default function Skills ({isDarkMode}) {
                     <div><b className="font-bold">Search wizard:</b> My proficiency in retrieving information from the depths of the internet resembles a finely honed skill. Whether it involves locating a specific code snippet or accessing comprehensive documentation, I can swiftly locate what&apos;s needed to accomplish tasks accurately and promptly.</div>
                 </div>
             </div>
-            <hr className={`border-t-1 ${isDarkMode ? 'border-[#cbd5e7]' : 'border-[#26265f]' }`} />
+            <hr className={`border-t-1 ${isDarkMode ? 'border-[#cbd5e7]' : 'border-[#878788]' }`} />
         </div>
     )
 }

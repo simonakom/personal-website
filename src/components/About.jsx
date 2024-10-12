@@ -8,7 +8,7 @@ export default function About ({isDarkMode}) {
                 <p>As a <b className="font-bold">QA </b>engineer, I am equally passionate about ensuring that every product I work on meets the highest standards of <b className="font-bold">functionality, usability </b>and <b className="font-bold">performance.</b> I have experience in both manual and automated testing, utilizing tools such as <b className="font-bold">Cypress </b> for end-to-end testing and <b className="font-bold">Postman/Newman </b> for API testing, focusing on identifying and resolving issues to deliver a flawless user experience.</p><br />
                 <p>When I am not at the computer, you will probably find me cycling, exploring new hiking trails, diving headfirst into a captivating book, or traveling the world!</p>
             </div>
-            <hr className={`border-t-1 ${isDarkMode ? 'border-[#cbd5e7]' : 'border-[#26265f]' }`} />
+            <hr className={`border-t-1 ${isDarkMode ? 'border-[#cbd5e7]' : 'border-[#878788]' }`} />
         </div>
     )
 }

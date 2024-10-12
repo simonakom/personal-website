@@ -57,7 +57,7 @@ export default function Navbar({ isDarkMode }) {
                 </div>
                 <div className={`inline-elements slider mb-19 ${isDarkMode ? 'text-[#cbd5e7]' : 'text-[#272828ef]'}`}>
                     I build
-                        <div className={`slide ${isDarkMode ? 'text-[#79afdc]' : 'text-[#2f2fb4]'}`}>
+                        <div className={`slide ${isDarkMode ? 'text-[#8ac2f0]' : 'text-[#3a3a9d]'}`}>
                             <div><div>responsive</div></div>
                             <div><div>engaging</div></div>
                             <div><div>user-friendly</div></div>
