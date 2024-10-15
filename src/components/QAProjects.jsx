@@ -5,13 +5,10 @@ import postman from '../assets/images/postman.png';
 import cypress from '../assets/images/cypress.jpg';
 import './Projects.css';
 
-
 export default function Projects({isDarkMode}) {
-
     return (
-        <div className='qaprojects' id="qaprojects">
+        <div className='qaprojects px-10' id="qaprojects">
             <p className='mt-16 mb-10 ms-10 text-lg font-bold'>QA Projects:</p>
-
             <div className='flex mb-2 items-center justify-between'>
                 <div className='flex items-center gap-3'>
                     <img src={postman} alt="postman" className='w-[35px] rounded-full' />
@@ -63,7 +60,7 @@ export default function Projects({isDarkMode}) {
             <div className='flex mb-2 items-center justify-between'>
                 <div className='flex items-center gap-3'>
                     <img src={postman} alt="postman" className='w-[35px] rounded-full' />
-                    <p>Postman/Neman automated tests (scripts) of CRUD API built with PostgressSQL, Node.js and Express for managing <b className={`${isDarkMode ? 'text-[#ffffff]]' : ' text-[#000000]'}`}>movies and actors</b></p>
+                    <p>Postman/Neman automated tests (scripts) of CRUD API built with PostgresSQL, Node.js and Express for managing <b className={`${isDarkMode ? 'text-[#ffffff]]' : ' text-[#000000]'}`}>movies and actors</b></p>
                 </div>
                 <div className='flex items-center gap-3'>
                     <FaAngleDoubleRight />

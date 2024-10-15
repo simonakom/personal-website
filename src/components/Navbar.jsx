@@ -122,7 +122,7 @@ export default function Navbar({ isDarkMode }) {
                     <a href="https://github.com/simonakom">
                         <FaGithub className={`transition-transform transform hover:scale-110 icon ${isDarkMode ? 'hover:text-[#79afdc]' : 'hover:text-[#3a3a9d]'}`} />
                     </a>
-                    <a href="https://www.linkedin.com/in/simona-komarovska-a70376185/">
+                    <a href="https://www.linkedin.com/in/simona-komarovska/">
                         <FaLinkedin className={`transition-transform transform hover:scale-110 icon ${isDarkMode ? 'hover:text-[#79afdc]' : 'hover:text-[#3a3a9d]'}`} />
                     </a>
                     <a href="mailto:simonak399@gmail.com">

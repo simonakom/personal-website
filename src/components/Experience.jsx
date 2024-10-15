@@ -23,19 +23,17 @@ import jenkins from '../assets/images/jenkins.png';
 import git from '../assets/images/git.png';
 import trello from '../assets/images/trello.png';
 import testomat from '../assets/images/testomat.png';
-
 import office from '../assets/images/office.png';
 import photoshop from '../assets/images/photoshop.png';
 import salesforce from '../assets/images/salesforce.png';
-
 import express from '../assets/images/expressjs.png';
 
 export default function Experience ({isDarkMode}) {
     return (
         <div className='experience' id="experience">
             <p className='my-16 ms-10 text-lg'>Some <b className="font-bold">technologies</b> I&apos;ve worked with:</p>
-            <div className='text-justify pb-24 px-10 ms-5 grid grid-cols-4 gap-6'>
-                <div>
+            <div className='text-justify pb-24 px-10 ms-5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6'>
+            <div>
                     <img src={js} alt="js" className='w-[60px] rounded-xl' />
                     <p className='mt-1'>JavaScript</p>
                 </div>
@@ -148,8 +146,6 @@ export default function Experience ({isDarkMode}) {
                     <img src={office} alt="office" className='w-[60px] rounded-xl mt-3' />
                     <p className='mt-5'>MSOffice</p>
                 </div>
-             
-                
             </div>
             <hr className={`border-t-1 ${isDarkMode ? 'border-[#cbd5e7]' : 'border-[#878788]' }`} />
         </div>
