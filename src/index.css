@@ -2,6 +2,132 @@
 @tailwind components;
 @tailwind utilities;
 
+.mouse-highlight {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  pointer-events: none;
+  z-index: 2147483647;
+  transition: all 0.1s ease-out;
+  box-shadow: 
+    0 0 30px rgba(255, 255, 255, 0.8),
+    0 0 60px rgba(255, 255, 255, 0.646),
+    0 0 90px rgba(255, 255, 255, 0.77);
+  filter: blur(35px);
+}
+
+.smoke-particle {
+  position: fixed;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 2147483646;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%, transparent 100%);
+  box-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.2),
+    0 0 20px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease-out;
+  animation: smokeRise 4s ease-out infinite;
+  filter: blur(1px);
+}
+
+@keyframes smokeRise {
+  0% {
+    opacity: 0.4;
+    transform: scale(0.5) rotate(0deg);
+    filter: blur(1px);
+  }
+  50% {
+    opacity: 0.2;
+    transform: scale(1.2) rotate(180deg);
+    filter: blur(2px);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2) rotate(360deg);
+    filter: blur(3px);
+  }
+}
+
+.firefly {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 2147483645;
+  box-shadow: 
+    0 0 8px var(--firefly-color),
+    0 0 16px var(--firefly-color),
+    0 0 24px var(--firefly-color);
+  transition: all 0.2s ease-out;
+  animation: fireflyTwinkle 3s ease-in-out infinite;
+  background: radial-gradient(circle, var(--firefly-color) 30%, rgba(255, 255, 255, 0.8) 70%);
+}
+
+@keyframes fireflyTwinkle {
+  0%, 100% {
+    box-shadow: 
+      0 0 8px var(--firefly-color),
+      0 0 16px var(--firefly-color),
+      0 0 24px var(--firefly-color);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 
+      0 0 12px var(--firefly-color),
+      0 0 24px var(--firefly-color),
+      0 0 36px var(--firefly-color);
+    transform: scale(1.2);
+  }
+}
+
+.soft-orb {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 2147483646;
+  filter: blur(8px);
+  box-shadow: 0 0 32px var(--orb-color), 0 0 64px var(--orb-color);
+  transition: all 0.2s ease-out;
+  background: var(--orb-color);
+}
+
+.comet-tail {
+  position: fixed;
+  border-radius: 8px;
+  pointer-events: none;
+  z-index: 2147483646;
+  filter: blur(2px);
+  box-shadow: 0 0 16px #00eaff, 0 0 32px #00eaff;
+  transition: all 0.15s ease-out;
+  background: linear-gradient(90deg, rgba(0,255,255,0.7) 0%, rgba(0,180,255,0.5) 60%, rgba(255,255,255,0.1) 100%);
+}
+
+.ripple-circle {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 2147483646;
+  filter: blur(4px);
+  box-shadow: 0 0 24px var(--ripple-color), 0 0 48px var(--ripple-color);
+  transition: all 0.2s ease-out;
+  background: var(--ripple-color);
+}
+
+.sparkle-effect {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 2147483646;
+  filter: blur(1.5px);
+  box-shadow: 0 0 8px var(--sparkle-color), 0 0 16px var(--sparkle-color);
+  transition: all 0.15s ease-out;
+  background: var(--sparkle-color);
+}
+
 
 .container {
     max-width: 1300px; 

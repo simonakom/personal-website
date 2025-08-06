@@ -103,6 +103,12 @@
     }
 }
 
+/* position-title styling */
+.position-title {
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
 /* text-typing animation */
 .wrapper .dynamic-txts{
     line-height: 25px;
@@ -114,12 +120,15 @@
 .dynamic-txts li span::after{
     content: "";
     position: absolute;
-    left: 0;
+    left: 50px;
     height: 100%;
     width: 100%;
     background: #0f172a;
     border-left: 1px solid rgb(255, 255, 255);
     animation: typing 3s steps(20) infinite;
+}
+.dynamic-txts li.second-response span::after{
+    animation: typing2 6s steps(50) infinite;
 }
 @keyframes typing {
     100%{
@@ -127,8 +136,14 @@
         margin: 0 -15px 0 15px;
     }
 }
+@keyframes typing2 {
+    100%{
+        left: 100%;
+        margin: 0 -15px 0 15px;
+    }
+}
 .header.light-mode .dynamic-txts li span::after {
-    background: #c0c4d0;
+    background: #ebeef5;
     border-left: 1px solid #030324;
     font-weight: 600;
 }

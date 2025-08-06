@@ -52,10 +52,10 @@ export default function Navbar({ isDarkMode }) {
                 <p className={`text-5xl mb-4 name ${isDarkMode ? 'text-[#cbd5e7]' : 'text-[#3a3a9d]'}`}>Simona Komarovska</p>
                 <div className={`mb-16 my-2 position-title wrapper ${isDarkMode ? '' : 'light-mode'}`}>
                     <ul className={`dynamic-txts ${isDarkMode ? 'text-[#d3dfefef]' : 'text-[#272828ef]'}`}>
-                        <li className='first-response'><span>Full-stack & QA Engineer</span></li>
+                        <li className='first-response'><span>Software QA Engineer</span></li>
                     </ul>
                 </div>
-                <div className={`inline-elements slider mb-19 ${isDarkMode ? 'text-[#cbd5e7]' : 'text-[#272828ef]'}`}>
+                {/* <div className={`inline-elements slider mb-19 ${isDarkMode ? 'text-[#cbd5e7]' : 'text-[#272828ef]'}`}>
                     I build
                         <div className={`slide ${isDarkMode ? 'text-[#8ac2f0]' : 'text-[#3a3a9d]'}`}>
                             <div><div>responsive</div></div>
@@ -63,7 +63,7 @@ export default function Navbar({ isDarkMode }) {
                             <div><div>user-friendly</div></div>
                         </div>
                     digital experiences
-                </div>
+                </div> */}
             </div>
             <nav className='navbar mt-10 cursor-pointer text-xl'>
                 <ul>
