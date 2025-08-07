@@ -12,10 +12,21 @@ import Projects from './components/Projects'
 export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-           const [smokeParticles, setSmokeParticles] = useState([]);
-         const [sparkles, setSparkles] = useState([]);
-
+  const [smokeParticles, setSmokeParticles] = useState([]);
+  const [sparkles, setSparkles] = useState([]);
   const [mouseGlow, setMouseGlow] = useState({ color: 'rgba(255, 255, 255, 0.16)', intensity: 1 });
+
+  // Use the same color palette for both dark and light mode
+  const highlightColor = isDarkMode
+    ? 'rgba(245, 234, 115, 0.22)'
+    : 'rgba(128, 163, 223, 0.58)'; // very intense black for light mode
+  const smokeColor = 'rgba(120, 115, 245, 0.13)';
+  const sparkleColors = [
+    'rgba(108, 105, 189, 0.55)',    // main blue-purple
+    'rgba(139, 107, 168, 0.41)',    // purple
+    'rgba(105, 142, 189, 0.49)',    // light blue
+    'rgba(61, 46, 79, 0.43)'        // lavender
+  ];
 
   useEffect(() => {
     document.body.style.background = isDarkMode
@@ -29,46 +40,40 @@ export default function App() {
   useEffect(() => {
     const handleMouseMove = (e) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
-      
       // Check what element is under the mouse for glow color
       const elementUnderMouse = document.elementFromPoint(e.clientX, e.clientY);
-      let newGlowColor = 'rgba(255, 255, 255, 0.16)';
+      let newGlowColor = highlightColor;
       let newIntensity = 1;
-
       if (elementUnderMouse) {
         const tagName = elementUnderMouse.tagName?.toLowerCase();
         const className = elementUnderMouse.className || '';
-        
-        // Different glow colors based on element type
         if (tagName === 'h1' || tagName === 'h2' || tagName === 'h3') {
-          newGlowColor = 'rgba(59, 130, 246, 0.3)'; // Blue for headings
+          newGlowColor = 'rgba(245, 115, 130, 0.32)'; // Heading color
           newIntensity = 1.2;
         } else if (tagName === 'a' || elementUnderMouse.closest('a')) {
-          newGlowColor = 'rgba(6, 182, 212, 0.3)'; // Cyan for links
+          newGlowColor = 'rgba(120, 180, 255, 0.32)'; // Link color
           newIntensity = 1.3;
         } else if (tagName === 'button' || elementUnderMouse.closest('button')) {
-          newGlowColor = 'rgba(245, 158, 11, 0.3)'; // Orange for buttons
+          newGlowColor = 'rgba(168, 85, 247, 0.32)'; // Button color
           newIntensity = 1.4;
         } else if (className.includes('project') || className.includes('card')) {
-          newGlowColor = 'rgba(168, 85, 247, 0.3)'; // Purple for project cards
+          newGlowColor = 'rgba(120, 115, 245, 0.22)'; // Card/Project color
           newIntensity = 1.1;
         } else if (tagName === 'p') {
-          newGlowColor = 'rgba(107, 114, 128, 0.2)'; // Gray for text
+          newGlowColor = 'rgba(120, 115, 245, 0.12)'; // Text color
           newIntensity = 0.9;
         } else if (tagName === 'img') {
-          newGlowColor = 'rgba(236, 72, 153, 0.3)'; // Pink for images
+          newGlowColor = 'rgba(255, 120, 242, 0.22)'; // Image color
           newIntensity = 1.2;
         }
       }
-
       setMouseGlow({ color: newGlowColor, intensity: newIntensity });
-      
       // Add smoke particle 
       const newSmoke = {
         id: Date.now() + Math.random(),
         x: e.clientX + (Math.random() - 0.5) * 40,
         y: e.clientY + (Math.random() - 0.5) * 40,
-        opacity: 0.1 + Math.random() * 0.3,
+        opacity: 0.13 + Math.random() * 0.13,
         scale: 0.5 + Math.random() * 1.5,
         riseSpeed: 0.3 + Math.random() * 1.2,
         driftSpeed: (Math.random() - 0.5) * 2,
@@ -76,20 +81,10 @@ export default function App() {
         originalX: e.clientX + (Math.random() - 0.5) * 40,
         originalY: e.clientY + (Math.random() - 0.5) * 40,
         rotation: Math.random() * 360,
-        rotationSpeed: (Math.random() - 0.5) * 4
+        rotationSpeed: (Math.random() - 0.5) * 4,
+        color: smokeColor
       };
-      
-      // Replace firefly creation 
-      const sparkleColors = [
-        'white',
-        'gold',
-        'deepskyblue',
-        'violet',
-        'aqua',
-        'hotpink',
-        'yellow',
-        'lime'
-      ];
+      // Unified sparkles
       const newSparkle = {
         id: Date.now() + Math.random() + 4000,
         x: e.clientX + (Math.random() - 0.5) * 20,
@@ -102,10 +97,8 @@ export default function App() {
         color: sparkleColors[Math.floor(Math.random() * sparkleColors.length)]
       };
       setSparkles(prev => [...prev.slice(-18), newSparkle]); // Keep last 18 sparkles
-
       setSmokeParticles(prev => [...prev.slice(-15), newSmoke]); // Keep last 15 smoke particles
     };
-
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
@@ -128,7 +121,6 @@ export default function App() {
         })).filter(smoke => smoke.opacity > 0 && smoke.y > -200)
       );
     }, 50);
-
     return () => clearInterval(interval);
   }, []);
 
@@ -147,8 +139,6 @@ export default function App() {
     return () => clearInterval(interval);
   }, []);
 
-
-
   const toggleBackground = () => {
     setIsDarkMode(!isDarkMode);
   };
@@ -161,12 +151,12 @@ export default function App() {
         style={{
           left: mousePosition.x - 12.5,
           top: mousePosition.y - 12.5,
-          backgroundColor: mouseGlow.color,
+          backgroundColor: highlightColor,
           border: 'none',
+          boxShadow: !isDarkMode ? '0 0 24px 12px rgba(106, 179, 183, 0.64)' : undefined,
           transform: `scale(${mouseGlow.intensity})`,
         }}
       />
-      
       {/* Smoke trail effect */}
       {smokeParticles.map(smoke => (
         <div
@@ -176,11 +166,18 @@ export default function App() {
             left: smoke.x - 8,
             top: smoke.y - 8,
             opacity: smoke.opacity,
-            transform: `scale(${smoke.scale}) rotate(${smoke.rotation}deg)`,
+            transform: `scale(${smoke.scale}) rotate(${smoke.rotation}deg)` ,
+            background: smoke.color,
+            borderRadius: '50%',
+            width: 24,
+            height: 24,
+            position: 'fixed',
+            pointerEvents: 'none',
+            zIndex: 9996,
+            filter: 'blur(4px)',
           }}
         />
       ))}
-      
       {/* Fireflies trail effect */}
       {sparkles.map(sparkle => (
         <div
@@ -195,6 +192,12 @@ export default function App() {
             transform: `scale(${sparkle.scale})`,
             background: sparkle.color,
             '--sparkle-color': sparkle.color,
+            borderRadius: '50%',
+            position: 'fixed',
+            pointerEvents: 'none',
+            zIndex: 9998,
+            filter: 'blur(1px)',
+            mixBlendMode: 'screen',
           }}
         />
       ))}

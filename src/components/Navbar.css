@@ -23,7 +23,7 @@
     width: 40px;
 }
 .header.light-mode .nav-item a::before {
-    background-color: #3a3a9d;
+    background-color: #5a84cc;
     box-shadow: 0px 0px 5px rgba(175, 175, 177, 0.539);
 }
 .header .nav-item a.active::before,
@@ -113,33 +113,41 @@
 .wrapper .dynamic-txts{
     line-height: 25px;
     font-size: 21px;
+    max-width: 400px; /* Limit the width */
+    overflow: hidden; /* Prevent overflow */
 }
 .dynamic-txts li span{
     position: relative;
+    display: inline-block; /* Ensure proper sizing */
 }
 .dynamic-txts li span::after{
     content: "";
     position: absolute;
-    left: 50px;
+    left: 0;
     height: 100%;
     width: 100%;
     background: #0f172a;
     border-left: 1px solid rgb(255, 255, 255);
-    animation: typing 3s steps(20) infinite;
+    animation: typing 6s steps(50) infinite;
 }
 .dynamic-txts li.second-response span::after{
-    animation: typing2 6s steps(50) infinite;
+    animation: typing2 6s steps(60) infinite;
 }
 @keyframes typing {
+    0% {
+        left: 0;
+    }
     100%{
         left: 100%;
         margin: 0 -15px 0 15px;
     }
 }
 @keyframes typing2 {
+    0% {
+        left: 0;
+    }
     100%{
         left: 100%;
-        margin: 0 -15px 0 15px;
     }
 }
 .header.light-mode .dynamic-txts li span::after {

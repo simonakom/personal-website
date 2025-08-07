@@ -49,10 +49,12 @@ export default function Navbar({ isDarkMode }) {
     return (
         <div className={`header p-10 ${isDarkMode ? '' : 'light-mode'}`}>
             <div className='mt-14'>
-                <p className={`text-5xl mb-4 name ${isDarkMode ? 'text-[#cbd5e7]' : 'text-[#3a3a9d]'}`}>Simona Komarovska</p>
+                <p className={`text-5xl mb-4 name ${isDarkMode ? 'text-[#cbd5e7]' : 'text-[#3a3a9d]'}`}>
+                    <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 opacity-70" style={{backgroundSize: '200% 100%'}}>Simona Komarovska</span>
+                </p>
                 <div className={`mb-16 my-2 position-title wrapper ${isDarkMode ? '' : 'light-mode'}`}>
                     <ul className={`dynamic-txts ${isDarkMode ? 'text-[#d3dfefef]' : 'text-[#272828ef]'}`}>
-                        <li className='first-response'><span>Software QA Engineer</span></li>
+                        <li className='first-response'><span className={`text-xl leading-relaxed ${isDarkMode ? '' : 'text-gray-600'}`}>Product Development & Quality Specialist</span></li>
                     </ul>
                 </div>
                 {/* <div className={`inline-elements slider mb-19 ${isDarkMode ? 'text-[#cbd5e7]' : 'text-[#272828ef]'}`}>
@@ -120,13 +122,13 @@ export default function Navbar({ isDarkMode }) {
                 </ul>
                 <div className='flex gap-5 text-3xl mt-16 icons'>
                     <a href="https://github.com/simonakom">
-                        <FaGithub className={`transition-transform transform hover:scale-110 icon ${isDarkMode ? 'hover:text-[#79afdc]' : 'hover:text-[#3a3a9d]'}`} />
+                        <FaGithub className={`transition-transform transform hover:scale-110 icon hover:text-blue-400`} />
                     </a>
                     <a href="https://www.linkedin.com/in/simona-komarovska/">
-                        <FaLinkedin className={`transition-transform transform hover:scale-110 icon ${isDarkMode ? 'hover:text-[#79afdc]' : 'hover:text-[#3a3a9d]'}`} />
+                        <FaLinkedin className={`transition-transform transform hover:scale-110 icon hover:text-blue-400`} />
                     </a>
                     <a href="mailto:simonak399@gmail.com">
-                        <MdEmail className={`transition-transform transform hover:scale-110 icon ${isDarkMode ? 'hover:text-[#79afdc]' : 'hover:text-[#3a3a9d]'}`} />
+                        <MdEmail className={`transition-transform transform hover:scale-110 icon hover:text-blue-400`} />
                     </a>
                 </div>
             </nav>

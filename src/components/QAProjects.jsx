@@ -7,8 +7,8 @@ import './Projects.css';
 
 export default function Projects({isDarkMode}) {
     return (
-        <div className='qaprojects px-10' id="qaprojects">
-            <p className='mt-16 mb-10 ms-10 text-lg font-bold'>QA Projects:</p>
+        <div className='qaprojects' id="qaprojects">
+            <p className='mt-16 mb-10 ms-10 text-xl font-bold'>QA Projects:</p>
             <div className='flex mb-2 items-center justify-between'>
                 <div className='flex items-center gap-3'>
                     <img src={postman} alt="postman" className='w-[35px] rounded-full' />
@@ -17,7 +17,7 @@ export default function Projects({isDarkMode}) {
                 <div className='flex items-center gap-3'>
                     <FaAngleDoubleRight />
                     <a href="https://github.com/simonakom/automationExcercise-postman-api-test">
-                        <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#79afdc] text-black' : 'bg-[#3a3a9d] text-white'}`}>Github</b>
+                        <b className="github-button">Github</b>
                     </a>
                 </div>
             </div>
@@ -29,7 +29,7 @@ export default function Projects({isDarkMode}) {
                 <div className='flex items-center gap-3'>
                     <FaAngleDoubleRight />
                     <a href="https://github.com/simonakom/automationExcercise-cypress-test">
-                        <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#79afdc] text-black' : 'bg-[#3a3a9d] text-white'}`}>Github</b>
+                        <b className="github-button">Github</b>
                     </a>
                 </div>
             </div>
@@ -41,7 +41,7 @@ export default function Projects({isDarkMode}) {
                 <div className='flex items-center gap-3'>
                     <FaAngleDoubleRight />
                     <a href="https://github.com/simonakom/todo-app-testing">
-                        <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#79afdc] text-black' : 'bg-[#3a3a9d] text-white'}`}>Github</b>
+                        <b className="github-button">Github</b>
                     </a>
                 </div>
             </div>
@@ -53,7 +53,7 @@ export default function Projects({isDarkMode}) {
                 <div className='flex items-center gap-3'>
                     <FaAngleDoubleRight />
                     <a href="https://github.com/simonakom/registration-form-list">
-                        <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#79afdc] text-black' : 'bg-[#3a3a9d] text-white'}`}>Github</b>
+                        <b className="github-button">Github</b>
                     </a>
                 </div>
             </div>
@@ -65,7 +65,7 @@ export default function Projects({isDarkMode}) {
                 <div className='flex items-center gap-3'>
                     <FaAngleDoubleRight />
                     <a href="https://github.com/simonakom/movie-actor-api-postgreeDB">
-                        <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#79afdc] text-black' : 'bg-[#3a3a9d] text-white'}`}>Github</b>
+                        <b className="github-button">Github</b>
                     </a>
                 </div>
             </div>
@@ -77,7 +77,7 @@ export default function Projects({isDarkMode}) {
                 <div className='flex items-center gap-3'>
                     <FaAngleDoubleRight />
                     <a href="https://github.com/simonakom/movie-actor-api">
-                        <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#79afdc] text-black' : 'bg-[#3a3a9d] text-white'}`}>Github</b>
+                        <b className="github-button">Github</b>
                     </a>
                 </div>
             </div>
@@ -89,7 +89,7 @@ export default function Projects({isDarkMode}) {
                 <div className='flex items-center gap-3'>
                     <FaAngleDoubleRight />
                     <a href="https://github.com/simonakom/shop-api">
-                        <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#79afdc] text-black' : 'bg-[#3a3a9d] text-white'}`}>Github</b>
+                        <b className="github-button">Github</b>
                     </a>
                 </div>
             </div>
@@ -101,7 +101,7 @@ export default function Projects({isDarkMode}) {
                 <div className='flex items-center gap-3'>
                     <FaAngleDoubleRight />
                     <a href="https://github.com/simonakom/unit-testing-jest">
-                        <b className={`text-sm px-2 py-1 rounded-2xl ${isDarkMode ? 'bg-[#79afdc] text-black' : 'bg-[#3a3a9d] text-white'}`}>Github</b>
+                        <b className="github-button">Github</b>
                     </a>
                 </div>
             </div>

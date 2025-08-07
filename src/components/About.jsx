@@ -1,12 +1,50 @@
+import { FaCode } from "react-icons/fa6";
+import { FaListCheck } from "react-icons/fa6";
+import { PiTestTubeFill } from "react-icons/pi";
+
+
 import PropTypes from 'prop-types';
 export default function About ({isDarkMode}) {
     return (
         <div className='about' id='about'>
-            <div className='space text-justify pt-14 mb-16 px-10'>
-                <p>Hello there! My name is <b className="font-bold">Simona</b> and I am design-minded, detail-oriented full-stack and QA engineer with a passion for creating visually captivating and seamlessly functional interfaces. Eager to contribute and grow in the world of <b className="font-bold"> web development</b> and <b className="font-bold">quality assurance </b>!</p><br />
-                <p>I aspire toward a career where I can leverage my creativity to design captivating software and immersive user experiences while ensuring the highest standards of quality. I bring proficiency in essential frontend technologies, including <b className="font-bold">HTML5, CSS3, and JavaScript,</b> along with hands-on experience in frameworks such as <b className="font-bold">React</b>. I am comfortable working with <b className="font-bold">responsive design</b> principles and I excel at translating <b className="font-bold">Figma</b> designs into high-quality, pixel-perfect, HTML, CSS, and JavaScrip/React code. Additionally, I have experience in backend development with <b className='font-bold'>Node.js</b>, enabling me to build robust APIs and server-side functionality, making me proficient across the full stack of web development.</p><br />
-                <p>As a <b className="font-bold">QA </b>engineer, I am equally passionate about ensuring that every product I work on meets the highest standards of <b className="font-bold">functionality, usability </b>and <b className="font-bold">performance.</b> I have experience in both manual and automated testing, utilizing tools such as <b className="font-bold">Cypress </b> for end-to-end testing and <b className="font-bold">Postman/Newman </b> for API testing, focusing on identifying and resolving issues to deliver a flawless user experience.</p><br />
-                <p>When I am not at the computer, you will probably find me cycling, exploring new hiking trails, diving headfirst into a captivating book, or traveling the world!</p>
+            <div className='space text-justify pt-14 mb-16 px-10 max-w-3xl mx-auto'>
+                <div className="mb-1">
+                    <p className="text-base leading-relaxed mb-8">Hey! I am <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 opacity-70" style={{display: 'inline'}}>Simona</span>, a digital product specialist with experience in QA and full-stack web development. I'm passionate about building user-focused digital products that combine great design with seamless functionality and deliver real value to both users and businesses. With a sharp eye for detail and clear communication, I thrive on solving meaningful problems and growing continuously in the field of product development!</p>
+                </div>
+                
+                <div className="mb-12">
+                    <p className="text-base leading-relaxed">I aspire toward a career where I can combine my technical skills, business mindset, and detail-oriented approach to drive product development and deliver exceptional user experiences with high-quality standards.</p>
+                </div>
+
+                <div className="space-y-8">
+                    <div className="gradient-border-left gradient-border-blue pl-6">
+                        <h3 className="text-base font-semibold mb-3 flex items-center gap-2">
+                            <FaCode className="text-xl text-blue-600 dark:text-blue-400" />
+                            Technical Skills
+                        </h3>
+                        <p className="text-base leading-relaxed">I bring proficiency in frontend technologies such as <span className="font-medium text-blue-600 dark:text-blue-400">HTML5</span>, <span className="font-medium text-blue-600 dark:text-blue-400">CSS3</span>, and <span className="font-medium text-blue-600 dark:text-blue-400">JavaScript</span>, with hands-on experience in <span className="font-medium text-blue-600 dark:text-blue-400">React</span>. I excel at responsive design and translating <span className="font-medium text-blue-600 dark:text-blue-400">Figma</span> designs into pixel-perfect code. Additionally, I have backend experience with <span className="font-medium text-blue-600 dark:text-blue-400">Node.js</span>, enabling me to build robust APIs and full-stack web applications.</p>
+                    </div>
+                    
+                    <div className="gradient-border-left gradient-border-blue pl-6">
+                        <h3 className="text-base font-semibold mb-3 flex items-center gap-2">
+                            <FaListCheck className="text-xl text-blue-600 dark:text-blue-400" />
+                            Product Management
+                        </h3>
+                        <p className="text-base leading-relaxed">With a business-oriented mindset, I support aligning product strategies with <span className="font-medium text-blue-600 dark:text-blue-400">company goals</span> and <span className="font-medium text-blue-600 dark:text-blue-400">user needs</span>. I assist in gathering and prioritizing requirements and collaborate closely with <span className="font-medium text-blue-600 dark:text-blue-400">cross-functional</span> teams to help drive projects from concept to launch, focusing on timely delivery and continuous improvement.</p>
+                    </div>
+                    
+                    <div className="gradient-border-left gradient-border-blue pl-6">
+                        <h3 className="text-base font-semibold mb-3 flex items-center gap-2">
+                            <PiTestTubeFill className="text-xl text-blue-600 dark:text-blue-400" />
+                            Quality Assurance
+                        </h3>
+                        <p className="text-base leading-relaxed">With a detail-oriented approach, I am passionate about ensuring every product meets the highest standards of <span className="font-medium text-blue-600 dark:text-blue-400">functionality</span>, <span className="font-medium text-blue-600 dark:text-blue-400">usability</span>, and <span className="font-medium text-blue-600 dark:text-blue-400">performance</span>. I have experience in manual and automated testing, utilizing tools like <span className="font-medium text-blue-600 dark:text-blue-400">Playwright</span>, <span className="font-medium text-blue-600 dark:text-blue-400">Cypress</span> for end-to-end testing and <span className="font-medium text-blue-600 dark:text-blue-400">Postman</span> for API testing, focusing on identifying and resolving issues to deliver a flawless user experience.</p>
+                    </div>
+                </div>
+                
+                <div className="mt-16">
+                    <p className="text-base leading-relaxed mb-8 text-left">When I am not at the computer, you will probably find me cycling, exploring new hiking trails, or traveling the world! <span className="animated-magic ml-2 inline-block">🌍</span></p>
+                </div>
             </div>
             <hr className={`border-t-1 ${isDarkMode ? 'border-[#cbd5e7]' : 'border-[#878788]' }`} />
         </div>
