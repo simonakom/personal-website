@@ -51,7 +51,7 @@ import rentify from '../assets/images/projects/rentify.png';
                 <h1 className="font-bold text-3xl mb-10">All Projects</h1>
 {/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
                 <div className={`sticky top-[-20px] z-50 ${isDarkMode ? 'bg-[#0f172a]' : 'bg-[#ebeef5]'}`}>
-                     <p className={`my-10 py-2 text-center border-t-2 border-b-2 font-medium title-blue`}> Landing pages</p>
+                     <p className={`my-10 py-2 text-center border-t-2 border-b-2 font-medium ${isDarkMode ? 'text-blue-400 border-blue-400' : 'text-gray-700 border-gray-400'}`}> Landing pages</p>
                 </div>
     
                 <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4  gap-10'>
@@ -142,7 +142,7 @@ import rentify from '../assets/images/projects/rentify.png';
                 </div>
 {/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
                 <div className={`sticky top-[-20px] z-50 ${isDarkMode ? 'bg-[#0f172a]' : 'bg-[#ebeef5]'}`}>
-                    <p className={`my-10 py-2 text-center border-t-2 border-b-2 font-medium title-blue`}>CRUD applications</p>
+                    <p className={`my-10 py-2 text-center border-t-2 border-b-2 font-medium ${isDarkMode ? 'text-blue-400 border-blue-400' : 'text-gray-700 border-gray-400'}`}>CRUD applications</p>
                 </div>
                 <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-10'>
                     <div>
@@ -184,7 +184,7 @@ import rentify from '../assets/images/projects/rentify.png';
                 </div>
 {/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
                 <div className={`sticky top-[-20px] z-50 ${isDarkMode ? 'bg-[#0f172a]' : 'bg-[#ebeef5]'}`}>
-                    <p className={`my-10 py-2 text-center border-t-2 border-b-2 font-medium title-blue`}>API applications</p>
+                    <p className={`my-10 py-2 text-center border-t-2 border-b-2 font-medium ${isDarkMode ? 'text-blue-400 border-blue-400' : 'text-gray-700 border-gray-400'}`}>API applications</p>
                 </div>
                 <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-10'>
                     <div>
@@ -238,7 +238,7 @@ import rentify from '../assets/images/projects/rentify.png';
                 </div>
 {/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
                 <div className={`sticky top-[-20px] z-50 ${isDarkMode ? 'bg-[#0f172a]' : 'bg-[#ebeef5]'}`}>
-                    <p className={`my-10 py-2 text-center border-t-2 border-b-2 font-medium title-blue`}>JavaScript/React projects</p>
+                    <p className={`my-10 py-2 text-center border-t-2 border-b-2 font-medium ${isDarkMode ? 'text-blue-400 border-blue-400' : 'text-gray-700 border-gray-400'}`}>JavaScript/React projects</p>
                 </div>
                 <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-10'>
                     <div>
@@ -400,7 +400,7 @@ import rentify from '../assets/images/projects/rentify.png';
                 </div>
 {/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
                 <div className={`sticky top-[-20px] z-50 ${isDarkMode ? 'bg-[#0f172a]' : 'bg-[#ebeef5]'}`}>
-                    <p className={`my-10 py-2 text-center border-t-2 border-b-2 font-medium title-blue`}>Fullstack applications</p>
+                    <p className={`my-10 py-2 text-center border-t-2 border-b-2 font-medium ${isDarkMode ? 'text-blue-400 border-blue-400' : 'text-gray-700 border-gray-400'}`}>Fullstack applications</p>
                 </div>
                 <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-10'>
                     <div>
@@ -442,7 +442,7 @@ import rentify from '../assets/images/projects/rentify.png';
                 </div>
 {/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
                 <div className={`sticky top-[-20px] z-50 ${isDarkMode ? 'bg-[#0f172a]' : 'bg-[#ebeef5]'}`}>
-                    <p className={`my-10 py-2 text-center border-t-2 border-b-2 font-medium title-blue`}>CSS Projects</p>
+                    <p className={`my-10 py-2 text-center border-t-2 border-b-2 font-medium ${isDarkMode ? 'text-blue-400 border-blue-400' : 'text-gray-700 border-gray-400'}`}>CSS Projects</p>
                 </div>
                 <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-10'>
                     <div>
