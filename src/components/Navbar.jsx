@@ -116,7 +116,7 @@ export default function Navbar({ isDarkMode }) {
                             smooth={true} 
                             offset={-150} 
                             duration={500} 
-                            >Dev Projects
+                            >Web Projects
                         </Link>
                     </li>
                 </ul>

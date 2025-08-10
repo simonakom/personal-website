@@ -60,7 +60,7 @@ export default function Projects({isDarkMode}) {
             <div className='flex mb-2 items-center justify-between'>
                 <div className='flex items-center gap-3'>
                     <img src={postman} alt="postman" className='w-[35px] rounded-full' />
-                    <p>Postman/Neman automated tests (scripts) of CRUD API built with PostgresSQL, Node.js and Express for managing <b className={`${isDarkMode ? 'text-[#ffffff]]' : ' text-[#000000]'}`}>movies and actors</b></p>
+                    <p>Postman/Neman automated tests (scripts) of CRUD API built with PostgreSQL, Node.js and Express for managing <b className={`${isDarkMode ? 'text-[#ffffff]]' : ' text-[#000000]'}`}>movies and actors</b></p>
                 </div>
                 <div className='flex items-center gap-3'>
                     <FaAngleDoubleRight />

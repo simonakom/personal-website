@@ -50,7 +50,7 @@ import basedash from '../assets/images/basedash.png';
 export default function Experience ({isDarkMode}) {
     return (
         <div className='experience' id="experience">
-            <p className='my-14 ms-10 text-xl font-bold'>Some technologies I&apos;ve worked with:</p>
+            <p className='my-14 ms-10 text-xl font-bold'>Technologies I have worked with:</p>
             
             <div className='space-y-8 pb-24 px-10 max-w-6xl mx-auto'>
                 <div className={`p-6 rounded-xl ${isDarkMode ? 'bg-slate-800/50 border border-slate-700' : 'bg-white/50 border border-slate-200'} shadow-lg hover:shadow-xl transition-shadow duration-300`}>
