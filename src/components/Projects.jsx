@@ -36,15 +36,16 @@ export default function Projects({isDarkMode}) {
 
     return (
         <div className='projects' id="projects">
-            <p className='mt-16 mb-14 ms-10 text-xl font-bold'>Web Projects:</p>
-            <div className='text-justify pb-20 px-10 grid grid-cols-1 md:grid-cols-2 gap-6 items-start'>
+            <div className='px-9 max-w-3xl mx-auto'>
+                <p className='mt-16 mb-14 text-xl font-bold'>Web Projects:</p>
+                <div className='text-justify pb-20 grid grid-cols-1 md:grid-cols-2 gap-6 items-start'>
                 <div className='mb-8 text-center'>
                     <a href="https://simonakom.github.io/netflix-page/index.html">
                         <img src={netflix} alt="netflix" className='w-[400px] rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                     </a>
                     <div className='flex flex-col gap-3 mt-3 justify-center'> 
                         <p className="text-[16px] title-blue">
-                            <b className='text-[20px]'>Netfix</b> <br />
+                            <b className='text-[20px]'>Netflix</b> <br />
                             <span className={`${isDarkMode ? 'text-white' : 'text-[#4c4b4b]'}`}>Landing page</span>
                         </p>
                         <div>
@@ -79,7 +80,7 @@ export default function Projects({isDarkMode}) {
                     <div className='flex flex-col gap-3 mt-3 justify-center'> 
                         <p className="text-[16px] title-blue">
                             <b className='text-[20px]'>Rentify: rent platform</b> <br />
-                            <span className={`${isDarkMode ? 'text-white' : 'text-[#4c4b4b]'}`}>Fullstack project</span>
+                            <span className={`${isDarkMode ? 'text-white' : 'text-[#4c4b4b]'}`}>Full-stack project</span>
                         </p>  
                         <div>
                             <a href="https://github.com/simonakom/pc-rent-platform">               
@@ -96,7 +97,7 @@ export default function Projects({isDarkMode}) {
                     <div className='flex flex-col gap-3 mt-3 justify-center'> 
                         <p className="text-[16px] title-blue">
                             <b className='text-[20px]'>PulpCinemaHub</b> <br />
-                            <span className={`${isDarkMode ? 'text-white' : 'text-[#4c4b4b]'}`}>Fullstack project</span>
+                            <span className={`${isDarkMode ? 'text-white' : 'text-[#4c4b4b]'}`}>Full-stack project</span>
                         </p>  
                         <div>
                             <a href="https://github.com/simonakom/forum-app">               
@@ -111,8 +112,8 @@ export default function Projects({isDarkMode}) {
                         <img src={coctails} alt="coctails" className='w-[400px] rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                     </a>
                     <div className='flex flex-col gap-3 mt-3 justify-center'> 
-                        <p className="text-[16px] title-blue">
-                            <b className='text-[20px]'>Coctails receipe</b> <br />
+                                                    <p className="text-[16px] title-blue">
+                            <b className='text-[20px]'>Cocktail recipes</b> <br />
                             <span className={`${isDarkMode ? 'text-white' : 'text-[#4c4b4b]'}`}>API app</span>
                         </p>    
                         <div>
@@ -163,7 +164,7 @@ export default function Projects({isDarkMode}) {
                     </a>
                     <div className='flex flex-col gap-3 mt-3 justify-center'> 
                         <p className="text-[16px] title-blue">
-                            <b className='text-[20px]'>Data-table</b> <br />
+                            <b className='text-[20px]'>Data Table</b> <br />
                             <span className={`${isDarkMode ? 'text-white' : 'text-[#4c4b4b]'}`}>CRUD app</span>
                         </p> 
                         <div>
@@ -181,7 +182,7 @@ export default function Projects({isDarkMode}) {
                     <div className='flex flex-col gap-3 mt-3 justify-center'> 
                         <p className="text-[16px] title-blue">
                             <b className='text-[20px]'>BMI calculator</b> <br />
-                            <span className={`${isDarkMode ? 'text-white' : 'text-[#4c4b4b]'}`}>Javascript app</span>
+                            <span className={`${isDarkMode ? 'text-white' : 'text-[#4c4b4b]'}`}>JavaScript app</span>
                         </p> 
                         <div>
                             <a href="https://github.com/simonakom/bmi-calculator">               
@@ -227,7 +228,8 @@ export default function Projects({isDarkMode}) {
                     </div>
                 </div>
             )}
-            <div className="mx-10 mb-5 text-sm text-slate-500">@ Portfolio coded in Visual Studio Code & crafted with React vite and Tailwind CSS by me :)</div>
+            </div>
+            <div className="mx-10 mb-5 text-sm text-slate-500">@ Portfolio coded in Visual Studio Code and crafted with React, Vite, and Tailwind CSS by me :)</div>
         </div>
     )
 }

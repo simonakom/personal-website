@@ -51,7 +51,7 @@ import rentify from '../assets/images/projects/rentify.png';
                 <h1 className="font-bold text-3xl mb-10">All Projects</h1>
 {/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
                 <div className={`sticky top-[-20px] z-50 ${isDarkMode ? 'bg-[#0f172a]' : 'bg-[#ebeef5]'}`}>
-                     <p className={`my-10 py-2 text-center border-t-2 border-b-2 font-medium ${isDarkMode ? 'text-blue-400 border-blue-400' : 'text-gray-700 border-gray-400'}`}> Landing pages</p>
+                     <p className={`my-10 py-2 text-center border-t-2 border-b-2 font-medium ${isDarkMode ? 'text-blue-400 border-blue-400' : 'text-gray-700 border-gray-400'}`}>Landing pages</p>
                 </div>
     
                 <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4  gap-10'>
@@ -60,8 +60,8 @@ import rentify from '../assets/images/projects/rentify.png';
                             <img src={spotify} alt="spotify" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                         </a>
                         <div className='mt-2'>
-                            <p className="text-[20px] title-blue"><b>Spotify landing page</b></p>
-                            <p className='mb-1'> Build with <b className='font-bold'>react</b>, <b className='font-bold'>tailwind</b>, <br /><b className='font-bold'>css</b></p>
+                            <p className="text-[20px] title-blue"><b>Spotify</b></p>
+                            <p className='mb-1'>Built with <b className='font-bold'>React</b>, <b className='font-bold'>Tailwind</b>, <br /><b className='font-bold'>CSS</b></p>
                             <a href="https://github.com/simonakom/spotify-app">
                                 <b className="github-button">Github</b>
                             </a>
@@ -72,8 +72,8 @@ import rentify from '../assets/images/projects/rentify.png';
                             <img src={netflix} alt="netflix" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                         </a>
                         <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Netflix landing page</b></p>
-                            <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>, <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
+                            <p className="text-[20px] title-blue"><b>Netflix</b></p>
+                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/netflix-page">
                                 <b className="github-button">Github</b>
                             </a>
@@ -84,8 +84,8 @@ import rentify from '../assets/images/projects/rentify.png';
                             <img src={travlog} alt="travlog" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                         </a>
                         <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Travlog landing page</b></p>
-                            <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>, <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
+                            <p className="text-[20px] title-blue"><b>Travlog</b></p>
+                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/travlog-landing-page">
                                 <b className="github-button">Github</b>
                             </a>
@@ -96,8 +96,8 @@ import rentify from '../assets/images/projects/rentify.png';
                             <img src={abstract} alt="abstract" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                         </a>
                         <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Abstract landing page</b></p>
-                            <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>, <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
+                            <p className="text-[20px] title-blue"><b>Abstract</b></p>
+                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/abstract-landing-page">
                                 <b className="github-button">Github</b>
                             </a>
@@ -108,8 +108,8 @@ import rentify from '../assets/images/projects/rentify.png';
                             <img src={collab} alt="collab" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                         </a>
                         <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Collab landing page</b></p>
-                            <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>, <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
+                            <p className="text-[20px] title-blue"><b>Collab</b></p>
+                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/collab-landing-page">
                                 <b className="github-button">Github</b>
                             </a>
@@ -120,8 +120,8 @@ import rentify from '../assets/images/projects/rentify.png';
                             <img src={shoe} alt="shoe" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                         </a>
                         <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Sneaker landing page</b></p>
-                            <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>css</b>, <br /><b className='font-bold'>html</b></p>
+                            <p className="text-[20px] title-blue"><b>Sneaker</b></p>
+                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>CSS</b>, <br /><b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/sneaker-eshop-page">
                                 <b className="github-button">Github</b>
                             </a>
@@ -133,7 +133,7 @@ import rentify from '../assets/images/projects/rentify.png';
                         </a>
                         <div className='mt-2'> 
                             <p className="text-[20px] title-blue"><b>Christmas shop</b></p>
-                            <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>css</b>, <br /><b className='font-bold'>html</b></p>
+                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>CSS</b>, <br /><b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/sample-page">
                                 <b className="github-button">Github</b>
                             </a>
@@ -150,8 +150,8 @@ import rentify from '../assets/images/projects/rentify.png';
                             <img src={kolt} alt="kolt" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                         </a>
                         <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Kolt</b> scooters</p>
-                            <p className='mb-1'> Build with <b className='font-bold'>react vite</b>, <b className='font-bold'>tailwind</b>, <b className='font-bold'>css</b>, <b className='font-bold'>localStorage</b></p>
+                            <p className="text-[20px] title-blue"><b>Kolt scooters</b></p>
+                            <p className='mb-1'>Built with <b className='font-bold'>React Vite</b>, <b className='font-bold'>Tailwind</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>localStorage</b></p>
                             <a href="https://github.com/simonakom/kolt-scooters-app">
                                 <b className="github-button">Github</b>
                             </a>
@@ -163,7 +163,7 @@ import rentify from '../assets/images/projects/rentify.png';
                         </a>
                         <div className='mt-2'> 
                             <p className="text-[20px] title-blue"><b>Data-table</b> of products</p>
-                            <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>,  <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
+                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/data-table-app">
                                 <b className="github-button">Github</b>
                             </a>
@@ -175,7 +175,7 @@ import rentify from '../assets/images/projects/rentify.png';
                         </a>
                         <div className='mt-2'> 
                             <p className="text-[20px] title-blue"><b>Data-table</b> of people</p>
-                            <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>,  <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
+                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/crud-people-data-table">
                                 <b className="github-button">Github</b>
                             </a>
@@ -192,11 +192,11 @@ import rentify from '../assets/images/projects/rentify.png';
                             <img src={coctails} alt="coctails" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                         </a>
                         <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Coctails</b> receipe app</p>
-                            <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>,  <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
+                            <p className="text-[20px] title-blue"><b>Cocktail recipes</b></p>
+                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/coctails-api">
                                 <b className="github-button">Github</b>
-                            </a>
+                            </a>s
                         </div>
                     </div>
                     <div>
@@ -204,8 +204,8 @@ import rentify from '../assets/images/projects/rentify.png';
                             <img src={dogs} alt="dogs" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                         </a>
                         <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Dogs</b> photo</p>
-                            <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>,  <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
+                            <p className="text-[20px] title-blue"><b>Pet gallery</b></p>
+                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/dogs-api">
                                 <b className="github-button">Github</b>
                             </a>
@@ -216,8 +216,8 @@ import rentify from '../assets/images/projects/rentify.png';
                             <img src={selector} alt="selector" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                         </a>
                         <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Poeple</b> selector</p>
-                            <p className='mb-1'> Build with <b className='font-bold'>react vite</b>, <b className='font-bold'>tailwind</b>, <b className='font-bold'>css</b>, <b className='font-bold'>localStorage</b></p>
+                            <p className="text-[20px] title-blue"><b>People selector</b></p>
+                            <p className='mb-1'>Built with <b className='font-bold'>React Vite</b>, <b className='font-bold'>Tailwind</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>localStorage</b></p>
                             <a href="https://github.com/simonakom/people-selector">
                                 <b className="github-button">Github</b>
                             </a>
@@ -229,7 +229,7 @@ import rentify from '../assets/images/projects/rentify.png';
                         </a>
                         <div className='mt-2'> 
                             <p className="text-[20px] title-blue"><b>Jokes</b> by Chuck Norris</p>
-                            <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>css</b>, <br /><b className='font-bold'>html</b></p>
+                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>CSS</b>, <br /><b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/chuck-norris-jokes">
                                 <b className="github-button">Github</b>
                             </a>
@@ -247,7 +247,7 @@ import rentify from '../assets/images/projects/rentify.png';
                         </a>
                         <div className='mt-2'> 
                             <p className="text-[20px] title-blue"><b>Google</b> timer & stopwatch</p>
-                            <p className='mb-1'> Build with <b className='font-bold'>react vite</b>, <b className='font-bold'>tailwind</b>, <br /><b className='font-bold'>css</b></p>
+                            <p className='mb-1'>Built with <b className='font-bold'>React Vite</b>, <b className='font-bold'>Tailwind</b>, <br /><b className='font-bold'>CSS</b></p>
                             <a href="https://github.com/simonakom/google-timer-stopwatch">
                                 <b className="github-button">Github</b>
                             </a>
@@ -258,8 +258,8 @@ import rentify from '../assets/images/projects/rentify.png';
                             <img src={birthday} alt="birthday" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                         </a>
                         <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Birthday</b> countdown</p>
-                            <p className='mb-1'> Build with <b className='font-bold'>react vite</b>, <b className='font-bold'>tailwind</b>, <br /><b className='font-bold'>css</b></p>
+                            <p className="text-[20px] title-blue"><b>Birthday Timer</b></p>
+                            <p className='mb-1'>Built with <b className='font-bold'>React Vite</b>, <b className='font-bold'>Tailwind</b>, <br /><b className='font-bold'>CSS</b></p>
                             <a href="https://github.com/simonakom/birthday-countdown">
                                 <b className="github-button">Github</b>
                             </a>
@@ -270,8 +270,8 @@ import rentify from '../assets/images/projects/rentify.png';
                             <img src={tasks} alt="tasks" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                         </a>
                         <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>To-do</b> app</p>
-                            <p className='mb-1'> Build with <b className='font-bold'>react vite</b>, <b className='font-bold'>tailwind</b>, <b className='font-bold'>css</b>, <b className='font-bold'>localStorage</b></p>
+                            <p className="text-[20px] title-blue"><b>Task Tracker</b></p>
+                            <p className='mb-1'>Built with <b className='font-bold'>React Vite</b>, <b className='font-bold'>Tailwind</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>localStorage</b></p>
                             <a href="https://github.com/simonakom/todo-list">
                                 <b className="github-button">Github</b>
                             </a>
@@ -282,8 +282,8 @@ import rentify from '../assets/images/projects/rentify.png';
                             <img src={color} alt="color" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                         </a>
                         <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Color</b> picker</p>
-                            <p className='mb-1'> Build with <b className='font-bold'>react</b>, <b className='font-bold'>tailwind</b>, <b className='font-bold'>css</b>, <b className='font-bold'>localStorage</b></p>
+                            <p className="text-[20px] title-blue"><b>Color Picker</b></p>
+                            <p className='mb-1'>Built with <b className='font-bold'>React</b>, <b className='font-bold'>Tailwind</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>localStorage</b></p>
                             <a href="https://github.com/simonakom/color-picker">
                                 <b className="github-button">Github</b>
                             </a>
@@ -294,8 +294,8 @@ import rentify from '../assets/images/projects/rentify.png';
                             <img src={tips} alt="tips" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                         </a>
                         <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Tip</b> counter</p>
-                            <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>,  <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
+                            <p className="text-[20px] title-blue"><b>Tip Counter</b></p>
+                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/tip-counter">
                                 <b className="github-button">Github</b>
                             </a>
@@ -306,8 +306,8 @@ import rentify from '../assets/images/projects/rentify.png';
                             <img src={bmi} alt="bmi" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                         </a>
                         <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>BMI</b> calculator</p>
-                            <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>, <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
+                            <p className="text-[20px] title-blue"><b>BMI Calculator</b></p>
+                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/bmi-calculator">
                                 <b className="github-button">Github</b>
                             </a>
@@ -318,8 +318,8 @@ import rentify from '../assets/images/projects/rentify.png';
                             <img src={passGenerator} alt="passGenerator" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                         </a>
                         <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Password</b> generator</p>
-                            <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>,  <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
+                            <p className="text-[20px] title-blue"><b>Password Generator</b></p>
+                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/password-generator">
                                 <b className="github-button">Github</b>
                             </a>
@@ -330,8 +330,8 @@ import rentify from '../assets/images/projects/rentify.png';
                             <img src={pass} alt="pass" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                         </a>
                         <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Password</b> checker</p>
-                            <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>,  <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
+                            <p className="text-[20px] title-blue"><b>Password Validator</b></p>
+                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/check-password-strength?tab=readme-ov-file">
                                 <b className="github-button">Github</b>
                             </a>
@@ -342,8 +342,8 @@ import rentify from '../assets/images/projects/rentify.png';
                             <img src={game} alt="game" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                         </a>
                         <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Guessing</b> game!</p>
-                            <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>,  <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
+                            <p className="text-[20px] title-blue"><b>Guessing game!</b></p>
+                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/guessing-number-game?tab=readme-ov-file">
                                 <b className="github-button">Github</b>
                             </a>
@@ -354,8 +354,8 @@ import rentify from '../assets/images/projects/rentify.png';
                             <img src={palindrome} alt="palindrome" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                         </a>
                         <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Palindrome</b> app</p>
-                            <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>,  <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
+                            <p className="text-[20px] title-blue"><b>Palindrome Checker</b></p>
+                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/palindrome-app">
                                 <b className="github-button">Github</b>
                             </a>
@@ -367,7 +367,7 @@ import rentify from '../assets/images/projects/rentify.png';
                         </a>
                         <div className='mt-2'> 
                             <p className="text-[20px] title-blue"><b>Calculator</b></p>
-                            <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>, <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
+                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/calculator">
                                 <b className="github-button">Github</b>
                             </a>
@@ -379,7 +379,7 @@ import rentify from '../assets/images/projects/rentify.png';
                         </a>
                         <div className='mt-2'> 
                             <p className="text-[20px] title-blue"><b>Quiz</b></p>
-                            <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>,  <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
+                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/quiz">
                                 <b className="github-button">Github</b>
                             </a>
@@ -390,8 +390,8 @@ import rentify from '../assets/images/projects/rentify.png';
                             <img src={vowel} alt="vowel" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                         </a>
                         <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Vowel</b> counter</p>
-                            <p className='mb-1'> Build with <b className='font-bold'>javascript</b>, <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
+                            <p className="text-[20px] title-blue"><b>Vowel Counter</b></p>
+                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/vocals-counter?tab=readme-ov-file">
                                 <b className="github-button">Github</b>
                             </a>
@@ -408,8 +408,8 @@ import rentify from '../assets/images/projects/rentify.png';
                             <img src={rentify} alt="rentify" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                         </a>
                         <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Rentify</b> pc rent platform</p>
-                            <p className='mb-1'> Build with <b className='font-bold'>node.js</b>, <b className='font-bold'>nginx</b>, <b className='font-bold'>mySQL</b>, <b className='font-bold'>react vite</b>, <b className='font-bold'>tailwind</b>, <b className='font-bold'>css</b></p> 
+                            <p className="text-[20px] title-blue"><b>Rentify</b> PC rent app</p>
+                            <p className='mb-1'>Built with <b className='font-bold'>Node.js</b>, <b className='font-bold'>Nginx</b>, <b className='font-bold'>MySQL</b>, <b className='font-bold'>React Vite</b>, <b className='font-bold'>Tailwind</b>, <b className='font-bold'>CSS</b></p> 
                             <a href="https://github.com/simonakom/pc-rent-platform">
                                 <b className="github-button">Github</b>
                             </a>
@@ -420,8 +420,8 @@ import rentify from '../assets/images/projects/rentify.png';
                             <img src={cinema} alt="cinema" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
                         </a>
                         <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>PulpCinemaHub</b> app</p>
-                            <p className='mb-1'> Build with <b className='font-bold'>node.js</b>, <b className='font-bold'>MongoDB</b>, <b className='font-bold'>javascript</b>, <b className='font-bold'>bootstrap</b>, <b className='font-bold'>tailwind</b>, <b className='font-bold'>css</b>, <b className='font-bold'>html</b></p>
+                            <p className="text-[20px] title-blue"><b>PulpCinemaHub</b> forum</p>
+                            <p className='mb-1'>Built with <b className='font-bold'>Node.js</b>, <b className='font-bold'>MongoDB</b>, <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>Tailwind</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/forum-app">
                                 <b className="github-button">Github</b>
                             </a>
@@ -433,7 +433,7 @@ import rentify from '../assets/images/projects/rentify.png';
                         </a>
                         <div className='mt-2'> 
                             <p className="text-[20px] title-blue"><b>To-do</b> app</p>
-                            <p className='mb-1'> Build with <b className='font-bold'>node.js</b>, <b className='font-bold'>nginx</b>, <b className='font-bold'>bootstrap</b>, <b className='font-bold'>css</b>,<b className='font-bold'>html</b></p>
+                            <p className='mb-1'>Built with <b className='font-bold'>Node.js</b>, <b className='font-bold'>Nginx</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/todo-list-app">
                                 <b className="github-button">Github</b>
                             </a>
@@ -451,7 +451,7 @@ import rentify from '../assets/images/projects/rentify.png';
                         </a>
                         <div className='mt-2'> 
                             <p className="text-[20px] title-blue"><b>Contact form</b></p>
-                            <p className='mb-1'> Build with <b className='font-bold'>html</b>, <b className='font-bold'>css</b></p>
+                            <p className='mb-1'> Built with <b className='font-bold'>HTML</b>, <b className='font-bold'>CSS</b></p>
                             <a href="https://github.com/simonakom/contact-form">
                                 <b className="github-button">Github</b>
                             </a>
@@ -463,7 +463,7 @@ import rentify from '../assets/images/projects/rentify.png';
                         </a>
                         <div className='mt-2'> 
                             <p className="text-[20px] title-blue"><b>Registration form</b></p>
-                            <p className='mb-1'> Build with <b className='font-bold'>html</b>, <b className='font-bold'>css</b></p>
+                            <p className='mb-1'> Built with <b className='font-bold'>HTML</b>, <b className='font-bold'>CSS</b></p>
                             <a href="https://github.com/simonakom/contact-form">
                                 <b className="github-button">Github</b>
                             </a>
@@ -475,7 +475,7 @@ import rentify from '../assets/images/projects/rentify.png';
                         </a>
                         <div className='mt-2'> 
                             <p className="text-[20px] title-blue"><b>Shopping Cart</b></p>
-                            <p className='mb-1'> Build with <b className='font-bold'>html</b>, <b className='font-bold'>bootstrap</b>, <b className='font-bold'>css</b></p>
+                            <p className='mb-1'> Built with <b className='font-bold'>HTML</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b></p>
                             <a href="https://github.com/simonakom/shopping-cart">
                                 <b className="github-button">Github</b>
                             </a>
@@ -487,7 +487,7 @@ import rentify from '../assets/images/projects/rentify.png';
                         </a>
                         <div className='mt-2'> 
                             <p className="text-[20px] title-blue"><b>2048 Game</b></p>
-                            <p className='mb-1'> Build with <b className='font-bold'>html</b>, <b className='font-bold'>bootstrap</b>, <b className='font-bold'>css</b></p>
+                            <p className='mb-1'> Built with <b className='font-bold'>HTML</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b></p>
                             <a href="https://github.com/simonakom/2048-game">
                                 <b className="github-button">Github</b>
                             </a>
@@ -499,7 +499,7 @@ import rentify from '../assets/images/projects/rentify.png';
                         </a>
                         <div className='mt-2'> 
                             <p className="text-[20px] title-blue"><b>Invoice</b></p>
-                            <p className='mb-1'> Build with <b className='font-bold'>html</b>, <b className='font-bold'>css</b></p>
+                            <p className='mb-1'> Built with <b className='font-bold'>HTML</b>, <b className='font-bold'>CSS</b></p>
                             <a href="https://github.com/simonakom/invoice">
                                 <b className="github-button">Github</b>
                             </a>
@@ -511,7 +511,7 @@ import rentify from '../assets/images/projects/rentify.png';
                         </a>
                         <div className='mt-2'> 
                             <p className="text-[20px] title-blue"><b>Calendar</b></p>
-                            <p className='mb-1'> Build with <b className='font-bold'>html</b>, <b className='font-bold'>css</b></p>
+                            <p className='mb-1'> Built with <b className='font-bold'>HTML</b>, <b className='font-bold'>CSS</b></p>
                             <a href="https://github.com/simonakom/calendar?tab=readme-ov-file">
                                 <b className="github-button">Github</b>
                             </a>

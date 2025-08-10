@@ -46,13 +46,16 @@ import notion from '../assets/images/notion.png';
 import algolia from '../assets/images/algolia.svg';
 import hotjar from '../assets/images/hotjar.png';
 import basedash from '../assets/images/basedash.png';
+import devtools from '../assets/images/chrome-devtools.svg';
+import slack from '../assets/images/slack.png';
 
 export default function Experience ({isDarkMode}) {
     return (
         <div className='experience' id="experience">
-            <p className='my-14 ms-10 text-xl font-bold'>Technologies I have worked with:</p>
-            
-            <div className='space-y-8 pb-24 px-10 max-w-6xl mx-auto'>
+            <div className='px-9 max-w-3xl mx-auto'>
+                <p className='my-14 text-xl font-bold'>Technologies I have worked with:</p>
+                
+                <div className='space-y-8 pb-24'>
                 <div className={`p-6 rounded-xl ${isDarkMode ? 'bg-slate-800/50 border border-slate-700' : 'bg-white/50 border border-slate-200'} shadow-lg hover:shadow-xl transition-shadow duration-300`}>
                     <h3 className="text-lg font-semibold mb-6 flex items-center gap-2">
                         <IoColorPaletteOutline className={`text-2xl ${isDarkMode ? 'text-gray-300' : 'text-black'}`} />
@@ -102,7 +105,7 @@ export default function Experience ({isDarkMode}) {
                         </div>
                         <div>
                             <img src={express} alt="express" className='w-[60px] rounded-xl mt-1 brightness-150 ms-2' />
-                            <p className='ms-1 mt-2'><span className="font-medium">ExpressJS</span></p>
+                            <p className='mt-2'><span className="font-medium">ExpressJS</span></p>
                         </div>
                         <div>
                             <img src={swagger} alt="swagger" className='w-[60px] rounded-xl mt-1 ms-1' />
@@ -126,23 +129,23 @@ export default function Experience ({isDarkMode}) {
                             <p className='mt-2 ms-1'><span className="font-medium">Cypress</span></p>
                         </div>
                         <div>
-                            <img src={postman} alt="postman" className='w-[60px] rounded-xl' />
-                            <p className='mt-2'><span className='border-b border-gray-400 pb-1 font-medium'>Postman</span><br /><span className='text-sm ms-1'>Newman</span></p>
+                            <img src={postman} alt="postman" className='w-[60px] rounded-xl ms-1' />
+                            <p className='mt-2'><span className="font-medium">Postman</span></p>
                         </div>
                         <div>
-                            <img src={apache} alt="apache" className='w-[30px] rounded-xl ms-4 mt-2' />
-                            <p className='mt-2'><span className="font-medium">JMeter</span></p>
-                        </div>
-                        <div>
-                            <img src={jest} alt="jest" className='w-[70px] rounded-xl' />
+                            <img src={jest} alt="jest" className='w-[67px] rounded-xl' />
                             <p className='mt-2 ms-4'><span className="font-medium">Jest</span></p>
                         </div>
                         <div>
-                            <img src={jenkins} alt="jenkins" className='w-[49px] rounded-xl mt-1' />
-                            <p><span className="font-medium">Jenkins</span></p>
+                            <img src={apache} alt="apache" className='w-[32px] rounded-xl ms-4 mt-3' />
+                            <p className='mt-1'><span className="font-medium">JMeter</span></p>
                         </div>
                         <div>
-                            <img src={qase} alt="qase" className='w-[70px] rounded-xl mt-6' />
+                            <img src={jenkins} alt="jenkins" className='w-[47px] rounded-xl mt-1' />
+                            <p className='mt-1'><span className="font-medium">Jenkins</span></p>
+                        </div>
+                        <div>
+                            <img src={qase} alt="qase" className='w-[78px] rounded-xl mt-6' />
                             <p className='mt-6 ms-4'><span className="font-medium">Qase</span></p>
                         </div>
                         <div>
@@ -196,6 +199,10 @@ export default function Experience ({isDarkMode}) {
                             <p className='mt-3 ms-1'><span className="font-medium">GitHub</span></p>
                         </div>
                         <div>
+                            <img src={devtools} alt="devtools" className='h-[56px] rounded-xl ms-1' />
+                            <p className='mt-3'><span className="font-medium">DevTools</span></p>
+                        </div>
+                        <div>
                             <img src={cursor} alt="cursor" className='h-[63px] rounded-xl' />
                             <p className='mt-1 ms-2'><span className="font-medium">Cursor</span></p>
                         </div>
@@ -227,6 +234,10 @@ export default function Experience ({isDarkMode}) {
                         <div>
                             <img src={office} alt="office" className='w-[70px] rounded-xl mt-3' />
                             <p className='mt-5'><span className="font-medium">MS Office</span></p>
+                        </div>
+                        <div>
+                            <img src={slack} alt="slack" className='w-[52px] rounded-xl' />
+                            <p className='mt-3 ms-1'><span className="font-medium">Slack</span></p>
                         </div>
                         <div>
                             <img src={salesforce} alt="office" className='w-[74px] rounded-xl' />
@@ -278,6 +289,7 @@ export default function Experience ({isDarkMode}) {
                             <p className='mt-1'><span className="font-medium">Photoshop</span></p>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
 

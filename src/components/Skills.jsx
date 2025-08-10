@@ -7,8 +7,9 @@ import { MdAutoFixHigh } from "react-icons/md";
 export default function Skills ({isDarkMode}) {
     return (
         <div className='skills' id="skills">
-            <p className='mt-16 mb-10 ms-10 text-xl font-bold'>Skills:</p>
-            <div className='text-justify flex flex-col gap-5 pb-20 px-10'>
+            <div className='px-9 max-w-3xl mx-auto'>
+                <p className='mt-16 mb-10 text-xl font-bold'>Skills:</p>
+                <div className='text-justify flex flex-col gap-5 pb-20'>
                 <div className="gradient-border-left gradient-border-blue pl-6">
                     <h3 className="text-base font-semibold mb-3 flex items-center gap-2">
                         <BsRocketTakeoff className="text-xl text-blue-600 dark:text-blue-400" />
@@ -36,6 +37,7 @@ export default function Skills ({isDarkMode}) {
                         Search wizard
                     </h3>
                     <p className="text-base leading-relaxed">My proficiency in retrieving information from the depths of the internet resembles a finely honed skill. Whether it involves locating a specific code snippet or accessing comprehensive documentation, I can swiftly locate what&apos;s needed to accomplish tasks accurately and promptly.</p>
+                </div>
                 </div>
             </div>
             <hr className={`border-t-1 ${isDarkMode ? 'border-[#cbd5e7]' : 'border-[#878788]' }`} />
