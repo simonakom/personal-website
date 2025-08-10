@@ -1,32 +1,23 @@
 import { useState, useEffect } from 'react';
 import { MdOutlineWbSunny } from "react-icons/md";
 import { IoMoonOutline } from "react-icons/io5";
-import Switch from 'react-switch';
 import Navbar from './components/Navbar'
 import About from './components/About'
 import Skills from './components/Skills'
 import Experience from './components/Experience'
 import QAProjects from './components/QAProjects'
 import Projects from './components/Projects'
+import './components/ThemeToggle.css'
 
 export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [smokeParticles, setSmokeParticles] = useState([]);
-  const [sparkles, setSparkles] = useState([]);
   const [mouseGlow, setMouseGlow] = useState({ color: 'rgba(255, 255, 255, 0.16)', intensity: 1 });
 
   // Use the same color palette for both dark and light mode
   const highlightColor = isDarkMode
     ? 'rgba(245, 234, 115, 0.22)'
-    : 'rgba(128, 163, 223, 0.58)'; // very intense black for light mode
-  const smokeColor = 'rgba(120, 115, 245, 0.13)';
-  const sparkleColors = [
-    'rgba(108, 105, 189, 0.55)',    // main blue-purple
-    'rgba(139, 107, 168, 0.41)',    // purple
-    'rgba(105, 142, 189, 0.49)',    // light blue
-    'rgba(61, 46, 79, 0.43)'        // lavender
-  ];
+    : 'rgba(128, 163, 223, 0.58)'; 
 
   useEffect(() => {
     document.body.style.background = isDarkMode
@@ -68,76 +59,12 @@ export default function App() {
         }
       }
       setMouseGlow({ color: newGlowColor, intensity: newIntensity });
-      // Add smoke particle 
-      const newSmoke = {
-        id: Date.now() + Math.random(),
-        x: e.clientX + (Math.random() - 0.5) * 40,
-        y: e.clientY + (Math.random() - 0.5) * 40,
-        opacity: 0.13 + Math.random() * 0.13,
-        scale: 0.5 + Math.random() * 1.5,
-        riseSpeed: 0.3 + Math.random() * 1.2,
-        driftSpeed: (Math.random() - 0.5) * 2,
-        driftDirection: Math.random() * Math.PI * 2,
-        originalX: e.clientX + (Math.random() - 0.5) * 40,
-        originalY: e.clientY + (Math.random() - 0.5) * 40,
-        rotation: Math.random() * 360,
-        rotationSpeed: (Math.random() - 0.5) * 4,
-        color: smokeColor
-      };
-      // Unified sparkles
-      const newSparkle = {
-        id: Date.now() + Math.random() + 4000,
-        x: e.clientX + (Math.random() - 0.5) * 20,
-        y: e.clientY + (Math.random() - 0.5) * 20,
-        opacity: 0.7 + Math.random() * 0.3,
-        scale: 0.7 + Math.random() * 0.6,
-        size: 4 + Math.random() * 6,
-        twinkleSpeed: 0.12 + Math.random() * 0.08,
-        twinklePhase: Math.random() * Math.PI * 2,
-        color: sparkleColors[Math.floor(Math.random() * sparkleColors.length)]
-      };
-      setSparkles(prev => [...prev.slice(-18), newSparkle]); // Keep last 18 sparkles
-      setSmokeParticles(prev => [...prev.slice(-15), newSmoke]); // Keep last 15 smoke particles
+
     };
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
+  }, [highlightColor]);
 
-  // Animate smoke particles
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setSmokeParticles(prev => 
-        prev.map(smoke => ({
-          ...smoke,
-          opacity: Math.max(0, smoke.opacity - 0.002), // Very slow fade
-          scale: smoke.scale * 1.02, // Smoke expands as it rises
-          rotation: smoke.rotation + smoke.rotationSpeed,
-          // Natural smoke movement - rises and drifts
-          x: smoke.originalX + Math.sin(smoke.driftDirection + Date.now() * 0.0005) * smoke.driftSpeed * 10,
-          y: smoke.originalY - smoke.riseSpeed,
-          originalX: smoke.originalX + Math.sin(smoke.driftDirection + Date.now() * 0.0005) * smoke.driftSpeed * 10,
-          originalY: smoke.originalY - smoke.riseSpeed,
-          driftDirection: smoke.driftDirection + 0.01
-        })).filter(smoke => smoke.opacity > 0 && smoke.y > -200)
-      );
-    }, 50);
-    return () => clearInterval(interval);
-  }, []);
-
-  // Animate sparkles
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setSparkles(prev =>
-        prev.map(sparkle => ({
-          ...sparkle,
-          opacity: Math.max(0, sparkle.opacity - 0.04),
-          scale: sparkle.scale * (0.98 + Math.sin(sparkle.twinklePhase) * 0.02),
-          twinklePhase: sparkle.twinklePhase + sparkle.twinkleSpeed
-        })).filter(sparkle => sparkle.opacity > 0.01)
-      );
-    }, 50);
-    return () => clearInterval(interval);
-  }, []);
 
   const toggleBackground = () => {
     setIsDarkMode(!isDarkMode);
@@ -153,55 +80,10 @@ export default function App() {
           top: mousePosition.y - 12.5,
           backgroundColor: highlightColor,
           border: 'none',
-          boxShadow: !isDarkMode ? '0 0 24px 12px rgba(106, 179, 183, 0.64)' : undefined,
+          boxShadow: !isDarkMode ? '0 0 24px 12px rgba(255, 255, 255, 0.9)' : undefined,
           transform: `scale(${mouseGlow.intensity})`,
         }}
       />
-      {/* Smoke trail effect */}
-      {smokeParticles.map(smoke => (
-        <div
-          key={smoke.id}
-          className="smoke-particle"
-          style={{
-            left: smoke.x - 8,
-            top: smoke.y - 8,
-            opacity: smoke.opacity,
-            transform: `scale(${smoke.scale}) rotate(${smoke.rotation}deg)` ,
-            background: smoke.color,
-            borderRadius: '50%',
-            width: 24,
-            height: 24,
-            position: 'fixed',
-            pointerEvents: 'none',
-            zIndex: 9996,
-            filter: 'blur(4px)',
-          }}
-        />
-      ))}
-      {/* Fireflies trail effect */}
-      {sparkles.map(sparkle => (
-        <div
-          key={sparkle.id}
-          className="sparkle-effect"
-          style={{
-            left: sparkle.x - sparkle.size / 2,
-            top: sparkle.y - sparkle.size / 2,
-            width: sparkle.size,
-            height: sparkle.size,
-            opacity: sparkle.opacity,
-            transform: `scale(${sparkle.scale})`,
-            background: sparkle.color,
-            '--sparkle-color': sparkle.color,
-            borderRadius: '50%',
-            position: 'fixed',
-            pointerEvents: 'none',
-            zIndex: 9998,
-            filter: 'blur(1px)',
-            mixBlendMode: 'screen',
-          }}
-        />
-      ))}
-
 
       <div className={`container mx-auto px-1 sm:px-20 ${isDarkMode ? 'text-[#cbd5e7] font-thin' : 'text-[#272828ef] font-light'}`}>
         <div className="flex flex-col lg:flex-row">
@@ -215,14 +97,26 @@ export default function App() {
             <QAProjects isDarkMode={isDarkMode}/>
             <Projects isDarkMode={isDarkMode}/>
           </div>
-          <div className="mt-5 switch">
-            <Switch 
-              onChange={toggleBackground} 
-              checked={isDarkMode} 
-              onColor={isDarkMode ? "#5f89ac" : "#0c1323"}
-              uncheckedIcon={<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', fontSize: 18, color: 'black', paddingRight: 2 }}><IoMoonOutline /></div>}
-              checkedIcon={<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', fontSize: 18, color: 'white', paddingLeft: 3 }}><MdOutlineWbSunny /></div>}
-            />
+          <div className="theme-toggle-container">
+            <button
+              onClick={toggleBackground}
+              className={`theme-toggle-btn ${isDarkMode ? 'dark' : 'light'}`}
+              aria-label={`Switch to ${isDarkMode ? 'light' : 'dark'} mode`}
+            >
+              <div className="toggle-content">
+                {isDarkMode ? (
+                  <>
+                    <MdOutlineWbSunny className="toggle-icon" />
+                    <span className="toggle-text">Light</span>
+                  </>
+                ) : (
+                  <>
+                    <IoMoonOutline className="toggle-icon" />
+                    <span className="toggle-text">Dark</span>
+                  </>
+                )}
+              </div>
+            </button>
           </div>
         </div>
       </div>

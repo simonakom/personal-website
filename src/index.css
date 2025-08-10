@@ -2,70 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Gradient Border Classes */
-.dark-blue-gradient-border {
-  position: relative;
-  padding: 1.5rem;
-  border-radius: 0.75rem;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(147, 197, 253, 0.1) 100%);
-  border: 1px solid rgba(59, 130, 246, 0.2);
-  box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.1), 0 2px 4px -1px rgba(59, 130, 246, 0.06);
-}
-
-.pinkish-gradient-border {
-  position: relative;
-  padding: 1.5rem;
-  border-radius: 0.75rem;
-  background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(244, 114, 182, 0.1) 100%);
-  border: 1px solid rgba(236, 72, 153, 0.2);
-  box-shadow: 0 4px 6px -1px rgba(236, 72, 153, 0.1), 0 2px 4px -1px rgba(236, 72, 153, 0.06);
-}
-
-.baby-blue-gradient-border {
-  position: relative;
-  padding: 1.5rem;
-  border-radius: 0.75rem;
-  background: linear-gradient(135deg, rgba(96, 165, 250, 0.1) 0%, rgba(147, 197, 253, 0.1) 100%);
-  border: 1px solid rgba(96, 165, 250, 0.2);
-  box-shadow: 0 4px 6px -1px rgba(96, 165, 250, 0.1), 0 2px 4px -1px rgba(96, 165, 250, 0.06);
-}
-
-.purple-gradient-border {
-  position: relative;
-  padding: 1.5rem;
-  border-radius: 0.75rem;
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(167, 139, 250, 0.1) 100%);
-  border: 1px solid rgba(139, 92, 246, 0.2);
-  box-shadow: 0 4px 6px -1px rgba(139, 92, 246, 0.1), 0 2px 4px -1px rgba(139, 92, 246, 0.06);
-}
-
-.green-gradient-border {
-  position: relative;
-  padding: 1.5rem;
-  border-radius: 0.75rem;
-  background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(74, 222, 128, 0.1) 100%);
-  border: 1px solid rgba(34, 197, 94, 0.2);
-  box-shadow: 0 4px 6px -1px rgba(34, 197, 94, 0.1), 0 2px 4px -1px rgba(34, 197, 94, 0.06);
-}
-
-.orange-gradient-border {
-  position: relative;
-  padding: 1.5rem;
-  border-radius: 0.75rem;
-  background: linear-gradient(135deg, rgba(249, 115, 22, 0.1) 0%, rgba(251, 146, 60, 0.1) 100%);
-  border: 1px solid rgba(249, 115, 22, 0.2);
-  box-shadow: 0 4px 6px -1px rgba(249, 115, 22, 0.1), 0 2px 4px -1px rgba(249, 115, 22, 0.06);
-}
-
-.teal-gradient-border {
-  position: relative;
-  padding: 1.5rem;
-  border-radius: 0.75rem;
-  background: linear-gradient(135deg, rgba(20, 184, 166, 0.1) 0%, rgba(45, 212, 191, 0.1) 100%);
-  border: 1px solid rgba(20, 184, 166, 0.2);
-  box-shadow: 0 4px 6px -1px rgba(20, 184, 166, 0.1), 0 2px 4px -1px rgba(20, 184, 166, 0.06);
-}
-
 /* Gradient Left Border */
 .gradient-border-left {
   position: relative;
@@ -88,72 +24,6 @@
   --gradient-end: #60a5fa;
 }
 
-.gradient-border-blue-turquoise {
-  --gradient-start: #0d9488;
-  --gradient-mid: #14b8a6;
-  --gradient-end: #2dd4bf;
-}
-
-.gradient-border-dark-blue {
-  --gradient-start: #1e3a8a;
-  --gradient-mid: #1e40af;
-  --gradient-end: #3b82f6;
-}
-
-.gradient-border-pink {
-  --gradient-start: #be185d;
-  --gradient-mid: #ec4899;
-  --gradient-end: #f472b6;
-}
-
-.gradient-border-light-pink {
-  --gradient-start: #f472b6;
-  --gradient-mid: #f9a8d4;
-  --gradient-end: #fbcfe8;
-}
-
-.gradient-border-light-blue {
-  --gradient-start: #2563eb;
-  --gradient-mid: #60a5fa;
-  --gradient-end: #93c5fd;
-}
-
-.gradient-border-purple {
-  --gradient-start: #7c3aed;
-  --gradient-mid: #8b5cf6;
-  --gradient-end: #a78bfa;
-}
-
-.gradient-border-green {
-  --gradient-start: #16a34a;
-  --gradient-mid: #22c55e;
-  --gradient-end: #4ade80;
-}
-
-.gradient-border-orange {
-  --gradient-start: #ea580c;
-  --gradient-mid: #f97316;
-  --gradient-end: #fb923c;
-}
-
-.gradient-border-teal {
-  --gradient-start: #0d9488;
-  --gradient-mid: #14b8a6;
-  --gradient-end: #2dd4bf;
-}
-
-@keyframes gradientShift {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 .mouse-highlight {
   position: fixed;
   width: 25px;
@@ -167,117 +37,6 @@
     0 0 60px rgba(255, 255, 255, 0.646),
     0 0 90px rgba(255, 255, 255, 0.77);
   filter: blur(35px);
-}
-
-.smoke-particle {
-  position: fixed;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 2147483646;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%, transparent 100%);
-  box-shadow: 
-    0 0 10px rgba(255, 255, 255, 0.2),
-    0 0 20px rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease-out;
-  animation: smokeRise 4s ease-out infinite;
-  filter: blur(1px);
-}
-
-@keyframes smokeRise {
-  0% {
-    opacity: 0.4;
-    transform: scale(0.5) rotate(0deg);
-    filter: blur(1px);
-  }
-  50% {
-    opacity: 0.2;
-    transform: scale(1.2) rotate(180deg);
-    filter: blur(2px);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(2) rotate(360deg);
-    filter: blur(3px);
-  }
-}
-
-.firefly {
-  position: fixed;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 2147483645;
-  box-shadow: 
-    0 0 8px var(--firefly-color),
-    0 0 16px var(--firefly-color),
-    0 0 24px var(--firefly-color);
-  transition: all 0.2s ease-out;
-  animation: fireflyTwinkle 3s ease-in-out infinite;
-  background: radial-gradient(circle, var(--firefly-color) 30%, rgba(255, 255, 255, 0.8) 70%);
-}
-
-@keyframes fireflyTwinkle {
-  0%, 100% {
-    box-shadow: 
-      0 0 8px var(--firefly-color),
-      0 0 16px var(--firefly-color),
-      0 0 24px var(--firefly-color);
-    transform: scale(1);
-  }
-  50% {
-    box-shadow: 
-      0 0 12px var(--firefly-color),
-      0 0 24px var(--firefly-color),
-      0 0 36px var(--firefly-color);
-    transform: scale(1.2);
-  }
-}
-
-.soft-orb {
-  position: fixed;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 2147483646;
-  filter: blur(8px);
-  box-shadow: 0 0 32px var(--orb-color), 0 0 64px var(--orb-color);
-  transition: all 0.2s ease-out;
-  background: var(--orb-color);
-}
-
-.comet-tail {
-  position: fixed;
-  border-radius: 8px;
-  pointer-events: none;
-  z-index: 2147483646;
-  filter: blur(2px);
-  box-shadow: 0 0 16px #00eaff, 0 0 32px #00eaff;
-  transition: all 0.15s ease-out;
-  background: linear-gradient(90deg, rgba(0,255,255,0.7) 0%, rgba(0,180,255,0.5) 60%, rgba(255,255,255,0.1) 100%);
-}
-
-.ripple-circle {
-  position: fixed;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 2147483646;
-  filter: blur(4px);
-  box-shadow: 0 0 24px var(--ripple-color), 0 0 48px var(--ripple-color);
-  transition: all 0.2s ease-out;
-  background: var(--ripple-color);
-}
-
-.sparkle-effect {
-  position: fixed;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 2147483646;
-  filter: blur(1.5px);
-  box-shadow: 0 0 8px var(--sparkle-color), 0 0 16px var(--sparkle-color);
-  transition: all 0.15s ease-out;
-  background: var(--sparkle-color);
 }
 
 /* Animated Globe */
@@ -367,7 +126,6 @@
   }
 }
 
-
 /* Global Button Styles */
 .github-button {
   @apply text-sm px-2 py-1 rounded-2xl bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 text-white opacity-70 transition-all duration-300;
@@ -392,11 +150,6 @@
 @media screen and (max-width:1028px) {
     .width{
         width: 100% !important
-    }
-    .switch {
-        position: absolute;
-        top: 20px;
-        right: 20px;
     }
     .space {
         margin-top: -100px !important;

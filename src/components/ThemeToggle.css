@@ -1,0 +1,116 @@
+/* Theme Toggle Button */
+.theme-toggle-container {
+  position: fixed;
+  top: 25px;
+  right: 35px;
+  z-index: 1000;
+}
+
+.theme-toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 50px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  min-width: 85px;
+  height: 32px;
+}
+
+.theme-toggle-btn.dark {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  color: #f8fafc;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theme-toggle-btn.light {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  color: #1e293b;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.theme-toggle-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.theme-toggle-btn:active {
+  transform: translateY(0);
+  transition: transform 0.1s;
+}
+
+.theme-toggle-btn.dark:hover {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.theme-toggle-btn.light:hover {
+  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.toggle-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toggle-icon {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle-btn:hover .toggle-icon {
+  transform: scale(1.1);
+}
+
+.toggle-text {
+  font-weight: 600;
+  letter-spacing: 0.025em;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1028px) {
+  .theme-toggle-container {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+  }
+}
+
+/* Tablet adjustments */
+@media screen and (max-width: 768px) {
+  .theme-toggle-container {
+    top: 20px;
+    right: 20px;
+  }
+  
+  .theme-toggle-btn {
+    min-width: 80px;
+    height: 30px;
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+}
+
+/* Small mobile adjustments */
+@media screen and (max-width: 480px) {
+  .theme-toggle-container {
+    top: 15px;
+    right: 15px;
+  }
+  
+  .theme-toggle-btn {
+    min-width: 70px;
+    height: 28px;
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+} 
