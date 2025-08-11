@@ -28,42 +28,42 @@ export default function App() {
       : '#ebeef5'; 
   }, [isDarkMode]);
 
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
-      // Check what element is under the mouse for glow color
-      const elementUnderMouse = document.elementFromPoint(e.clientX, e.clientY);
-      let newGlowColor = highlightColor;
-      let newIntensity = 1;
-      if (elementUnderMouse) {
-        const tagName = elementUnderMouse.tagName?.toLowerCase();
-        const className = elementUnderMouse.className || '';
-        if (tagName === 'h1' || tagName === 'h2' || tagName === 'h3') {
-          newGlowColor = 'rgba(245, 115, 130, 0.32)'; // Heading color
-          newIntensity = 1.2;
-        } else if (tagName === 'a' || elementUnderMouse.closest('a')) {
-          newGlowColor = 'rgba(120, 180, 255, 0.32)'; // Link color
-          newIntensity = 1.3;
-        } else if (tagName === 'button' || elementUnderMouse.closest('button')) {
-          newGlowColor = 'rgba(168, 85, 247, 0.32)'; // Button color
-          newIntensity = 1.4;
-        } else if (className.includes('project') || className.includes('card')) {
-          newGlowColor = 'rgba(120, 115, 245, 0.22)'; // Card/Project color
-          newIntensity = 1.1;
-        } else if (tagName === 'p') {
-          newGlowColor = 'rgba(120, 115, 245, 0.12)'; // Text color
-          newIntensity = 0.9;
-        } else if (tagName === 'img') {
-          newGlowColor = 'rgba(255, 120, 242, 0.22)'; // Image color
-          newIntensity = 1.2;
-        }
-      }
-      setMouseGlow({ color: newGlowColor, intensity: newIntensity });
+  // useEffect(() => {
+  //   const handleMouseMove = (e) => {
+  //     setMousePosition({ x: e.clientX, y: e.clientY });
+  //     // Check what element is under the mouse for glow color
+  //     const elementUnderMouse = document.elementFromPoint(e.clientX, e.clientY);
+  //     let newGlowColor = highlightColor;
+  //     let newIntensity = 1;
+  //     if (elementUnderMouse) {
+  //       const tagName = elementUnderMouse.tagName?.toLowerCase();
+  //       const className = elementUnderMouse.className || '';
+  //       if (tagName === 'h1' || tagName === 'h2' || tagName === 'h3') {
+  //         newGlowColor = 'rgba(245, 115, 130, 0.32)'; // Heading color
+  //         newIntensity = 1.2;
+  //       } else if (tagName === 'a' || elementUnderMouse.closest('a')) {
+  //         newGlowColor = 'rgba(120, 180, 255, 0.32)'; // Link color
+  //         newIntensity = 1.3;
+  //       } else if (tagName === 'button' || elementUnderMouse.closest('button')) {
+  //         newGlowColor = 'rgba(168, 85, 247, 0.32)'; // Button color
+  //         newIntensity = 1.4;
+  //       } else if (className.includes('project') || className.includes('card')) {
+  //         newGlowColor = 'rgba(120, 115, 245, 0.22)'; // Card/Project color
+  //         newIntensity = 1.1;
+  //       } else if (tagName === 'p') {
+  //         newGlowColor = 'rgba(120, 115, 245, 0.12)'; // Text color
+  //         newIntensity = 0.9;
+  //       } else if (tagName === 'img') {
+  //         newGlowColor = 'rgba(255, 120, 242, 0.22)'; // Image color
+  //         newIntensity = 1.2;
+  //       }
+  //     }
+  //     setMouseGlow({ color: newGlowColor, intensity: newIntensity });
 
-    };
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, [highlightColor]);
+  //   };
+  //   window.addEventListener('mousemove', handleMouseMove);
+  //   return () => window.removeEventListener('mousemove', handleMouseMove);
+  // }, [highlightColor]);
 
 
   const toggleBackground = () => {

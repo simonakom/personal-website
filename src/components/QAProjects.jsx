@@ -97,7 +97,7 @@ export default function Projects({isDarkMode}) {
                                             href={project.githubUrl}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className={`group/btn inline-flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-500/40 group-hover:text-white group-hover:border-blue-500/80' : 'bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-300 hover:border-gray-400 group-hover:bg-blue-300 group-hover:text-gray-800 group-hover:border-blue-400'}`}
+                                            className={`group/btn inline-flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-slate-500/80 hover:!text-white hover:!border-slate-400/60 hover:!shadow-lg hover:!shadow-slate-500/20' : 'bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-300 hover:border-gray-400 group-hover:bg-blue-200/60 group-hover:text-gray-800 group-hover:border-blue-200/50 hover:!bg-slate-200 hover:!text-gray-800 hover:!border-slate-300/80 hover:!shadow-lg hover:!shadow-slate-200/40'}`}
                                         >
                                             <FaGithub className="text-sm" />
                                             View Code

@@ -99,7 +99,7 @@ export default function FullProjectArchive({ isDarkMode }) {
                                             href={project.liveUrl} 
                                             target="_blank" 
                                             rel="noopener noreferrer"
-                                            className={`group/btn inline-flex items-center gap-2 px-3 py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-500/40 group-hover:text-white group-hover:border-blue-500/80' : 'bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-300 hover:border-gray-400 group-hover:bg-blue-300 group-hover:text-gray-800 group-hover:border-blue-400'}`}
+                                            className={`group/btn inline-flex items-center gap-2 px-3 py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-500 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-500/40 group-hover:text-white group-hover:border-blue-500/80' : 'bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-300 hover:border-gray-400 group-hover:bg-blue-300 group-hover:text-gray-800 group-hover:border-blue-400'}`}
                                         >
                                             <FaExternalLinkAlt className="text-xs" />
                                             Live Demo
