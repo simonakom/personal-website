@@ -9,6 +9,8 @@ export default function Navbar({ isDarkMode }) {
     const [fixedSection, setFixedSection] = useState(null);
 
     useEffect(() => {
+        let timeoutId;
+        
         function handleScroll() {
             const aboutSection = document.getElementById('about');
             const skillsSection = document.getElementById('skills'); 
@@ -16,7 +18,7 @@ export default function Navbar({ isDarkMode }) {
             const qaprojectsSection = document.getElementById('qaprojects');
             const projectsSection = document.getElementById('projects');
 
-            if (aboutSection && experienceSection && projectsSection && skillsSection) {
+            if (aboutSection && skillsSection && experienceSection && qaprojectsSection && projectsSection) {
                 const aboutOffsetTop = aboutSection.offsetTop;
                 const skillsOffsetTop = skillsSection.offsetTop; 
                 const experienceOffsetTop = experienceSection.offsetTop;
@@ -24,25 +26,39 @@ export default function Navbar({ isDarkMode }) {
                 const projectsOffsetTop = projectsSection.offsetTop;
                 const scrollTop = window.scrollY;
                 const screenWidth = window.innerWidth;
+                
+                // Add threshold for better detection timing
+                const threshold = 100;
     
-                if (scrollTop >= aboutOffsetTop && scrollTop < skillsOffsetTop && screenWidth <= 1024) {
+                if (scrollTop >= aboutOffsetTop - threshold && scrollTop < skillsOffsetTop - threshold && screenWidth <= 1024) {
                     setFixedSection('about');
-                } else if (scrollTop >= skillsOffsetTop && scrollTop < experienceOffsetTop && screenWidth <= 1024) {
+                } else if (scrollTop >= skillsOffsetTop - threshold && scrollTop < experienceOffsetTop - threshold && screenWidth <= 1024) {
                     setFixedSection('skills');
-                } else if (scrollTop >= experienceOffsetTop && scrollTop < projectsOffsetTop && screenWidth <= 1024) {
+                } else if (scrollTop >= experienceOffsetTop - threshold && scrollTop < qaprojectsOffsetTop - threshold && screenWidth <= 1024) {
                     setFixedSection('experience');
-                } else if (scrollTop >= qaprojectsOffsetTop && screenWidth <= 1024) {
-                    setFixedSection('projects');
-                } else if (scrollTop >= projectsOffsetTop && screenWidth <= 1024) {
+                } else if (scrollTop >= qaprojectsOffsetTop - threshold && scrollTop < projectsOffsetTop - threshold && screenWidth <= 1024) {
+                    setFixedSection('qaprojects');
+                } else if (scrollTop >= projectsOffsetTop - threshold && screenWidth <= 1024) {
                     setFixedSection('projects');
                 } else {
                     setFixedSection(null);
                 }
             }
         }
-        window.addEventListener('scroll', handleScroll);
+        
+        // Call handleScroll immediately to set initial state
+        handleScroll();
+        
+        // Debounced scroll handler for better performance
+        function debouncedScrollHandler() {
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(handleScroll, 10);
+        }
+        
+        window.addEventListener('scroll', debouncedScrollHandler);
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('scroll', debouncedScrollHandler);
+            clearTimeout(timeoutId);
         };
     }, []);
     
@@ -84,7 +100,7 @@ export default function Navbar({ isDarkMode }) {
                             to="experience" 
                             spy={true} 
                             smooth={true} 
-                            offset={-150} 
+                            offset={-50} 
                             duration={500} 
                             >Experience
                         </Link>
@@ -94,7 +110,7 @@ export default function Navbar({ isDarkMode }) {
                             to="skills" 
                             spy={true} 
                             smooth={true} 
-                            offset={-130} 
+                            offset={-50} 
                             duration={500} 
                             >Skills
                         </Link>
@@ -104,7 +120,7 @@ export default function Navbar({ isDarkMode }) {
                             to="qaprojects" 
                             spy={true} 
                             smooth={true} 
-                            offset={-150} 
+                            offset={-50} 
                             duration={500} 
                             >QA Projects
                         </Link>
@@ -114,7 +130,7 @@ export default function Navbar({ isDarkMode }) {
                             to="projects" 
                             spy={true} 
                             smooth={true} 
-                            offset={-150} 
+                            offset={-50} 
                             duration={500} 
                             >Web Projects
                         </Link>

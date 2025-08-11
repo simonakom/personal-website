@@ -192,11 +192,11 @@ export default function Projects({isDarkMode}) {
             {/* Modal */}
             {showModal && (
                 <div className="modal-overlay" ref={modalRef} onClick={closeModal}>
-                    <div className={`modal ${isDarkMode ? 'bg-[#0f172a]' : 'bg-[#ebeef5]'}`}>
+                    <div className={`modal ${isDarkMode ? 'dark bg-[#0f172a]' : 'bg-[#ebeef5]'}`}>
                         <div className="modal-content">
-                            <button className="modal-close-btn" onClick={toggleModal}>
-                                <FaAnglesLeft className="text-lg transition-transform duration-300 group-hover:scale-110" />
-                                <span className="ml-2 font-semibold">Close</span>
+                            <button className="modal-close-btn group" onClick={toggleModal}>
+                                <FaAnglesLeft className="text-lg transition-transform duration-300 group-hover:-translate-x-1" />
+                                <span className="ml-1 font-semibold">Close</span>
                             </button>
                             <Modal onClose={toggleModal} isDarkMode={isDarkMode} />
                         </div>
