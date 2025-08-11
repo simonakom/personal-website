@@ -9,7 +9,7 @@ export default function Projects({isDarkMode}) {
     return (
         <div className='qaprojects' id="qaprojects">
             <div className='px-9 max-w-4xl mx-auto'>
-                <p className='mt-16 mb-12 text-xl font-bold'>QA Projects:</p>
+                <p className='mt-14 mb-10 text-xl font-bold'>QA Projects:</p>
                 
                 <div className='grid gap-3'>
                     <div className={`group py-3 px-6 rounded-xl border transition-all duration-300 hover:shadow-lg hover:scale-[1.02] ${isDarkMode ? 'bg-gray-800 border-gray-700 hover:border-gray-600' : 'bg-white border-gray-200 hover:border-gray-300 shadow-md'}`}>
@@ -156,9 +156,8 @@ export default function Projects({isDarkMode}) {
                         </div>
                     </div>
                 </div>
-
-                <hr className={`border-t-2 mt-16 ${isDarkMode ? 'border-gray-600' : 'border-gray-300'}`} />
             </div>
+            <hr className={`border-t-1 mt-14 ${isDarkMode ? 'border-[#cbd5e7]' : 'border-[#878788]' }`} />
         </div>
     )
 }

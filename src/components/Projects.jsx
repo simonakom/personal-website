@@ -37,8 +37,8 @@ export default function Projects({isDarkMode}) {
     return (
         <div className='projects' id="projects">
             <div className='px-9 max-w-3xl mx-auto'>
-                <p className='mt-16 mb-14 text-xl font-bold'>Web Projects:</p>
-                <div className='text-justify pb-20 grid grid-cols-1 md:grid-cols-2 gap-6 items-start'>
+                <p className='mt-14 mb-10 text-xl font-bold'>Web Projects:</p>
+                <div className='text-justify pb-14 grid grid-cols-1 md:grid-cols-2 gap-6 items-start'>
                 <div className='mb-8 text-center'>
                     <a href="https://simonakom.github.io/netflix-page/index.html">
                         <img src={netflix} alt="netflix" className='w-[400px] rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
