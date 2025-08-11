@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 import { FaAnglesUp } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import calendar from '../assets/images/projects/calendar.png';
 import invoice from '../assets/images/projects/invoice.png';
 import christmas from '../assets/images/projects/christmas.png';
@@ -37,499 +39,413 @@ import timer from '../assets/images/projects/timer.png';
 import selector from '../assets/images/projects/selector.png';
 import rentify from '../assets/images/projects/rentify.png';
 
-    export default function FullProjectArchive({ isDarkMode }) {
-        const scrollToBottom = () => {
-            const bottomElement = document.getElementById('bottomElement'); 
-            if (bottomElement) {
-                bottomElement.scrollIntoView({ behavior: 'smooth', block: 'end' });
-            }
-        };
-        
-        return (
-            <div className="mx-10 mb-10 mt-10 relative">
-            <div id="bottomElement"></div> {/* Element to Scroll to */}
-                <h1 className="font-bold text-3xl mb-10">All Projects</h1>
-{/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
-                <div className={`sticky top-[-20px] z-50 ${isDarkMode ? 'bg-[#0f172a]' : 'bg-[#ebeef5]'}`}>
-                     <p className={`my-10 py-2 text-center border-t-2 border-b-2 font-medium ${isDarkMode ? 'text-blue-400 border-blue-400' : 'text-gray-700 border-gray-400'}`}>Landing pages</p>
-                </div>
+export default function FullProjectArchive({ isDarkMode }) {
+    const scrollToTop = () => {
+        const modalContent = document.querySelector('.modal-content');
+        if (modalContent) {
+            modalContent.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    };
     
-                <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4  gap-10'>
-                    <div>
-                        <a href="https://simonakom.github.io/spotify-app/build/index.html">
-                            <img src={spotify} alt="spotify" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'>
-                            <p className="text-[20px] title-blue"><b>Spotify</b></p>
-                            <p className='mb-1'>Built with <b className='font-bold'>React</b>, <b className='font-bold'>Tailwind</b>, <br /><b className='font-bold'>CSS</b></p>
-                            <a href="https://github.com/simonakom/spotify-app">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/netflix-page/index.html">
-                            <img src={netflix} alt="netflix" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Netflix</b></p>
-                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
-                            <a href="https://github.com/simonakom/netflix-page">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/travlog-landing-page/travlog.html">
-                            <img src={travlog} alt="travlog" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Travlog</b></p>
-                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
-                            <a href="https://github.com/simonakom/travlog-landing-page">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/abstract-landing-page/index.html">
-                            <img src={abstract} alt="abstract" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Abstract</b></p>
-                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
-                            <a href="https://github.com/simonakom/abstract-landing-page">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/collab-landing-page/collab.html">
-                            <img src={collab} alt="collab" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Collab</b></p>
-                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
-                            <a href="https://github.com/simonakom/collab-landing-page">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/sneaker-eshop-page/sneaker.html">
-                            <img src={shoe} alt="shoe" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Sneaker</b></p>
-                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>CSS</b>, <br /><b className='font-bold'>HTML</b></p>
-                            <a href="https://github.com/simonakom/sneaker-eshop-page">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/sample-page/sample-page.html">
-                            <img src={christmas} alt="christmas" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Christmas shop</b></p>
-                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>CSS</b>, <br /><b className='font-bold'>HTML</b></p>
-                            <a href="https://github.com/simonakom/sample-page">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-{/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
-                <div className={`sticky top-[-20px] z-50 ${isDarkMode ? 'bg-[#0f172a]' : 'bg-[#ebeef5]'}`}>
-                    <p className={`my-10 py-2 text-center border-t-2 border-b-2 font-medium ${isDarkMode ? 'text-blue-400 border-blue-400' : 'text-gray-700 border-gray-400'}`}>CRUD applications</p>
-                </div>
-                <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-10'>
-                    <div>
-                        <a href="https://simonakom.github.io/kolt-scooters-app/dist/index.html">
-                            <img src={kolt} alt="kolt" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Kolt scooters</b></p>
-                            <p className='mb-1'>Built with <b className='font-bold'>React Vite</b>, <b className='font-bold'>Tailwind</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>localStorage</b></p>
-                            <a href="https://github.com/simonakom/kolt-scooters-app">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/data-table-app/admin.html">
-                            <img src={product} alt="product" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Data-table</b> of products</p>
-                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
-                            <a href="https://github.com/simonakom/data-table-app">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/crud-people-data-table/dynamic-table.html">
-                            <img src={people} alt="people" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Data-table</b> of people</p>
-                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
-                            <a href="https://github.com/simonakom/crud-people-data-table">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-{/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
-                <div className={`sticky top-[-20px] z-50 ${isDarkMode ? 'bg-[#0f172a]' : 'bg-[#ebeef5]'}`}>
-                    <p className={`my-10 py-2 text-center border-t-2 border-b-2 font-medium ${isDarkMode ? 'text-blue-400 border-blue-400' : 'text-gray-700 border-gray-400'}`}>API applications</p>
-                </div>
-                <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-10'>
-                    <div>
-                        <a href="https://simonakom.github.io/coctails-api/coctails.html">
-                            <img src={coctails} alt="coctails" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Cocktail recipes</b></p>
-                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
-                            <a href="https://github.com/simonakom/coctails-api">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>s
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/dogs-api/dogs-photo-album.html">
-                            <img src={dogs} alt="dogs" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Pet gallery</b></p>
-                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
-                            <a href="https://github.com/simonakom/dogs-api">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/people-selector/dist/index.html">
-                            <img src={selector} alt="selector" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>People selector</b></p>
-                            <p className='mb-1'>Built with <b className='font-bold'>React Vite</b>, <b className='font-bold'>Tailwind</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>localStorage</b></p>
-                            <a href="https://github.com/simonakom/people-selector">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/chuck-norris-jokes/index.html">
-                            <img src={joke} alt="joke" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Jokes</b> by Chuck Norris</p>
-                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>CSS</b>, <br /><b className='font-bold'>HTML</b></p>
-                            <a href="https://github.com/simonakom/chuck-norris-jokes">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-{/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
-                <div className={`sticky top-[-20px] z-50 ${isDarkMode ? 'bg-[#0f172a]' : 'bg-[#ebeef5]'}`}>
-                    <p className={`my-10 py-2 text-center border-t-2 border-b-2 font-medium ${isDarkMode ? 'text-blue-400 border-blue-400' : 'text-gray-700 border-gray-400'}`}>JavaScript/React projects</p>
-                </div>
-                <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-10'>
-                    <div>
-                        <a href="https://simonakom.github.io/google-timer-stopwatch/dist/index.html">
-                            <img src={timer} alt="timer" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Google</b> timer & stopwatch</p>
-                            <p className='mb-1'>Built with <b className='font-bold'>React Vite</b>, <b className='font-bold'>Tailwind</b>, <br /><b className='font-bold'>CSS</b></p>
-                            <a href="https://github.com/simonakom/google-timer-stopwatch">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/birthday-countdown/dist/index.html">
-                            <img src={birthday} alt="birthday" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Birthday Timer</b></p>
-                            <p className='mb-1'>Built with <b className='font-bold'>React Vite</b>, <b className='font-bold'>Tailwind</b>, <br /><b className='font-bold'>CSS</b></p>
-                            <a href="https://github.com/simonakom/birthday-countdown">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/todo-list/dist/index.html">
-                            <img src={tasks} alt="tasks" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Task Tracker</b></p>
-                            <p className='mb-1'>Built with <b className='font-bold'>React Vite</b>, <b className='font-bold'>Tailwind</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>localStorage</b></p>
-                            <a href="https://github.com/simonakom/todo-list">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/color-picker/build/index.html">
-                            <img src={color} alt="color" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Color Picker</b></p>
-                            <p className='mb-1'>Built with <b className='font-bold'>React</b>, <b className='font-bold'>Tailwind</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>localStorage</b></p>
-                            <a href="https://github.com/simonakom/color-picker">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/tip-counter/index.html">
-                            <img src={tips} alt="tips" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Tip Counter</b></p>
-                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
-                            <a href="https://github.com/simonakom/tip-counter">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/bmi-calculator/index.html">
-                            <img src={bmi} alt="bmi" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>BMI Calculator</b></p>
-                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
-                            <a href="https://github.com/simonakom/bmi-calculator">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/password-generator/index.html">
-                            <img src={passGenerator} alt="passGenerator" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Password Generator</b></p>
-                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
-                            <a href="https://github.com/simonakom/password-generator">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/check-password-strength/index.html">
-                            <img src={pass} alt="pass" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Password Validator</b></p>
-                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
-                            <a href="https://github.com/simonakom/check-password-strength?tab=readme-ov-file">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/guessing-number-game/index.html">
-                            <img src={game} alt="game" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Guessing game!</b></p>
-                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
-                            <a href="https://github.com/simonakom/guessing-number-game?tab=readme-ov-file">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/palindrome-app/index.html">
-                            <img src={palindrome} alt="palindrome" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Palindrome Checker</b></p>
-                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
-                            <a href="https://github.com/simonakom/palindrome-app">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/calculator/calculator.html">
-                            <img src={calculator} alt="calculator" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Calculator</b></p>
-                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
-                            <a href="https://github.com/simonakom/calculator">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/quiz/index.html">
-                            <img src={quiz} alt="quiz" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Quiz</b></p>
-                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
-                            <a href="https://github.com/simonakom/quiz">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/vocals-counter/index.html">
-                            <img src={vowel} alt="vowel" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Vowel Counter</b></p>
-                            <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
-                            <a href="https://github.com/simonakom/vocals-counter?tab=readme-ov-file">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-{/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
-                <div className={`sticky top-[-20px] z-50 ${isDarkMode ? 'bg-[#0f172a]' : 'bg-[#ebeef5]'}`}>
-                    <p className={`my-10 py-2 text-center border-t-2 border-b-2 font-medium ${isDarkMode ? 'text-blue-400 border-blue-400' : 'text-gray-700 border-gray-400'}`}>Fullstack applications</p>
-                </div>
-                <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-10'>
-                    <div>
-                        <a href="https://github.com/simonakom/pc-rent-platform">
-                            <img src={rentify} alt="rentify" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Rentify</b> PC rent app</p>
-                            <p className='mb-1'>Built with <b className='font-bold'>Node.js</b>, <b className='font-bold'>Nginx</b>, <b className='font-bold'>MySQL</b>, <b className='font-bold'>React Vite</b>, <b className='font-bold'>Tailwind</b>, <b className='font-bold'>CSS</b></p> 
-                            <a href="https://github.com/simonakom/pc-rent-platform">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://github.com/simonakom/forum-app">
-                            <img src={cinema} alt="cinema" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>PulpCinemaHub</b> forum</p>
-                            <p className='mb-1'>Built with <b className='font-bold'>Node.js</b>, <b className='font-bold'>MongoDB</b>, <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>Tailwind</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
-                            <a href="https://github.com/simonakom/forum-app">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/todo-list-app/front-end/todos.html">
-                            <img src={todo} alt="todo" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>To-do</b> app</p>
-                            <p className='mb-1'>Built with <b className='font-bold'>Node.js</b>, <b className='font-bold'>Nginx</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
-                            <a href="https://github.com/simonakom/todo-list-app">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-{/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
-                <div className={`sticky top-[-20px] z-50 ${isDarkMode ? 'bg-[#0f172a]' : 'bg-[#ebeef5]'}`}>
-                    <p className={`my-10 py-2 text-center border-t-2 border-b-2 font-medium ${isDarkMode ? 'text-blue-400 border-blue-400' : 'text-gray-700 border-gray-400'}`}>CSS Projects</p>
-                </div>
-                <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-10'>
-                    <div>
-                        <a href="https://simonakom.github.io/contact-form/contact-form-responsive.html">
-                            <img src={contact} alt="contact" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Contact form</b></p>
-                            <p className='mb-1'> Built with <b className='font-bold'>HTML</b>, <b className='font-bold'>CSS</b></p>
-                            <a href="https://github.com/simonakom/contact-form">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/registration-form/registration.html">
-                            <img src={registration} alt="registration" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Registration form</b></p>
-                            <p className='mb-1'> Built with <b className='font-bold'>HTML</b>, <b className='font-bold'>CSS</b></p>
-                            <a href="https://github.com/simonakom/contact-form">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/shopping-cart/shopping-cart.html">
-                            <img src={shopping} alt="shopping" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Shopping Cart</b></p>
-                            <p className='mb-1'> Built with <b className='font-bold'>HTML</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b></p>
-                            <a href="https://github.com/simonakom/shopping-cart">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/2048-game/game-2048.html">
-                            <img src={game2048} alt="game2048" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>2048 Game</b></p>
-                            <p className='mb-1'> Built with <b className='font-bold'>HTML</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b></p>
-                            <a href="https://github.com/simonakom/2048-game">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/invoice/invoice.html">
-                            <img src={invoice} alt="invoice" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Invoice</b></p>
-                            <p className='mb-1'> Built with <b className='font-bold'>HTML</b>, <b className='font-bold'>CSS</b></p>
-                            <a href="https://github.com/simonakom/invoice">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="https://simonakom.github.io/calendar/calendar.html">
-                            <img src={calendar} alt="calendar" className='w-[200px] mb-3 rounded-xl cursor-pointer grayscale hover:grayscale-0 transition-transform transform hover:scale-110 duration-500' />
-                        </a>
-                        <div className='mt-2'> 
-                            <p className="text-[20px] title-blue"><b>Calendar</b></p>
-                            <p className='mb-1'> Built with <b className='font-bold'>HTML</b>, <b className='font-bold'>CSS</b></p>
-                            <a href="https://github.com/simonakom/calendar?tab=readme-ov-file">
-                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                {/* Scroll to Top Button */}
-                <div className="text-3xl mt-20 me-10 flex justify-end items-end">
-                    <button
-                        onClick={scrollToBottom}
-                        aria-label="Scroll to Bottom">
-                        <FaAnglesUp className="text-3xl" />
-                    </button>
-                </div>
-{/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
+    return (
+        <div className={`mx-6 mb-8 mt-6 relative ${isDarkMode ? 'text-gray-200' : 'text-gray-800'}`}>
+            {/* Header */}
+            <div className="text-center mb-12 mt-10">
+                <h1 className={`font-bold text-3xl mb-3 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
+                    Project Archive
+                </h1>
+                <p className={`text-mg ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                    Complete collection of my web development projects
+                </p>
             </div>
-        );
-    }
-    FullProjectArchive.propTypes = {
-        isDarkMode: PropTypes.bool.isRequired,
+
+            {/* Landing Pages Section */}
+            <div className="mb-16">
+                <div className={`sticky top-0 z-40 py-4 mb-8 ${isDarkMode ? 'bg-[#0f172a]/95 backdrop-blur-sm' : 'bg-[#ebeef5]/95 backdrop-blur-sm'}`}>
+                    <h2 className={`text-md font-bold text-center py-3 border-t border-b ${isDarkMode ? 'text-gray-200 border-gray-500' : 'text-gray-700 border-gray-400/60'}`}>
+                        Landing Pages
+                    </h2>
+                </div>
+                
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8'>
+                    {[
+                        { title: "Spotify", image: spotify, liveUrl: "https://simonakom.github.io/spotify-app/build/index.html", githubUrl: "https://github.com/simonakom/spotify-app", tech: "React, Tailwind, CSS" },
+                        { title: "Netflix", image: netflix, liveUrl: "https://simonakom.github.io/netflix-page/index.html", githubUrl: "https://github.com/simonakom/netflix-page", tech: "JavaScript, Bootstrap, CSS, HTML" },
+                        { title: "Travlog", image: travlog, liveUrl: "https://simonakom.github.io/travlog-landing-page/travlog.html", githubUrl: "https://github.com/simonakom/travlog-landing-page", tech: "JavaScript, Bootstrap, CSS, HTML" },
+                        { title: "Abstract", image: abstract, liveUrl: "https://simonakom.github.io/abstract-landing-page/index.html", githubUrl: "https://github.com/simonakom/abstract-landing-page", tech: "JavaScript, Bootstrap, CSS, HTML" },
+                        { title: "Collab", image: collab, liveUrl: "https://simonakom.github.io/collab-landing-page/collab.html", githubUrl: "https://github.com/simonakom/collab-landing-page", tech: "JavaScript, Bootstrap, CSS, HTML" },
+                        { title: "Sneaker", image: shoe, liveUrl: "https://simonakom.github.io/sneaker-eshop-page/sneaker.html", githubUrl: "https://github.com/simonakom/sneaker-eshop-page", tech: "JavaScript, CSS, HTML" },
+                        { title: "Christmas Shop", image: christmas, liveUrl: "https://simonakom.github.io/sample-page/sample-page.html", githubUrl: "https://github.com/simonakom/sample-page", tech: "JavaScript, CSS, HTML" }
+                    ].map((project, index) => (
+                        <div key={index} className={`group relative overflow-hidden rounded-2xl border transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] ${isDarkMode ? 'bg-gray-800/50 border-gray-700 hover:border-blue-500/50' : 'bg-white/80 border-gray-200 hover:border-blue-400/50 shadow-lg'}`}>
+                            <div className='relative overflow-hidden'>
+                                <img 
+                                    src={project.image} 
+                                    alt={project.title} 
+                                    className='w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110' 
+                                />
+                                
+                                <div className='absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-center items-center p-6'>
+                                    <h3 className={`text-xl font-bold mb-3 text-center text-white`}>
+                                        {project.title}
+                                    </h3>
+                                    
+                                    <p className={`text-sm text-center text-gray-200 mb-4 leading-relaxed`}>
+                                        {project.tech}
+                                    </p>
+                                    
+                                    <div className='flex gap-2'>
+                                        <a 
+                                            href={project.liveUrl} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className={`group/btn inline-flex items-center gap-2 px-3 py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-500/40 group-hover:text-white group-hover:border-blue-500/80' : 'bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-300 hover:border-gray-400 group-hover:bg-blue-300 group-hover:text-gray-800 group-hover:border-blue-400'}`}
+                                        >
+                                            <FaExternalLinkAlt className="text-xs" />
+                                            Live Demo
+                                        </a>
+                                        <a 
+                                            href={project.githubUrl} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className={`group/btn inline-flex items-center gap-2 px-3 py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-500/40 group-hover:text-white group-hover:border-blue-500/80' : 'bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-300 hover:border-gray-400 group-hover:bg-blue-300 group-hover:text-gray-800 group-hover:border-blue-400'}`}
+                                        >
+                                            <FaGithub className="text-xs" />
+                                            View Code
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            {/* CRUD Applications Section */}
+            <div className="mb-16">
+                <div className={`sticky top-0 z-40 py-4 mb-8 ${isDarkMode ? 'bg-[#0f172a]/95 backdrop-blur-sm' : 'bg-[#ebeef5]/95 backdrop-blur-sm'}`}>
+                    <h2 className={`text-md font-bold text-center py-3 border-t border-b ${isDarkMode ? 'text-gray-200 border-gray-500' : 'text-gray-700 border-gray-400/60'}`}>
+                        CRUD Applications
+                    </h2>
+                </div>
+                
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8'>
+                    {[
+                        { title: "Kolt Scooters", image: kolt, liveUrl: "https://simonakom.github.io/kolt-scooters-app/dist/index.html", githubUrl: "https://github.com/simonakom/kolt-scooters-app", tech: "React Vite, Tailwind, CSS, localStorage" },
+                        { title: "Data Table of Products", image: product, liveUrl: "https://simonakom.github.io/data-table-app/admin.html", githubUrl: "https://github.com/simonakom/data-table-app", tech: "JavaScript, Bootstrap, CSS, HTML" },
+                        { title: "Data Table of People", image: people, liveUrl: "https://simonakom.github.io/crud-people-data-table/dynamic-table.html", githubUrl: "https://github.com/simonakom/crud-people-data-table", tech: "JavaScript, Bootstrap, CSS, HTML" }
+                    ].map((project, index) => (
+                        <div key={index} className={`group relative overflow-hidden rounded-2xl border transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] ${isDarkMode ? 'bg-gray-800/50 border-gray-700 hover:border-blue-500/50' : 'bg-white/80 border-gray-200 hover:border-blue-400/50 shadow-lg'}`}>
+                            <div className='relative overflow-hidden'>
+                                <img 
+                                    src={project.image} 
+                                    alt={project.title} 
+                                    className='w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110' 
+                                />
+                                
+                                <div className='absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-center items-center p-6'>
+                                    <h3 className={`text-xl font-bold mb-3 text-center text-white`}>
+                                        {project.title}
+                                    </h3>
+                                    
+                                    <p className={`text-sm text-center text-gray-200 mb-4 leading-relaxed`}>
+                                        {project.tech}
+                                    </p>
+                                    
+                                    <div className='flex gap-2'>
+                                        <a 
+                                            href={project.liveUrl} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className={`group/btn inline-flex items-center gap-2 px-3 py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-500/40 group-hover:text-white group-hover:border-blue-500/80' : 'bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-300 hover:border-gray-400 group-hover:bg-blue-300 group-hover:text-gray-800 group-hover:border-blue-400'}`}
+                                        >
+                                            <FaExternalLinkAlt className="text-xs" />
+                                            Live Demo
+                                        </a>
+                                        <a 
+                                            href={project.githubUrl} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className={`group/btn inline-flex items-center gap-2 px-3 py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-500/40 group-hover:text-white group-hover:border-blue-500/80' : 'bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-300 hover:border-gray-400 group-hover:bg-blue-300 group-hover:text-gray-800 group-hover:border-blue-400'}`}
+                                        >
+                                            <FaGithub className="text-xs" />
+                                            View Code
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            {/* API Applications Section */}
+            <div className="mb-16">
+                <div className={`sticky top-0 z-40 py-4 mb-8 ${isDarkMode ? 'bg-[#0f172a]/95 backdrop-blur-sm' : 'bg-[#ebeef5]/95 backdrop-blur-sm'}`}>
+                    <h2 className={`text-md font-bold text-center py-3 border-t border-b ${isDarkMode ? 'text-gray-200 border-gray-500' : 'text-gray-700 border-gray-400/60'}`}>
+                        API Applications
+                    </h2>
+                </div>
+                
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8'>
+                    {[
+                        { title: "Cocktail Recipes", image: coctails, liveUrl: "https://simonakom.github.io/coctails-api/coctails.html", githubUrl: "https://github.com/simonakom/coctails-api", tech: "JavaScript, Bootstrap, CSS, HTML" },
+                        { title: "Pet Gallery", image: dogs, liveUrl: "https://simonakom.github.io/dogs-api/dogs-photo-album.html", githubUrl: "https://github.com/simonakom/dogs-api", tech: "JavaScript, Bootstrap, CSS, HTML" },
+                        { title: "People Selector", image: selector, liveUrl: "https://simonakom.github.io/people-selector/dist/index.html", githubUrl: "https://github.com/simonakom/people-selector", tech: "React Vite, Tailwind, CSS, localStorage" },
+                        { title: "Jokes by Chuck Norris", image: joke, liveUrl: "https://simonakom.github.io/chuck-norris-jokes/index.html", githubUrl: "https://github.com/simonakom/chuck-norris-jokes", tech: "JavaScript, CSS, HTML" }
+                    ].map((project, index) => (
+                        <div key={index} className={`group relative overflow-hidden rounded-2xl border transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] ${isDarkMode ? 'bg-gray-800/50 border-gray-700 hover:border-blue-500/50' : 'bg-white/80 border-gray-200 hover:border-blue-400/50 shadow-lg'}`}>
+                            <div className='relative overflow-hidden'>
+                                <img 
+                                    src={project.image} 
+                                    alt={project.title} 
+                                    className='w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110' 
+                                />
+                                
+                                <div className='absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-center items-center p-6'>
+                                    <h3 className={`text-xl font-bold mb-3 text-center text-white`}>
+                                        {project.title}
+                                    </h3>
+                                    
+                                    <p className={`text-sm text-center text-gray-200 mb-4 leading-relaxed`}>
+                                        {project.tech}
+                                    </p>
+                                    
+                                    <div className='flex gap-2'>
+                                        <a 
+                                            href={project.liveUrl} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className={`group/btn inline-flex items-center gap-2 px-3 py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-500/40 group-hover:text-white group-hover:border-blue-500/80' : 'bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-300 hover:border-gray-400 group-hover:bg-blue-300 group-hover:text-gray-800 group-hover:border-blue-400'}`}
+                                        >
+                                            <FaExternalLinkAlt className="text-xs" />
+                                            Live Demo
+                                        </a>
+                                        <a 
+                                            href={project.githubUrl} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className={`group/btn inline-flex items-center gap-2 px-3 py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-500/40 group-hover:text-white group-hover:border-blue-500/80' : 'bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-300 hover:border-gray-400 group-hover:bg-blue-300 group-hover:text-gray-800 group-hover:border-blue-400'}`}
+                                        >
+                                            <FaGithub className="text-xs" />
+                                            View Code
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            {/* JavaScript/React Projects Section */}
+            <div className="mb-16">
+                <div className={`sticky top-0 z-40 py-4 mb-8 ${isDarkMode ? 'bg-[#0f172a]/95 backdrop-blur-sm' : 'bg-[#ebeef5]/95 backdrop-blur-sm'}`}>
+                    <h2 className={`text-md font-bold text-center py-3 border-t border-b ${isDarkMode ? 'text-gray-200 border-gray-500' : 'text-gray-700 border-gray-400/60'}`}>
+                        JavaScript/React Projects
+                    </h2>
+                </div>
+                
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8'>
+                    {[
+                        { title: "Google Timer & Stopwatch", image: timer, liveUrl: "https://simonakom.github.io/google-timer-stopwatch/dist/index.html", githubUrl: "https://github.com/simonakom/google-timer-stopwatch", tech: "React Vite, Tailwind, CSS" },
+                        { title: "Birthday Timer", image: birthday, liveUrl: "https://simonakom.github.io/birthday-countdown/dist/index.html", githubUrl: "https://github.com/simonakom/birthday-countdown", tech: "React Vite, Tailwind, CSS" },
+                        { title: "Task Tracker", image: tasks, liveUrl: "https://simonakom.github.io/todo-list/dist/index.html", githubUrl: "https://github.com/simonakom/todo-list", tech: "React Vite, Tailwind, CSS, localStorage" },
+                        { title: "Color Picker", image: color, liveUrl: "https://simonakom.github.io/color-picker/build/index.html", githubUrl: "https://github.com/simonakom/color-picker", tech: "React, Tailwind, CSS, localStorage" },
+                        { title: "Tip Counter", image: tips, liveUrl: "https://simonakom.github.io/tip-counter/index.html", githubUrl: "https://github.com/simonakom/tip-counter", tech: "JavaScript, Bootstrap, CSS, HTML" },
+                        { title: "BMI Calculator", image: bmi, liveUrl: "https://simonakom.github.io/bmi-calculator/index.html", githubUrl: "https://github.com/simonakom/bmi-calculator", tech: "JavaScript, Bootstrap, CSS, HTML" },
+                        { title: "Password Generator", image: passGenerator, liveUrl: "https://simonakom.github.io/password-generator/index.html", githubUrl: "https://github.com/simonakom/password-generator", tech: "JavaScript, Bootstrap, CSS, HTML" },
+                        { title: "Password Validator", image: pass, liveUrl: "https://simonakom.github.io/check-password-strength/index.html", githubUrl: "https://github.com/simonakom/check-password-strength", tech: "JavaScript, Bootstrap, CSS, HTML" },
+                        { title: "Guessing Game", image: game, liveUrl: "https://simonakom.github.io/guessing-number-game/index.html", githubUrl: "https://github.com/simonakom/guessing-number-game", tech: "JavaScript, Bootstrap, CSS, HTML" },
+                        { title: "Palindrome Checker", image: palindrome, liveUrl: "https://simonakom.github.io/palindrome-app/index.html", githubUrl: "https://github.com/simonakom/palindrome-app", tech: "JavaScript, Bootstrap, CSS, HTML" },
+                        { title: "Calculator", image: calculator, liveUrl: "https://simonakom.github.io/calculator/calculator.html", githubUrl: "https://github.com/simonakom/calculator", tech: "JavaScript, Bootstrap, CSS, HTML" },
+                        { title: "Quiz", image: quiz, liveUrl: "https://simonakom.github.io/quiz/index.html", githubUrl: "https://github.com/simonakom/quiz", tech: "JavaScript, Bootstrap, CSS, HTML" },
+                        { title: "Vowel Counter", image: vowel, liveUrl: "https://simonakom.github.io/vocals-counter/index.html", githubUrl: "https://github.com/simonakom/vocals-counter", tech: "JavaScript, CSS, HTML" }
+                    ].map((project, index) => (
+                        <div key={index} className={`group relative overflow-hidden rounded-2xl border transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] ${isDarkMode ? 'bg-gray-800/50 border-gray-700 hover:border-blue-500/50' : 'bg-white/80 border-gray-200 hover:border-blue-400/50 shadow-lg'}`}>
+                            <div className='relative overflow-hidden'>
+                                <img 
+                                    src={project.image} 
+                                    alt={project.title} 
+                                    className='w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110' 
+                                />
+                                
+                                <div className='absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-center items-center p-6'>
+                                    <h3 className={`text-xl font-bold mb-3 text-center text-white`}>
+                                        {project.title}
+                                    </h3>
+                                    
+                                    <p className={`text-sm text-center text-gray-200 mb-4 leading-relaxed`}>
+                                        {project.tech}
+                                    </p>
+                                    
+                                    <div className='flex gap-2'>
+                                        <a 
+                                            href={project.liveUrl} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className={`group/btn inline-flex items-center gap-2 px-3 py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-500/40 group-hover:text-white group-hover:border-blue-500/80' : 'bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-300 hover:border-gray-400 group-hover:bg-blue-300 group-hover:text-gray-800 group-hover:border-blue-400'}`}
+                                        >
+                                            <FaExternalLinkAlt className="text-xs" />
+                                            Live Demo
+                                        </a>
+                                        <a 
+                                            href={project.githubUrl} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className={`group/btn inline-flex items-center gap-2 px-3 py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-500/40 group-hover:text-white group-hover:border-blue-500/80' : 'bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-300 hover:border-gray-400 group-hover:bg-blue-300 group-hover:text-gray-800 group-hover:border-blue-400'}`}
+                                        >
+                                            <FaGithub className="text-xs" />
+                                            View Code
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            {/* Fullstack Applications Section */}
+            <div className="mb-16">
+                <div className={`sticky top-0 z-40 py-4 mb-8 ${isDarkMode ? 'bg-[#0f172a]/95 backdrop-blur-sm' : 'bg-[#ebeef5]/95 backdrop-blur-sm'}`}>
+                    <h2 className={`text-md font-bold text-center py-3 border-t border-b ${isDarkMode ? 'text-gray-200 border-gray-500' : 'text-gray-700 border-gray-400/60'}`}>
+                        Fullstack Applications
+                    </h2>
+                </div>
+                
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8'>
+                    {[
+                        { title: "Rentify PC Rent App", image: rentify, liveUrl: "https://github.com/simonakom/pc-rent-platform", githubUrl: "https://github.com/simonakom/pc-rent-platform", tech: "Node.js, Nginx, MySQL, React Vite, Tailwind, CSS" },
+                        { title: "PulpCinemaHub Forum", image: cinema, liveUrl: "https://github.com/simonakom/forum-app", githubUrl: "https://github.com/simonakom/forum-app", tech: "Node.js, MongoDB, JavaScript, Bootstrap, Tailwind, CSS, HTML" },
+                        { title: "To-do App", image: todo, liveUrl: "https://simonakom.github.io/todo-list-app/front-end/todos.html", githubUrl: "https://github.com/simonakom/todo-list-app", tech: "Node.js, Nginx, Bootstrap, CSS, HTML" }
+                    ].map((project, index) => (
+                        <div key={index} className={`group relative overflow-hidden rounded-2xl border transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] ${isDarkMode ? 'bg-gray-800/50 border-gray-700 hover:border-blue-500/50' : 'bg-white/80 border-gray-200 hover:border-blue-400/50 shadow-lg'}`}>
+                            <div className='relative overflow-hidden'>
+                                <img 
+                                    src={project.image} 
+                                    alt={project.title} 
+                                    className='w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110' 
+                                />
+                                
+                                <div className='absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-center items-center p-6'>
+                                    <h3 className={`text-xl font-bold mb-3 text-center text-white`}>
+                                        {project.title}
+                                    </h3>
+                                    
+                                    <p className={`text-sm text-center text-gray-200 mb-4 leading-relaxed`}>
+                                        {project.tech}
+                                    </p>
+                                    
+                                    <div className='flex gap-2'>
+                                        <a 
+                                            href={project.liveUrl} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className={`group/btn inline-flex items-center gap-2 px-3 py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-500/40 group-hover:text-white group-hover:border-blue-500/80' : 'bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-300 hover:border-gray-400 group-hover:bg-blue-300 group-hover:text-gray-800 group-hover:border-blue-400'}`}
+                                        >
+                                            <FaExternalLinkAlt className="text-xs" />
+                                            Live Demo
+                                        </a>
+                                        <a 
+                                            href={project.githubUrl} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className={`group/btn inline-flex items-center gap-2 px-3 py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-500/40 group-hover:text-white group-hover:border-blue-500/80' : 'bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-300 hover:border-gray-400 group-hover:bg-blue-300 group-hover:text-gray-800 group-hover:border-blue-400'}`}
+                                        >
+                                            <FaGithub className="text-xs" />
+                                            View Code
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            {/* CSS Projects Section */}
+            <div className="mb-16">
+                <div className={`sticky top-0 z-40 py-4 mb-8 ${isDarkMode ? 'bg-[#0f172a]/95 backdrop-blur-sm' : 'bg-[#ebeef5]/95 backdrop-blur-sm'}`}>
+                    <h2 className={`text-md font-bold text-center py-3 border-t border-b ${isDarkMode ? 'text-gray-200 border-gray-500' : 'text-gray-700 border-gray-400/60'}`}>
+                        CSS Projects
+                    </h2>
+                </div>
+                
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8'>
+                    {[
+                        { title: "Contact Form", image: contact, liveUrl: "https://simonakom.github.io/contact-form/contact-form-responsive.html", githubUrl: "https://github.com/simonakom/contact-form", tech: "HTML, CSS" },
+                        { title: "Registration Form", image: registration, liveUrl: "https://simonakom.github.io/registration-form/registration.html", githubUrl: "https://github.com/simonakom/contact-form", tech: "HTML, CSS" },
+                        { title: "Shopping Cart", image: shopping, liveUrl: "https://simonakom.github.io/shopping-cart/shopping-cart.html", githubUrl: "https://github.com/simonakom/shopping-cart", tech: "HTML, Bootstrap, CSS" },
+                        { title: "2048 Game", image: game2048, liveUrl: "https://simonakom.github.io/2048-game/game-2048.html", githubUrl: "https://github.com/simonakom/2048-game", tech: "HTML, Bootstrap, CSS" },
+                        { title: "Invoice", image: invoice, liveUrl: "https://simonakom.github.io/invoice/invoice.html", githubUrl: "https://github.com/simonakom/invoice", tech: "HTML, CSS" },
+                        { title: "Calendar", image: calendar, liveUrl: "https://simonakom.github.io/calendar/calendar.html", githubUrl: "https://github.com/simonakom/calendar", tech: "HTML, CSS" }
+                    ].map((project, index) => (
+                        <div key={index} className={`group relative overflow-hidden rounded-2xl border transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] ${isDarkMode ? 'bg-gray-800/50 border-gray-700 hover:border-blue-500/50' : 'bg-white/80 border-gray-200 hover:border-blue-400/50 shadow-lg'}`}>
+                            <div className='relative overflow-hidden'>
+                                <img 
+                                    src={project.image} 
+                                    alt={project.title} 
+                                    className='w-full h-48 object-cover transition-transform duration-700 group-hover:scale-110' 
+                                />
+                                
+                                <div className='absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-center items-center p-6'>
+                                    <h3 className={`text-xl font-bold mb-3 text-center text-white`}>
+                                        {project.title}
+                                    </h3>
+                                    
+                                    <p className={`text-sm text-center text-gray-200 mb-4 leading-relaxed`}>
+                                        {project.tech}
+                                    </p>
+                                    
+                                    <div className='flex gap-2'>
+                                        <a 
+                                            href={project.liveUrl} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className={`group/btn inline-flex items-center gap-2 px-3 py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-500/40 group-hover:text-white group-hover:border-blue-500/80' : 'bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-300 hover:border-gray-400 group-hover:bg-blue-300 group-hover:text-gray-800 group-hover:border-blue-400'}`}
+                                        >
+                                            <FaExternalLinkAlt className="text-xs" />
+                                            Live Demo
+                                        </a>
+                                        <a 
+                                            href={project.githubUrl} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className={`group/btn inline-flex items-center gap-2 px-3 py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-500/40 group-hover:text-white group-hover:border-blue-500/80' : 'bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-300 hover:border-gray-400 group-hover:bg-blue-300 group-hover:text-gray-800 group-hover:border-blue-400'}`}
+                                        >
+                                            <FaGithub className="text-xs" />
+                                            View Code
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            {/* Scroll to Top Button */}
+            <div className="text-center mt-16 mb-8">
+                <button
+                    onClick={scrollToTop}
+                    aria-label="Scroll to Top"
+                    className={`inline-flex items-center gap-2 px-6 py-3 rounded-[10px] font-medium text-sm transition-all duration-300 backdrop-blur-sm min-w-[140px] h-10 ${isDarkMode ? 'bg-gradient-to-br from-[rgba(30,41,59,0.4)] to-[rgba(51,65,85,0.4)] text-[#f8fafc] border border-[rgba(255,255,255,0.1)] hover:bg-gradient-to-br hover:from-[rgba(15,23,42,0.6)] hover:to-[rgba(30,41,59,0.6)] hover:border-[rgba(255,255,255,0.2)] hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(0,0,0,0.2)]' : 'bg-gradient-to-br from-[rgba(255,255,255,0.4)] to-[rgba(248,250,252,0.4)] text-[#1e293b] border border-[rgba(0,0,0,0.1)] hover:bg-gradient-to-br hover:from-[rgba(241,245,249,0.6)] hover:to-[rgba(226,232,240,0.6)] hover:border-[rgba(0,0,0,0.15)] hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(0,0,0,0.2)]'}`}
+                    style={{
+                        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.13)',
+                        fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, sans-serif',
+                        fontWeight: '500',
+                        letterSpacing: '0.025em'
+                    }}
+                >
+                    <FaAnglesUp className="text-lg transition-transform duration-300 group-hover:scale-110" />
+                    <span className="font-semibold">Scroll to Top</span>
+                </button>
+            </div>
+        </div>
+    );
+}
+
+FullProjectArchive.propTypes = {
+    isDarkMode: PropTypes.bool.isRequired,
 };

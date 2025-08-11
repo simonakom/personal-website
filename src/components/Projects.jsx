@@ -175,10 +175,16 @@ export default function Projects({isDarkMode}) {
                 <div className='text-center mt-10 mb-20'>
                     <button 
                         onClick={toggleModal}
-                        className={`group inline-flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500' : 'bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-300 hover:border-gray-400'}`}
+                        className={`group inline-flex items-center gap-2 px-6 py-3 rounded-[10px] font-medium text-sm transition-all duration-300 backdrop-blur-sm min-w-[140px] h-10 ${isDarkMode ? 'bg-gradient-to-br from-[rgba(30,41,59,0.4)] to-[rgba(51,65,85,0.4)] text-[#f8fafc] border border-[rgba(255,255,255,0.1)] hover:bg-gradient-to-br hover:from-[rgba(15,23,42,0.6)] hover:to-[rgba(30,41,59,0.6)] hover:border-[rgba(255,255,255,0.2)] hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(0,0,0,0.2)]' : 'bg-gradient-to-br from-[rgba(255,255,255,0.4)] to-[rgba(248,250,252,0.4)] text-[#1e293b] border border-[rgba(0,0,0,0.1)] hover:bg-gradient-to-br hover:from-[rgba(241,245,249,0.6)] hover:to-[rgba(226,232,240,0.6)] hover:border-[rgba(0,0,0,0.15)] hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(0,0,0,0.2)]'}`}
+                        style={{
+                            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.13)',
+                            fontFamily: 'Inter, -apple-system, BlinkMacSystemFont, sans-serif',
+                            fontWeight: '500',
+                            letterSpacing: '0.025em'
+                        }}
                     >
-                        <span>View Full Project Archive</span>
-                        <FaAnglesRight className="text-xs transition-transform duration-300 group-hover:translate-x-1" />
+                        <span className="font-semibold">View Full Project Archive</span>
+                        <FaAnglesRight className="text-lg transition-transform duration-300 group-hover:translate-x-1 group-hover:scale-110" />
                     </button>
                 </div>
             </div>
@@ -188,8 +194,9 @@ export default function Projects({isDarkMode}) {
                 <div className="modal-overlay" ref={modalRef} onClick={closeModal}>
                     <div className={`modal ${isDarkMode ? 'bg-[#0f172a]' : 'bg-[#ebeef5]'}`}>
                         <div className="modal-content">
-                            <button className="modal-close-btn text-3xl" onClick={toggleModal}>
-                                <FaAnglesLeft />
+                            <button className="modal-close-btn" onClick={toggleModal}>
+                                <FaAnglesLeft className="text-lg transition-transform duration-300 group-hover:scale-110" />
+                                <span className="ml-2 font-semibold">Close</span>
                             </button>
                             <Modal onClose={toggleModal} isDarkMode={isDarkMode} />
                         </div>
