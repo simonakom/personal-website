@@ -137,6 +137,19 @@
   opacity: 1;
 }
 
+/* Brighter version for dark mode contexts */
+.github-button-bright {
+  @apply text-base px-3 py-1.5 rounded-2xl bg-gradient-to-r from-blue-300 via-blue-400 to-blue-500 text-white opacity-90 transition-all duration-300;
+  background-size: 200% 100%;
+  filter: brightness(0.9) contrast(1.1);
+}
+
+.github-button-bright:hover {
+  background-position: right center;
+  opacity: 1;
+  filter: brightness(1.1) contrast(1);
+}
+
 /* Global Title Styles */
 .title-blue {
   @apply text-blue-600 dark:text-blue-400;

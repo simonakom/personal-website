@@ -63,7 +63,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Spotify</b></p>
                             <p className='mb-1'>Built with <b className='font-bold'>React</b>, <b className='font-bold'>Tailwind</b>, <br /><b className='font-bold'>CSS</b></p>
                             <a href="https://github.com/simonakom/spotify-app">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -75,7 +75,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Netflix</b></p>
                             <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/netflix-page">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -87,7 +87,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Travlog</b></p>
                             <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/travlog-landing-page">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -99,7 +99,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Abstract</b></p>
                             <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/abstract-landing-page">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -111,7 +111,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Collab</b></p>
                             <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/collab-landing-page">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -123,7 +123,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Sneaker</b></p>
                             <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>CSS</b>, <br /><b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/sneaker-eshop-page">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -135,7 +135,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Christmas shop</b></p>
                             <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>CSS</b>, <br /><b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/sample-page">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -153,7 +153,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Kolt scooters</b></p>
                             <p className='mb-1'>Built with <b className='font-bold'>React Vite</b>, <b className='font-bold'>Tailwind</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>localStorage</b></p>
                             <a href="https://github.com/simonakom/kolt-scooters-app">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -165,7 +165,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Data-table</b> of products</p>
                             <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/data-table-app">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -177,7 +177,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Data-table</b> of people</p>
                             <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/crud-people-data-table">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -195,7 +195,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Cocktail recipes</b></p>
                             <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/coctails-api">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>s
                         </div>
                     </div>
@@ -207,7 +207,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Pet gallery</b></p>
                             <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/dogs-api">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -219,7 +219,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>People selector</b></p>
                             <p className='mb-1'>Built with <b className='font-bold'>React Vite</b>, <b className='font-bold'>Tailwind</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>localStorage</b></p>
                             <a href="https://github.com/simonakom/people-selector">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -231,7 +231,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Jokes</b> by Chuck Norris</p>
                             <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>CSS</b>, <br /><b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/chuck-norris-jokes">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -249,7 +249,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Google</b> timer & stopwatch</p>
                             <p className='mb-1'>Built with <b className='font-bold'>React Vite</b>, <b className='font-bold'>Tailwind</b>, <br /><b className='font-bold'>CSS</b></p>
                             <a href="https://github.com/simonakom/google-timer-stopwatch">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -261,7 +261,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Birthday Timer</b></p>
                             <p className='mb-1'>Built with <b className='font-bold'>React Vite</b>, <b className='font-bold'>Tailwind</b>, <br /><b className='font-bold'>CSS</b></p>
                             <a href="https://github.com/simonakom/birthday-countdown">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -273,7 +273,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Task Tracker</b></p>
                             <p className='mb-1'>Built with <b className='font-bold'>React Vite</b>, <b className='font-bold'>Tailwind</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>localStorage</b></p>
                             <a href="https://github.com/simonakom/todo-list">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -285,7 +285,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Color Picker</b></p>
                             <p className='mb-1'>Built with <b className='font-bold'>React</b>, <b className='font-bold'>Tailwind</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>localStorage</b></p>
                             <a href="https://github.com/simonakom/color-picker">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -297,7 +297,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Tip Counter</b></p>
                             <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/tip-counter">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -309,7 +309,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>BMI Calculator</b></p>
                             <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/bmi-calculator">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -321,7 +321,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Password Generator</b></p>
                             <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/password-generator">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -333,7 +333,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Password Validator</b></p>
                             <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/check-password-strength?tab=readme-ov-file">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -345,7 +345,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Guessing game!</b></p>
                             <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/guessing-number-game?tab=readme-ov-file">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -357,7 +357,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Palindrome Checker</b></p>
                             <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/palindrome-app">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -369,7 +369,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Calculator</b></p>
                             <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/calculator">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -381,7 +381,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Quiz</b></p>
                             <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/quiz">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -393,7 +393,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Vowel Counter</b></p>
                             <p className='mb-1'>Built with <b className='font-bold'>JavaScript</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/vocals-counter?tab=readme-ov-file">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -411,7 +411,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Rentify</b> PC rent app</p>
                             <p className='mb-1'>Built with <b className='font-bold'>Node.js</b>, <b className='font-bold'>Nginx</b>, <b className='font-bold'>MySQL</b>, <b className='font-bold'>React Vite</b>, <b className='font-bold'>Tailwind</b>, <b className='font-bold'>CSS</b></p> 
                             <a href="https://github.com/simonakom/pc-rent-platform">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -423,7 +423,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>PulpCinemaHub</b> forum</p>
                             <p className='mb-1'>Built with <b className='font-bold'>Node.js</b>, <b className='font-bold'>MongoDB</b>, <b className='font-bold'>JavaScript</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>Tailwind</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/forum-app">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -435,7 +435,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>To-do</b> app</p>
                             <p className='mb-1'>Built with <b className='font-bold'>Node.js</b>, <b className='font-bold'>Nginx</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b>, <b className='font-bold'>HTML</b></p>
                             <a href="https://github.com/simonakom/todo-list-app">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -453,7 +453,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Contact form</b></p>
                             <p className='mb-1'> Built with <b className='font-bold'>HTML</b>, <b className='font-bold'>CSS</b></p>
                             <a href="https://github.com/simonakom/contact-form">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -465,7 +465,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Registration form</b></p>
                             <p className='mb-1'> Built with <b className='font-bold'>HTML</b>, <b className='font-bold'>CSS</b></p>
                             <a href="https://github.com/simonakom/contact-form">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -477,7 +477,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Shopping Cart</b></p>
                             <p className='mb-1'> Built with <b className='font-bold'>HTML</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b></p>
                             <a href="https://github.com/simonakom/shopping-cart">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -489,7 +489,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>2048 Game</b></p>
                             <p className='mb-1'> Built with <b className='font-bold'>HTML</b>, <b className='font-bold'>Bootstrap</b>, <b className='font-bold'>CSS</b></p>
                             <a href="https://github.com/simonakom/2048-game">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -501,7 +501,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Invoice</b></p>
                             <p className='mb-1'> Built with <b className='font-bold'>HTML</b>, <b className='font-bold'>CSS</b></p>
                             <a href="https://github.com/simonakom/invoice">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -513,7 +513,7 @@ import rentify from '../assets/images/projects/rentify.png';
                             <p className="text-[20px] title-blue"><b>Calendar</b></p>
                             <p className='mb-1'> Built with <b className='font-bold'>HTML</b>, <b className='font-bold'>CSS</b></p>
                             <a href="https://github.com/simonakom/calendar?tab=readme-ov-file">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>

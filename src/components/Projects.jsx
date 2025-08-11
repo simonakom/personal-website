@@ -50,7 +50,7 @@ export default function Projects({isDarkMode}) {
                         </p>
                         <div>
                             <a href="https://github.com/simonakom/netflix-page?tab=readme-ov-file">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -67,7 +67,7 @@ export default function Projects({isDarkMode}) {
                         </p>                      
                         <div>
                                                         <a href="https://github.com/simonakom/spotify-app">
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -84,7 +84,7 @@ export default function Projects({isDarkMode}) {
                         </p>  
                         <div>
                             <a href="https://github.com/simonakom/pc-rent-platform">               
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -101,7 +101,7 @@ export default function Projects({isDarkMode}) {
                         </p>  
                         <div>
                             <a href="https://github.com/simonakom/forum-app">               
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -118,7 +118,7 @@ export default function Projects({isDarkMode}) {
                         </p>    
                         <div>
                             <a href="https://github.com/simonakom/coctails-api">               
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -135,7 +135,7 @@ export default function Projects({isDarkMode}) {
                         </p>    
                         <div>
                             <a href="https://github.com/simonakom/google-timer-stopwatch">               
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -152,7 +152,7 @@ export default function Projects({isDarkMode}) {
                         </p>  
                         <div>
                             <a href="https://github.com/simonakom/kolt-scooters-app">               
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -169,7 +169,7 @@ export default function Projects({isDarkMode}) {
                         </p> 
                         <div>
                             <a href="https://github.com/simonakom/data-table-app">               
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -186,7 +186,7 @@ export default function Projects({isDarkMode}) {
                         </p> 
                         <div>
                             <a href="https://github.com/simonakom/bmi-calculator">               
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
@@ -203,7 +203,7 @@ export default function Projects({isDarkMode}) {
                         </p>  
                         <div>
                             <a href="https://github.com/simonakom/contact-form">               
-                                <b className="github-button">Github</b>
+                                <b className={isDarkMode ? "github-button-bright" : "github-button"}>Github</b>
                             </a>
                         </div>
                     </div>
