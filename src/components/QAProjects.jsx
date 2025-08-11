@@ -63,7 +63,7 @@ export default function Projects({isDarkMode}) {
             <div className='px-9 max-w-3xl mx-auto'>
                 <div className='mb-10'>
                     <p className={`mt-14 mb-3 text-xl font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>QA Projects</p>
-                    <p className={`text-md ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Quality assurance projects showcasing automated testing expertise across various technologies</p>
+                    <p className={`text-md ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Quality assurance projects showcasing automated testing expertise across various technologies:</p>
                 </div>
                 
                 <div className='grid gap-4'>
@@ -93,15 +93,14 @@ export default function Projects({isDarkMode}) {
                                     
                                     {/* View Code Button - Right side, centered */}
                                     <div className='flex-shrink-0 flex items-center justify-center min-w-[120px]'>
-                                        <a 
-                                            href={project.githubUrl} 
-                                            target="_blank" 
+                                        <a
+                                            href={project.githubUrl}
+                                            target="_blank"
                                             rel="noopener noreferrer"
-                                            className={`group/btn inline-flex items-center gap-2 px-3 py-1.5 rounded-lg font-medium text-sm transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-500/40 group-hover:text-blue-300 group-hover:border-blue-500/80' : 'bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-300 hover:border-gray-400 group-hover:bg-blue-300 group-hover:text-blue-800 group-hover:border-blue-400'}`}
+                                            className={`group/btn inline-flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-500/40 group-hover:text-white group-hover:border-blue-500/80' : 'bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-300 hover:border-gray-400 group-hover:bg-blue-300 group-hover:text-gray-800 group-hover:border-blue-400'}`}
                                         >
-                                            <FaGithub className="text-xs" />
+                                            <FaGithub className="text-sm" />
                                             View Code
-                                            <FaAngleDoubleRight className="text-xs transition-transform duration-300 group-hover:translate-x-1" />
                                         </a>
                                     </div>
                                 </div>

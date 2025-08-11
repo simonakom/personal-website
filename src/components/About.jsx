@@ -9,7 +9,7 @@ export default function About ({isDarkMode}) {
         <div className='about' id='about'>
             <div className='space text-justify pt-20 mb-14 px-9 max-w-3xl mx-auto'>
                 <div className="mb-1">
-                    <p className="text-base leading-relaxed mb-8">Hey! I am <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 opacity-70" style={{display: 'inline'}}>Simona</span>, a digital product specialist with experience in QA and full-stack web development. I am passionate about building cutting-edge applications that combine great design, seamless functionality, and deliver real value to users and businesses. With a sharp eye for detail and strong communication skills, I enjoy solving complex problems and striving for continuous improvement in the field of product development!</p>
+                    <p className="text-base leading-relaxed mb-8">Hey! I am <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 opacity-70" style={{display: 'inline'}}>Simona</span>, a digital product specialist with experience in Quality Assurance and full-stack web development. I am passionate about building cutting-edge applications that combine great design, seamless functionality, and deliver real value to users and businesses. With a sharp eye for detail and strong communication skills, I enjoy solving complex problems and continuously growing my expertise in the field of product development!</p>
                 </div>
                 
                 <div className="mb-12">
