@@ -8,7 +8,7 @@ export default function Skills ({isDarkMode}) {
     return (
         <div className='skills' id="skills">
             <div className='px-9 max-w-3xl mx-auto'>
-                <p className='mt-14 mb-10 text-xl font-bold'>Skills:</p>
+                <p className='mt-14 mb-10 text-xl font-bold'>Skills</p>
                 <div className='text-justify flex flex-col gap-5 pb-14'>
                     
                 <div className="gradient-border-left gradient-border-blue pl-6">

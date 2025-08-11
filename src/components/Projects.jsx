@@ -39,7 +39,6 @@ export default function Projects({isDarkMode}) {
     const projects = [
         {
             title: "Netflix",
-            description: "Landing page",
             image: netflix,
             liveUrl: "https://simonakom.github.io/netflix-page/index.html",
             githubUrl: "https://github.com/simonakom/netflix-page?tab=readme-ov-file",
@@ -47,31 +46,41 @@ export default function Projects({isDarkMode}) {
         },
         {
             title: "Spotify",
-            description: "Landing page",
             image: spotify,
             liveUrl: "https://simonakom.github.io/spotify-app/build/index.html",
             githubUrl: "https://github.com/simonakom/spotify-app",
             type: "Landing page"
         },
         {
-            title: "Rentify: rent platform",
-            description: "Full-stack project",
+            title: <><span className="font-bold">Rentify</span><br /><span className="font-thin">PC rent app</span></>,
             image: rentify,
             liveUrl: "https://github.com/simonakom/pc-rent-platform",
             githubUrl: "https://github.com/simonakom/pc-rent-platform",
             type: "Full-stack project"
         },
         {
-            title: "PulpCinemaHub",
-            description: "Full-stack project",
+            title: <><span className="font-bold">PulpCinemaHub</span><br /><span className="font-thin">Forum app</span></>,
             image: cinema,
             liveUrl: "https://github.com/simonakom/forum-app",
             githubUrl: "https://github.com/simonakom/forum-app",
             type: "Full-stack project"
         },
         {
-            title: "Kolt",
-            description: "CRUD app",
+            title: "Cocktail Recipes",
+            image: coctails,
+            liveUrl: "https://github.com/simonakom/coctails-api",
+            githubUrl: "https://github.com/simonakom/coctails-api",
+            type: "API app"
+        },
+        {
+            title: "Google Timer & Stopwatch",
+            image: timer,
+            liveUrl: "https://github.com/simonakom/google-timer-stopwatch",
+            githubUrl: "https://github.com/simonakom/google-timer-stopwatch",
+            type: "React app"
+        },
+        {
+            title: "Kolt Scooters",
             image: kolt,
             liveUrl: "https://github.com/simonakom/kolt-scooters-app",
             githubUrl: "https://github.com/simonakom/kolt-scooters-app",
@@ -79,23 +88,20 @@ export default function Projects({isDarkMode}) {
         },
         {
             title: "Data Table",
-            description: "CRUD app",
             image: product,
             liveUrl: "https://github.com/simonakom/data-table-app",
             githubUrl: "https://github.com/simonakom/data-table-app",
             type: "CRUD app"
         },
         {
-            title: "BMI calculator",
-            description: "JavaScript app",
+            title: "BMI Calculator",
             image: bmi,
             liveUrl: "https://github.com/simonakom/bmi-calculator",
             githubUrl: "https://github.com/simonakom/bmi-calculator",
             type: "JavaScript app"
         },
         {
-            title: "Contact form",
-            description: "CSS project",
+            title: "Contact Form",
             image: contact,
             liveUrl: "https://github.com/simonakom/contact-form",
             githubUrl: "https://github.com/simonakom/contact-form",
@@ -105,72 +111,74 @@ export default function Projects({isDarkMode}) {
 
     return (
         <div className='projects' id="projects">
-            <div className='px-9 max-w-4xl mx-auto'>
-                <div className='text-center mb-16'>
-                    <h2 className={`text-3xl font-bold mb-4 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>Web Projects</h2>
-                    <p className={`text-lg ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>A collection of my web development projects showcasing various technologies and skills</p>
+            <div className='px-9 max-w-3xl mx-auto'>
+                <div className='mb-10'>
+                    <h2 className={`mt-14 mb-3 text-xl font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>Web Projects</h2>
+                    <p className={`text-md ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>A collection of my web development projects showcasing various technologies and skills</p>
                 </div>
                 
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-8 pb-16'>
+                <div className='grid grid-cols-1 gap-8 pb-16'>
                     {projects.map((project, index) => (
                         <div key={index} className={`group relative overflow-hidden rounded-2xl border transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] ${isDarkMode ? 'bg-gray-800/50 border-gray-700 hover:border-blue-500/50' : 'bg-white/80 border-gray-200 hover:border-blue-400/50 shadow-lg'}`}>
-                            {/* Project Image */}
+                            {/* Project Image Container */}
                             <div className='relative overflow-hidden'>
                                 <img 
                                     src={project.image} 
                                     alt={project.title} 
-                                    className='w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110' 
+                                    className='w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110' 
                                 />
-                                <div className='absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
-                            </div>
-                            
-                            {/* Project Content */}
-                            <div className='p-6'>
-                                <div className='mb-4'>
-                                    <h3 className={`text-xl font-bold mb-2 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>{project.title}</h3>
-                                    <p className={`text-sm font-medium px-3 py-1 rounded-full inline-block ${isDarkMode ? 'bg-blue-500/20 text-blue-400 border border-blue-500/30' : 'bg-blue-100 text-blue-700 border border-blue-200'}`}>
-                                        {project.type}
-                                    </p>
-                                </div>
                                 
-                                <p className={`text-sm mb-6 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                                    {project.description}
-                                </p>
-                                
-                                {/* Action Buttons */}
-                                <div className='flex gap-3'>
-                                    <a 
-                                        href={project.liveUrl} 
-                                        target="_blank" 
-                                        rel="noopener noreferrer"
-                                        className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all duration-300 ${isDarkMode ? 'bg-blue-600 hover:bg-blue-700 text-white' : 'bg-blue-500 hover:bg-blue-600 text-white'}`}
-                                    >
-                                        <FaExternalLinkAlt className="text-sm" />
-                                        Live Demo
-                                    </a>
-                                    <a 
-                                        href={project.githubUrl} 
-                                        target="_blank" 
-                                        rel="noopener noreferrer"
-                                        className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600' : 'bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-300'}`}
-                                    >
-                                        <FaGithub className="text-sm" />
-                                        Code
-                                    </a>
+                                {/* Hover Overlay */}
+                                <div className='absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-center items-center p-8'>
+                                    {/* Project Title */}
+                                    <h3 className={`text-2xl font-bold mb-4 text-center ${isDarkMode ? 'text-white' : 'text-white'}`}>
+                                        {project.title}
+                                    </h3>
+                                    
+                                    {/* Project Type Badge */}
+                                    <div className='mb-6'>
+                                        <span className={`text-xs font-semibold px-3 py-1.5 rounded-full ${isDarkMode ? 'bg-gray-600/80 text-white border border-gray-500/60' : 'bg-gray-600/80 text-white border border-gray-500/60'}`}>
+                                            {project.type}
+                                        </span>
+                                    </div>
+                                    
+                                    {/* Action Buttons */}
+                                    <div className='flex gap-4'>
+                                        {index !== 2 && index !== 3 && (
+                                            <a 
+                                                href={project.liveUrl} 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                                className={`group/btn inline-flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-500/40 group-hover:text-blue-300 group-hover:border-blue-500/80' : 'bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-300 hover:border-gray-400 group-hover:bg-blue-300 group-hover:text-blue-800 group-hover:border-blue-400'}`}
+                                            >
+                                                <FaExternalLinkAlt className="text-sm" />
+                                                Live Demo
+                                            </a>
+                                        )}
+                                        <a 
+                                            href={project.githubUrl} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className={`group/btn inline-flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-500/40 group-hover:text-blue-300 group-hover:border-blue-500/80' : 'bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-300 hover:border-gray-400 group-hover:bg-blue-300 group-hover:text-blue-800 group-hover:border-blue-400'}`}
+                                        >
+                                            <FaGithub className="text-sm" />
+                                            View Code
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     ))}
                 </div>
                 
-                {/* View More Button */}
-                <div className='text-center mb-20'>
+                {/* View More Button - Redesigned */}
+                <div className='text-center mt-10 mb-20'>
                     <button 
                         onClick={toggleModal}
-                        className={`group inline-flex items-center gap-3 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 ${isDarkMode ? 'bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-blue-500/25' : 'bg-blue-500 hover:bg-blue-600 text-white shadow-lg hover:shadow-blue-500/25'}`}
+                        className={`group inline-flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500' : 'bg-gray-100 hover:bg-gray-200 text-gray-700 border border-gray-300 hover:border-gray-400'}`}
                     >
                         <span>View Full Project Archive</span>
-                        <FaAnglesRight className="transition-transform duration-300 group-hover:translate-x-1" />
+                        <FaAnglesRight className="text-xs transition-transform duration-300 group-hover:translate-x-1" />
                     </button>
                 </div>
             </div>
