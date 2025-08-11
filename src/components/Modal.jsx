@@ -92,9 +92,9 @@ export default function FullProjectArchive({ isDarkMode }) {
                                     
                                     {/* Project Tech Badge */}
                                     <div className='mb-4'>
-                                        <span className={`text-xs font-semibold px-4 py-2 rounded-full backdrop-blur-3xl shadow-2xl relative overflow-hidden inline-block max-w-xs text-center leading-tight ${isDarkMode ? 'bg-gradient-to-br from-white/20 via-white/10 to-white/5 text-white border border-white/20 shadow-white/30' : 'bg-gradient-to-br from-black/20 via-black/10 to-black/5 text-gray-800 border border-gray-300/20 shadow-black/30'}`}>
+                                        <span className={`text-xs font-semibold px-4 py-2 rounded-full backdrop-blur-3xl shadow-2xl relative overflow-hidden inline-block max-w-xs text-center leading-tight bg-gradient-to-br from-white/20 via-white/10 to-white/5 text-white border border-white/20 shadow-white/30`}>
                                             {/* Glass Reflection Overlay */}
-                                            <div className={`absolute inset-0 bg-gradient-to-br from-transparent via-white/10 to-transparent transform -skew-x-12 ${isDarkMode ? 'opacity-30' : 'opacity-20'}`}></div>
+                                            <div className={`absolute inset-0 bg-gradient-to-br from-transparent via-white/10 to-transparent transform -skew-x-12 opacity-30`}></div>
                                             <span className="relative z-10 whitespace-normal break-words">{project.tech}</span>
                                         </span>
                                     </div>
@@ -155,9 +155,9 @@ export default function FullProjectArchive({ isDarkMode }) {
                                     
                                     {/* Project Tech Badge */}
                                     <div className='mb-4'>
-                                        <span className={`text-xs font-semibold px-4 py-2 rounded-full backdrop-blur-3xl shadow-2xl relative overflow-hidden inline-block max-w-xs text-center leading-tight ${isDarkMode ? 'bg-gradient-to-br from-white/20 via-white/10 to-white/5 text-white border border-white/20 shadow-white/30' : 'bg-gradient-to-br from-black/20 via-black/10 to-black/5 text-gray-800 border border-gray-300/20 shadow-black/30'}`}>
+                                        <span className={`text-xs font-semibold px-4 py-2 rounded-full backdrop-blur-3xl shadow-2xl relative overflow-hidden inline-block max-w-xs text-center leading-tight bg-gradient-to-br from-white/20 via-white/10 to-white/5 text-white border border-white/20 shadow-white/30`}>
                                             {/* Glass Reflection Overlay */}
-                                            <div className={`absolute inset-0 bg-gradient-to-br from-transparent via-white/10 to-transparent transform -skew-x-12 ${isDarkMode ? 'opacity-30' : 'opacity-20'}`}></div>
+                                            <div className={`absolute inset-0 bg-gradient-to-br from-transparent via-white/10 to-transparent transform -skew-x-12 opacity-30`}></div>
                                             <span className="relative z-10 whitespace-normal break-words">{project.tech}</span>
                                         </span>
                                     </div>
@@ -219,9 +219,9 @@ export default function FullProjectArchive({ isDarkMode }) {
                                     
                                     {/* Project Tech Badge */}
                                     <div className='mb-4'>
-                                        <span className={`text-xs font-semibold px-4 py-2 rounded-full backdrop-blur-3xl shadow-2xl relative overflow-hidden inline-block max-w-xs text-center leading-tight ${isDarkMode ? 'bg-gradient-to-br from-white/20 via-white/10 to-white/5 text-white border border-white/20 shadow-white/30' : 'bg-gradient-to-br from-black/20 via-black/10 to-black/5 text-gray-800 border border-gray-300/20 shadow-black/30'}`}>
+                                        <span className={`text-xs font-semibold px-4 py-2 rounded-full backdrop-blur-3xl shadow-2xl relative overflow-hidden inline-block max-w-xs text-center leading-tight bg-gradient-to-br from-white/20 via-white/10 to-white/5 text-white border border-white/20 shadow-white/30`}>
                                             {/* Glass Reflection Overlay */}
-                                            <div className={`absolute inset-0 bg-gradient-to-br from-transparent via-white/10 to-transparent transform -skew-x-12 ${isDarkMode ? 'opacity-30' : 'opacity-20'}`}></div>
+                                            <div className={`absolute inset-0 bg-gradient-to-br from-transparent via-white/10 to-transparent transform -skew-x-12 opacity-30`}></div>
                                             <span className="relative z-10 whitespace-normal break-words">{project.tech}</span>
                                         </span>
                                     </div>
@@ -292,9 +292,9 @@ export default function FullProjectArchive({ isDarkMode }) {
                                     
                                     {/* Project Tech Badge */}
                                     <div className='mb-4'>
-                                        <span className={`text-xs font-semibold px-4 py-2 rounded-full backdrop-blur-3xl shadow-2xl relative overflow-hidden inline-block max-w-xs text-center leading-tight ${isDarkMode ? 'bg-gradient-to-br from-white/20 via-white/10 to-white/5 text-white border border-white/20 shadow-white/30' : 'bg-gradient-to-br from-black/20 via-black/10 to-black/5 text-gray-800 border border-gray-300/20 shadow-black/30'}`}>
+                                        <span className={`text-xs font-semibold px-4 py-2 rounded-full backdrop-blur-3xl shadow-2xl relative overflow-hidden inline-block max-w-xs text-center leading-tight bg-gradient-to-br from-white/20 via-white/10 to-white/5 text-white border border-white/20 shadow-white/30`}>
                                             {/* Glass Reflection Overlay */}
-                                            <div className={`absolute inset-0 bg-gradient-to-br from-transparent via-white/10 to-transparent transform -skew-x-12 ${isDarkMode ? 'opacity-30' : 'opacity-20'}`}></div>
+                                            <div className={`absolute inset-0 bg-gradient-to-br from-transparent via-white/10 to-transparent transform -skew-x-12 opacity-30`}></div>
                                             <span className="relative z-10 whitespace-normal break-words">{project.tech}</span>
                                         </span>
                                     </div>
@@ -355,9 +355,9 @@ export default function FullProjectArchive({ isDarkMode }) {
                                     
                                     {/* Project Tech Badge */}
                                     <div className='mb-4'>
-                                        <span className={`text-xs font-semibold px-4 py-2 rounded-full backdrop-blur-3xl shadow-2xl relative overflow-hidden inline-block max-w-xs text-center leading-tight ${isDarkMode ? 'bg-gradient-to-br from-white/20 via-white/10 to-white/5 text-white border border-white/20 shadow-white/30' : 'bg-gradient-to-br from-black/20 via-black/10 to-black/5 text-gray-800 border border-gray-300/20 shadow-black/30'}`}>
+                                        <span className={`text-xs font-semibold px-4 py-2 rounded-full backdrop-blur-3xl shadow-2xl relative overflow-hidden inline-block max-w-xs text-center leading-tight bg-gradient-to-br from-white/20 via-white/10 to-white/5 text-white border border-white/20 shadow-white/30`}>
                                             {/* Glass Reflection Overlay */}
-                                            <div className={`absolute inset-0 bg-gradient-to-br from-transparent via-white/10 to-transparent transform -skew-x-12 ${isDarkMode ? 'opacity-30' : 'opacity-20'}`}></div>
+                                            <div className={`absolute inset-0 bg-gradient-to-br from-transparent via-white/10 to-transparent transform -skew-x-12 opacity-30`}></div>
                                             <span className="relative z-10 whitespace-normal break-words">{project.tech}</span>
                                         </span>
                                     </div>
@@ -421,9 +421,9 @@ export default function FullProjectArchive({ isDarkMode }) {
                                     
                                     {/* Project Tech Badge */}
                                     <div className='mb-4'>
-                                        <span className={`text-xs font-semibold px-4 py-2 rounded-full backdrop-blur-3xl shadow-2xl relative overflow-hidden inline-block max-w-xs text-center leading-tight ${isDarkMode ? 'bg-gradient-to-br from-white/20 via-white/10 to-white/5 text-white border border-white/20 shadow-white/30' : 'bg-gradient-to-br from-black/20 via-black/10 to-black/5 text-gray-800 border border-gray-300/20 shadow-black/30'}`}>
+                                        <span className={`text-xs font-semibold px-4 py-2 rounded-full backdrop-blur-3xl shadow-2xl relative overflow-hidden inline-block max-w-xs text-center leading-tight bg-gradient-to-br from-white/20 via-white/10 to-white/5 text-white border border-white/20 shadow-white/30`}>
                                             {/* Glass Reflection Overlay */}
-                                            <div className={`absolute inset-0 bg-gradient-to-br from-transparent via-white/10 to-transparent transform -skew-x-12 ${isDarkMode ? 'opacity-30' : 'opacity-20'}`}></div>
+                                            <div className={`absolute inset-0 bg-gradient-to-br from-transparent via-white/10 to-transparent transform -skew-x-12 opacity-30`}></div>
                                             <span className="relative z-10 whitespace-normal break-words">{project.tech}</span>
                                         </span>
                                     </div>
