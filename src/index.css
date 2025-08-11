@@ -128,7 +128,7 @@
 
 /* Global Button Styles */
 .github-button {
-  @apply text-sm px-2 py-1 rounded-2xl bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 text-white opacity-70 transition-all duration-300;
+  @apply text-base px-3 py-1.5 rounded-2xl bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 text-white opacity-70 transition-all duration-300;
   background-size: 200% 100%;
 }
 

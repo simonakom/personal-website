@@ -8,105 +8,156 @@ import './Projects.css';
 export default function Projects({isDarkMode}) {
     return (
         <div className='qaprojects' id="qaprojects">
-            <div className='px-9 max-w-3xl mx-auto'>
-                <p className='mt-16 mb-10 text-xl font-bold'>QA Projects:</p>
-            <div className='flex mb-2 items-center justify-between'>
-                <div className='flex items-center gap-3'>
-                    <img src={postman} alt="postman" className='w-[35px] rounded-full' />
-                    <p className='mr-4'>Postman automated API tests (scripts) + CI of an <b className={`${isDarkMode ? 'text-[#ffffff]]' : ' text-[#000000]'}`}>e-shop</b></p>
+            <div className='px-9 max-w-4xl mx-auto'>
+                <p className='mt-16 mb-12 text-2xl font-bold text-center'>QA Projects</p>
+                
+                <div className='grid gap-6'>
+                    <div className={`group p-6 rounded-xl border transition-all duration-300 hover:shadow-lg hover:scale-[1.02] ${isDarkMode ? 'bg-gray-800 border-gray-700 hover:border-gray-600' : 'bg-white border-gray-200 hover:border-gray-300 shadow-md'}`}>
+                        <div className='flex items-center justify-between'>
+                            <div className='flex items-center gap-4'>
+                                <img src={postman} alt="postman" className='w-10 h-10 rounded-full shadow-sm' />
+                                <div>
+                                    <h3 className={`text-lg font-semibold mb-1 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>E-Shop API Testing</h3>
+                                    <p className={`text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Automated API tests (scripts) with Postman + CI</p>
+                                </div>
+                            </div>
+                            <div className='flex items-center gap-3'>
+                                <FaAngleDoubleRight className={`text-lg transition-all duration-300 group-hover:translate-x-1 group-hover:scale-110 ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`} />
+                                <a href="https://github.com/simonakom/automationExcercise-postman-api-test">
+                                    <b className="github-button">Github</b>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={`group p-6 rounded-xl border transition-all duration-300 hover:shadow-lg hover:scale-[1.02] ${isDarkMode ? 'bg-gray-800 border-gray-700 hover:border-gray-600' : 'bg-white border-gray-200 hover:border-gray-300 shadow-md'}`}>
+                        <div className='flex items-center justify-between'>
+                            <div className='flex items-center gap-4'>
+                                <img src={cypress} alt="cypress" className='w-10 h-10 rounded-full shadow-sm' />
+                                <div>
+                                    <h3 className={`text-lg font-semibold mb-1 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>E-Shop Testing</h3>
+                                    <p className={`text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>End-to-end testing with Cypress + CI</p>
+                                </div>
+                            </div>
+                            <div className='flex items-center gap-3'>
+                                <FaAngleDoubleRight className={`text-lg transition-all duration-300 group-hover:translate-x-1 group-hover:scale-110 ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`} />
+                                <a href="https://github.com/simonakom/automationExcercise-cypress-test">
+                                    <b className="github-button">Github</b>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={`group p-6 rounded-xl border transition-all duration-300 hover:shadow-lg hover:scale-[1.02] ${isDarkMode ? 'bg-gray-800 border-gray-700 hover:border-gray-600' : 'bg-white border-gray-200 hover:border-gray-300 shadow-md'}`}>
+                        <div className='flex items-center justify-between'>
+                            <div className='flex items-center gap-4'>
+                                <img src={cypress} alt="cypress" className='w-10 h-10 rounded-full shadow-sm' />
+                                <div>
+                                    <h3 className={`text-lg font-semibold mb-1 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>Todo App Testing</h3>
+                                    <p className={`text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Automated testing with Cypress + CI</p>
+                                </div>
+                            </div>
+                            <div className='flex items-center gap-3'>
+                                <FaAngleDoubleRight className={`text-lg transition-all duration-300 group-hover:translate-x-1 group-hover:scale-110 ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`} />
+                                <a href="https://github.com/simonakom/todo-app-testing">
+                                    <b className="github-button">Github</b>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={`group p-6 rounded-xl border transition-all duration-300 hover:shadow-lg hover:scale-[1.02] ${isDarkMode ? 'bg-gray-800 border-gray-700 hover:border-gray-600' : 'bg-white border-gray-200 hover:border-gray-300 shadow-md'}`}>
+                        <div className='flex items-center justify-between'>
+                            <div className='flex items-center gap-4'>
+                                <img src={cypress} alt="cypress" className='w-10 h-10 rounded-full shadow-sm' />
+                                <div>
+                                    <h3 className={`text-lg font-semibold mb-1 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>Registration Form Testing</h3>
+                                    <p className={`text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Automated testing with Cypress</p>
+                                </div>
+                            </div>
+                            <div className='flex items-center gap-3'>
+                                <FaAngleDoubleRight className={`text-lg transition-all duration-300 group-hover:translate-x-1 group-hover:scale-110 ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`} />
+                                <a href="https://github.com/simonakom/registration-form-list">
+                                    <b className="github-button">Github</b>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={`group p-6 rounded-xl border transition-all duration-300 hover:shadow-lg hover:scale-[1.02] ${isDarkMode ? 'bg-gray-800 border-gray-700 hover:border-gray-600' : 'bg-white border-gray-200 hover:border-gray-300 shadow-md'}`}>
+                        <div className='flex items-center justify-between'>
+                            <div className='flex items-center gap-4'>
+                                <img src={postman} alt="postman" className='w-10 h-10 rounded-full shadow-sm' />
+                                <div>
+                                    <h3 className={`text-lg font-semibold mb-1 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>Movie Database API Testing</h3>
+                                    <p className={`text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>CRUD operations testing with Postman scripts</p>
+                                </div>
+                            </div>
+                            <div className='flex items-center gap-3'>
+                                <FaAngleDoubleRight className={`text-lg transition-all duration-300 group-hover:translate-x-1 group-hover:scale-110 ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`} />
+                                <a href="https://github.com/simonakom/movie-actor-api-postgreeDB">
+                                    <b className="github-button">Github</b>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={`group p-6 rounded-xl border transition-all duration-300 hover:shadow-lg hover:scale-[1.02] ${isDarkMode ? 'bg-gray-800 border-gray-700 hover:border-gray-600' : 'bg-white border-gray-200 hover:border-gray-300 shadow-md'}`}>
+                        <div className='flex items-center justify-between'>
+                            <div className='flex items-center gap-4'>
+                                <img src={postman} alt="postman" className='w-10 h-10 rounded-full shadow-sm' />
+                                <div>
+                                    <h3 className={`text-lg font-semibold mb-1 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>Movies & Actors API Testing</h3>
+                                    <p className={`text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>CRUD operations testing with Postman</p>
+                                </div>
+                            </div>
+                            <div className='flex items-center gap-3'>
+                                <FaAngleDoubleRight className={`text-lg transition-all duration-300 group-hover:translate-x-1 group-hover:scale-110 ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`} />
+                                <a href="https://github.com/simonakom/movie-actor-api">
+                                    <b className="github-button">Github</b>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={`group p-6 rounded-xl border transition-all duration-300 hover:shadow-lg hover:scale-[1.02] ${isDarkMode ? 'bg-gray-800 border-gray-700 hover:border-gray-600' : 'bg-white border-gray-200 hover:border-gray-300 shadow-md'}`}>
+                        <div className='flex items-center justify-between'>
+                            <div className='flex items-center gap-4'>
+                                <img src={postman} alt="postman" className='w-10 h-10 rounded-full shadow-sm' />
+                                <div>
+                                    <h3 className={`text-lg font-semibold mb-1 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>Shop Management API Testing</h3>
+                                    <p className={`text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>CRUD operations testing with Postman</p>
+                                </div>
+                            </div>
+                            <div className='flex items-center gap-3'>
+                                <FaAngleDoubleRight className={`text-lg transition-all duration-300 group-hover:translate-x-1 group-hover:scale-110 ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`} />
+                                <a href="https://github.com/simonakom/shop-api">
+                                    <b className="github-button">Github</b>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={`group p-6 rounded-xl border transition-all duration-300 hover:shadow-lg hover:scale-[1.02] ${isDarkMode ? 'bg-gray-800 border-gray-700 hover:border-gray-600' : 'bg-white border-gray-200 hover:border-gray-300 shadow-md'}`}>
+                        <div className='flex items-center justify-between'>
+                            <div className='flex items-center gap-4'>
+                                <img src={jest} alt="jest" className='w-10 h-10 rounded-full shadow-sm' />
+                                <div>
+                                    <h3 className={`text-lg font-semibold mb-1 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>Algorithm Testing Suite</h3>
+                                    <p className={`text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Unit tests for mathematical functions</p>
+                                </div>
+                            </div>
+                            <div className='flex items-center gap-3'>
+                                <FaAngleDoubleRight className={`text-lg transition-all duration-300 group-hover:translate-x-1 group-hover:scale-110 ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`} />
+                                <a href="https://github.com/simonakom/unit-testing-jest">
+                                    <b className="github-button">Github</b>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className='flex items-center gap-3'>
-                    <FaAngleDoubleRight />
-                    <a href="https://github.com/simonakom/automationExcercise-postman-api-test">
-                        <b className="github-button">Github</b>
-                    </a>
-                </div>
-            </div>
-            <div className='flex mb-2 items-center justify-between'>
-                <div className='flex items-center gap-3'>
-                    <img src={cypress} alt="postman" className='w-[35px] rounded-full' />
-                    <p className='mr-4'>Cypress automated tests + CI of an <b className={`${isDarkMode ? 'text-[#ffffff]]' : ' text-[#000000]'}`}>e-shop</b></p>
-                </div>
-                <div className='flex items-center gap-3'>
-                    <FaAngleDoubleRight />
-                    <a href="https://github.com/simonakom/automationExcercise-cypress-test">
-                        <b className="github-button">Github</b>
-                    </a>
-                </div>
-            </div>
-            <div className='flex mb-2 items-center justify-between'>
-                <div className='flex items-center gap-3'>
-                    <img src={cypress} alt="postman" className='w-[35px] rounded-full' />
-                    <p className='mr-4'>Cypress automated tests + CI of a <b className={`${isDarkMode ? 'text-[#ffffff]]' : ' text-[#000000]'}`}>to-do app</b></p>
-                </div>
-                <div className='flex items-center gap-3'>
-                    <FaAngleDoubleRight />
-                    <a href="https://github.com/simonakom/todo-app-testing">
-                        <b className="github-button">Github</b>
-                    </a>
-                </div>
-            </div>
-            <div className='flex mb-2 items-center justify-between'>
-                <div className='flex items-center gap-3'>
-                    <img src={cypress} alt="postman" className='w-[35px] rounded-full' />
-                    <p className='mr-4'>Cypress automated tests of a <b className={`${isDarkMode ? 'text-[#ffffff]]' : ' text-[#000000]'}`}>registration form</b></p>
-                </div>
-                <div className='flex items-center gap-3'>
-                    <FaAngleDoubleRight />
-                    <a href="https://github.com/simonakom/registration-form-list">
-                        <b className="github-button">Github</b>
-                    </a>
-                </div>
-            </div>
-            <div className='flex mb-2 items-center justify-between'>
-                <div className='flex items-center gap-3'>
-                    <img src={postman} alt="postman" className='w-[35px] rounded-full' />
-                    <p className='mr-4'>Postman automated tests (scripts) of a CRUD API built with PostgreSQL, Node.js and Express for managing <b className={`${isDarkMode ? 'text-[#ffffff]]' : ' text-[#000000]'}`}>movies and actors</b></p>
-                </div>
-                <div className='flex items-center gap-3'>
-                    <FaAngleDoubleRight />
-                    <a href="https://github.com/simonakom/movie-actor-api-postgreeDB">
-                        <b className="github-button">Github</b>
-                    </a>
-                </div>
-            </div>
-            <div className='flex mb-2 items-center justify-between'>
-                <div className='flex items-center gap-3'>
-                    <img src={postman} alt="postman" className='w-[35px] rounded-full' />
-                    <p className='mr-4'>Postman simple test of a CRUD API built with Node.js and Express for managing <b className={`${isDarkMode ? 'text-[#ffffff]]' : ' text-[#000000]'}`}>movies and actors</b></p>
-                </div>
-                <div className='flex items-center gap-3'>
-                    <FaAngleDoubleRight />
-                    <a href="https://github.com/simonakom/movie-actor-api">
-                        <b className="github-button">Github</b>
-                    </a>
-                </div>
-            </div>
-            <div className='flex mb-2 items-center justify-between'>
-                <div className='flex items-center gap-3'>
-                    <img src={postman} alt="postman" className='w-[35px] rounded-full' />
-                    <p className='mr-4'>Postman simple test of a CRUD API built with Node.js and Express for managing <b className={`${isDarkMode ? 'text-[#ffffff]]' : ' text-[#000000]'}`}>shops</b></p>
-                </div>
-                <div className='flex items-center gap-3'>
-                    <FaAngleDoubleRight />
-                    <a href="https://github.com/simonakom/shop-api">
-                        <b className="github-button">Github</b>
-                    </a>
-                </div>
-            </div>
-            <div className='flex mb-2 items-center justify-between'>
-                <div className='flex items-center gap-3'>
-                    <img src={jest} alt="jest" className='w-[40px] rounded-full' />
-                    <p className='mr-4'>Unit tests with Jest, covering a variety of common <b className={`${isDarkMode ? 'text-[#ffffff]' : 'text-[#000000]'}`}>algorithmic problems</b> and <b className={`${isDarkMode ? 'text-[#ffffff]' : 'text-[#000000]'}`}>mathematical functions</b></p>
-                </div>
-                <div className='flex items-center gap-3'>
-                    <FaAngleDoubleRight />
-                    <a href="https://github.com/simonakom/unit-testing-jest">
-                        <b className="github-button">Github</b>
-                    </a>
-                </div>
-            </div>
-            <hr className={`border-t-1 mt-20 ${isDarkMode ? 'border-[#cbd5e7]' : 'border-[#878788]' }`} />
+
+                <hr className={`border-t-2 mt-16 ${isDarkMode ? 'border-gray-600' : 'border-gray-300'}`} />
             </div>
         </div>
     )
