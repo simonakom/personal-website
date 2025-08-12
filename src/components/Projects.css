@@ -110,3 +110,19 @@
     border-color: rgba(255, 255, 255, 0.2);
 }
 
+/* Responsive positioning for close button on smaller screens */
+@media (max-width: 514px) {
+    .modal-close-btn {
+        top: 10px;
+        right: 10px;
+        padding: 0 8px;
+        min-width: 36px;
+        height: 28px;
+        font-size: 11px;
+    }
+    
+    .modal-close-btn span {
+        display: none; /* Hide the "Close" text on very small screens */
+    }
+}
+

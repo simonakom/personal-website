@@ -48,9 +48,9 @@ export default function FullProjectArchive({ isDarkMode }) {
     };
     
     return (
-        <div className={`mx-9 mb-8 mt-6 relative ${isDarkMode ? 'text-gray-200' : 'text-gray-800'}`}>
+        <div className={`mb-8 mt-6 relative ${isDarkMode ? 'text-gray-200' : 'text-gray-800'}`}>
             {/* Header */}
-            <div className="text-center mb-12 mt-10">
+            <div className="text-center mb-12 mt-10 mx-9">
                 <h1 className={`font-bold text-3xl mb-3 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
                     Project Archive
                 </h1>
@@ -67,7 +67,7 @@ export default function FullProjectArchive({ isDarkMode }) {
                     </h2>
                 </div>
                 
-                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mx-9'>
                     {[
                         { title: "Spotify", image: spotify, liveUrl: "https://simonakom.github.io/spotify-app/build/index.html", githubUrl: "https://github.com/simonakom/spotify-app", tech: "React, Tailwind, CSS" },
                         { title: "Netflix", image: netflix, liveUrl: "https://simonakom.github.io/netflix-page/index.html", githubUrl: "https://github.com/simonakom/netflix-page", tech: "JavaScript, Bootstrap, CSS, HTML" },
@@ -134,7 +134,7 @@ export default function FullProjectArchive({ isDarkMode }) {
                     </h2>
                 </div>
                 
-                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mx-9'>
                     {[
                         { title: "Kolt Scooters", image: kolt, liveUrl: "https://simonakom.github.io/kolt-scooters-app/dist/index.html", githubUrl: "https://github.com/simonakom/kolt-scooters-app", tech: "React Vite, Tailwind, CSS, localStorage" },
                         { title: <><span className="font-bold">Data Table</span> <span className="font-thin">of Products</span></>, image: product, liveUrl: "https://simonakom.github.io/data-table-app/admin.html", githubUrl: "https://github.com/simonakom/data-table-app", tech: "JavaScript, Bootstrap, CSS, HTML" },
@@ -197,7 +197,7 @@ export default function FullProjectArchive({ isDarkMode }) {
                     </h2>
                 </div>
                 
-                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mx-9'>
                     {[
                         { title: "Cocktail Recipes", image: coctails, liveUrl: "https://simonakom.github.io/coctails-api/coctails.html", githubUrl: "https://github.com/simonakom/coctails-api", tech: "JavaScript, Bootstrap, CSS, HTML" },
                         { title: "Pet Gallery", image: dogs, liveUrl: "https://simonakom.github.io/dogs-api/dogs-photo-album.html", githubUrl: "https://github.com/simonakom/dogs-api", tech: "JavaScript, Bootstrap, CSS, HTML" },
@@ -261,7 +261,7 @@ export default function FullProjectArchive({ isDarkMode }) {
                     </h2>
                 </div>
                 
-                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mx-9'>
                     {[
                         { title: "Google Timer & Stopwatch", image: timer, liveUrl: "https://simonakom.github.io/google-timer-stopwatch/dist/index.html", githubUrl: "https://github.com/simonakom/google-timer-stopwatch", tech: "React Vite, Tailwind, CSS" },
                         { title: "Birthday Timer", image: birthday, liveUrl: "https://simonakom.github.io/birthday-countdown/dist/index.html", githubUrl: "https://github.com/simonakom/birthday-countdown", tech: "React Vite, Tailwind, CSS" },
@@ -334,7 +334,7 @@ export default function FullProjectArchive({ isDarkMode }) {
                     </h2>
                 </div>
                 
-                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mx-9'>
                     {[
                         { title: <><span className="font-bold">Rentify</span> <span className="font-thin">PC rent app</span></>, image: rentify, liveUrl: "https://github.com/simonakom/pc-rent-platform", githubUrl: "https://github.com/simonakom/pc-rent-platform", tech: "Node.js, Nginx, MySQL, React Vite, Tailwind, CSS" },
                         { title: <><span className="font-bold">PulpCinemaHub</span> <span className="font-thin">Forum</span></>, image: cinema, liveUrl: "https://github.com/simonakom/forum-app", githubUrl: "https://github.com/simonakom/forum-app", tech: "Node.js, MongoDB, JavaScript, Bootstrap, Tailwind, CSS, HTML" },
@@ -388,7 +388,7 @@ export default function FullProjectArchive({ isDarkMode }) {
                     </h2>
                 </div>
                 
-                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mx-9'>
                     {[
                         { title: "Contact Form", image: contact, liveUrl: "https://simonakom.github.io/contact-form/contact-form-responsive.html", githubUrl: "https://github.com/simonakom/contact-form", tech: "HTML, CSS" },
                         { title: "Registration Form", image: registration, liveUrl: "https://simonakom.github.io/registration-form/registration.html", githubUrl: "https://github.com/simonakom/contact-form", tech: "HTML, CSS" },
