@@ -121,6 +121,15 @@
 .dynamic-txts li.second-response span::after{
     animation: typing2 6s steps(60) infinite;
 }
+
+/* Disable typing animation on smaller screens to prevent issues with text wrapping */
+@media screen and (max-width: 541px) {
+    .dynamic-txts li span::after {
+        animation: none;
+        display: none;
+    }
+}
+
 @keyframes typing {
     0% {
         left: 0;
