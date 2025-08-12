@@ -61,14 +61,14 @@ export default function Experience ({isDarkMode}) {
                         <IoColorPaletteOutline className={`text-2xl ${isDarkMode ? 'text-gray-300' : 'text-black'}`} />
                         Frontend Development
                     </h3>
-                    <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3'>
+                    <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-6 gap-3'>
                         <div>
                             <img src={js} alt="js" className='w-[50px] rounded-xl ms-2' />
                             <p className='mt-1 text-sm'><span className="font-light">JavaScript</span></p>
                         </div>
                         <div>
                             <img src={html} alt="html" className='w-[50px] rounded-xl ms-1' />
-                            <p className='mt-1 ms-2 text-sm'><span className="font-light">HTML5</span></p>
+                            <p className='mt-1 ms-3 text-sm'><span className="font-light">HTML5</span></p>
                         </div>
                         <div>
                             <img src={css} alt="css" className='w-[50px] rounded-xl' />
@@ -98,7 +98,7 @@ export default function Experience ({isDarkMode}) {
                         <FaLaptopCode className={`text-2xl ${isDarkMode ? 'text-gray-300' : 'text-black'}`} />
                         Backend Development
                     </h3>
-                    <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3'>
+                    <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-6 gap-3'>
                         <div>
                             <img src={node} alt="node" className='w-[47px] rounded-xl ms-1' />
                             <p className='ms-1 mt-2 text-sm'><span className="font-light">Node.js</span></p>
@@ -119,7 +119,7 @@ export default function Experience ({isDarkMode}) {
                         <PiTestTubeFill className={`text-2xl ${isDarkMode ? 'text-gray-300' : 'text-black'}`} />
                         Testing & Quality Assurance
                     </h3>
-                    <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3'>
+                    <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-6 gap-3'>
                         <div>
                             <img src={playwright} alt="playwright" className='w-[50px] rounded-xl ms-2' />
                             <p className='mt-2 text-sm'><span className="font-light">Playwright</span></p>
@@ -160,7 +160,7 @@ export default function Experience ({isDarkMode}) {
                         <TbDatabaseCog className={`text-2xl ${isDarkMode ? 'text-gray-300' : 'text-black'}`} />
                         Databases & Data Tools
                     </h3>
-                    <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3'>
+                    <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-6 gap-3'>
                         <div>
                             <img src={sql} alt="sql" className='w-[52px] rounded-xl mt-2 ms-4' />
                             <p className='ms-5 mt-1 text-sm'><span className="font-light">MySQL</span></p>
@@ -189,7 +189,7 @@ export default function Experience ({isDarkMode}) {
                         <VscTools className={`text-2xl ${isDarkMode ? 'text-gray-300' : 'text-black'}`} />
                         Development Tools
                     </h3>
-                    <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3'>
+                    <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-6 gap-3'>
                         <div>
                             <img src={git} alt="git" className='w-[52px] rounded-xl' />
                             <p className='mt-2 ms-5 text-sm'><span className="font-light">Git</span></p>
@@ -214,7 +214,7 @@ export default function Experience ({isDarkMode}) {
                         <FaHandshakeAngle className={`text-2xl ${isDarkMode ? 'text-gray-300' : 'text-black'}`} />
                         Project Management
                     </h3>
-                    <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3'>
+                    <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-6 gap-3'>
                         <div>
                             <img src={jira} alt="jira" className='h-[51px] rounded-xl ms-2 mt-1' />
                             <p className='ms-5 mt-1 text-sm'><span className="font-light">Jira</span></p>
@@ -251,7 +251,7 @@ export default function Experience ({isDarkMode}) {
                         <TbReportSearch className={`text-2xl ${isDarkMode ? 'text-gray-300' : 'text-black'}`} />
                         Analytics
                     </h3>
-                    <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3'>
+                    <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-6 gap-3'>
                         <div>
                             <img src={mixpanel} alt="mixpanel" className='w-[50px] rounded-xl ms-1' />
                             <p className='mt-1 text-sm'><span className="font-light">Mixpanel</span></p>
@@ -276,7 +276,7 @@ export default function Experience ({isDarkMode}) {
                         <IoColorPaletteOutline className={`text-2xl ${isDarkMode ? 'text-gray-300' : 'text-black'}`} />
                         Design
                     </h3>
-                    <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3'>
+                    <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-6 gap-3'>
                         <div>
                             <img src={figma} alt="figma" className='w-[33px] rounded-xl ms-2' />
                             <p className='mt-1 text-sm'><span className="font-light">Figma</span></p>
