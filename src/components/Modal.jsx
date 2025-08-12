@@ -137,8 +137,8 @@ export default function FullProjectArchive({ isDarkMode }) {
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8'>
                     {[
                         { title: "Kolt Scooters", image: kolt, liveUrl: "https://simonakom.github.io/kolt-scooters-app/dist/index.html", githubUrl: "https://github.com/simonakom/kolt-scooters-app", tech: "React Vite, Tailwind, CSS, localStorage" },
-                        { title: "Data Table of Products", image: product, liveUrl: "https://simonakom.github.io/data-table-app/admin.html", githubUrl: "https://github.com/simonakom/data-table-app", tech: "JavaScript, Bootstrap, CSS, HTML" },
-                        { title: "Data Table of People", image: people, liveUrl: "https://simonakom.github.io/crud-people-data-table/dynamic-table.html", githubUrl: "https://github.com/simonakom/crud-people-data-table", tech: "JavaScript, Bootstrap, CSS, HTML" }
+                        { title: <><span className="font-bold">Data Table</span> <span className="font-thin">of Products</span></>, image: product, liveUrl: "https://simonakom.github.io/data-table-app/admin.html", githubUrl: "https://github.com/simonakom/data-table-app", tech: "JavaScript, Bootstrap, CSS, HTML" },
+                        { title: <><span className="font-bold">Data Table</span> <span className="font-thin">of People</span></>, image: people, liveUrl: "https://simonakom.github.io/crud-people-data-table/dynamic-table.html", githubUrl: "https://github.com/simonakom/crud-people-data-table", tech: "JavaScript, Bootstrap, CSS, HTML" }
                     ].map((project, index) => (
                         <div key={index} className={`group relative overflow-hidden rounded-2xl border transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] ${isDarkMode ? 'bg-gray-800/50 border-gray-700 hover:border-blue-500/50' : 'bg-white/80 border-gray-200 hover:border-blue-400/50 shadow-lg'}`}>
                             <div className='relative overflow-hidden'>
@@ -202,7 +202,7 @@ export default function FullProjectArchive({ isDarkMode }) {
                         { title: "Cocktail Recipes", image: coctails, liveUrl: "https://simonakom.github.io/coctails-api/coctails.html", githubUrl: "https://github.com/simonakom/coctails-api", tech: "JavaScript, Bootstrap, CSS, HTML" },
                         { title: "Pet Gallery", image: dogs, liveUrl: "https://simonakom.github.io/dogs-api/dogs-photo-album.html", githubUrl: "https://github.com/simonakom/dogs-api", tech: "JavaScript, Bootstrap, CSS, HTML" },
                         { title: "People Selector", image: selector, liveUrl: "https://simonakom.github.io/people-selector/dist/index.html", githubUrl: "https://github.com/simonakom/people-selector", tech: "React Vite, Tailwind, CSS, localStorage" },
-                        { title: "Jokes by Chuck Norris", image: joke, liveUrl: "https://simonakom.github.io/chuck-norris-jokes/index.html", githubUrl: "https://github.com/simonakom/chuck-norris-jokes", tech: "JavaScript, CSS, HTML" }
+                        { title: <><span className="font-bold">Jokes</span> <span className="font-thin">by Chuck Norris</span></>, image: joke, liveUrl: "https://simonakom.github.io/chuck-norris-jokes/index.html", githubUrl: "https://github.com/simonakom/chuck-norris-jokes", tech: "JavaScript, CSS, HTML" }
                     ].map((project, index) => (
                         <div key={index} className={`group relative overflow-hidden rounded-2xl border transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] ${isDarkMode ? 'bg-gray-800/50 border-gray-700 hover:border-blue-500/50' : 'bg-white/80 border-gray-200 hover:border-blue-400/50 shadow-lg'}`}>
                             <div className='relative overflow-hidden'>
@@ -336,9 +336,9 @@ export default function FullProjectArchive({ isDarkMode }) {
                 
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8'>
                     {[
-                        { title: "Rentify PC Rent App", image: rentify, liveUrl: "https://github.com/simonakom/pc-rent-platform", githubUrl: "https://github.com/simonakom/pc-rent-platform", tech: "Node.js, Nginx, MySQL, React Vite, Tailwind, CSS" },
-                        { title: "PulpCinemaHub Forum", image: cinema, liveUrl: "https://github.com/simonakom/forum-app", githubUrl: "https://github.com/simonakom/forum-app", tech: "Node.js, MongoDB, JavaScript, Bootstrap, Tailwind, CSS, HTML" },
-                        { title: "To-do App", image: todo, liveUrl: "https://simonakom.github.io/todo-list-app/front-end/todos.html", githubUrl: "https://github.com/simonakom/todo-list-app", tech: "Node.js, Nginx, Bootstrap, CSS, HTML" }
+                        { title: <><span className="font-bold">Rentify</span> <span className="font-thin">PC rent app</span></>, image: rentify, liveUrl: "https://github.com/simonakom/pc-rent-platform", githubUrl: "https://github.com/simonakom/pc-rent-platform", tech: "Node.js, Nginx, MySQL, React Vite, Tailwind, CSS" },
+                        { title: <><span className="font-bold">PulpCinemaHub</span> <span className="font-thin">Forum</span></>, image: cinema, liveUrl: "https://github.com/simonakom/forum-app", githubUrl: "https://github.com/simonakom/forum-app", tech: "Node.js, MongoDB, JavaScript, Bootstrap, Tailwind, CSS, HTML" },
+                        { title: <><span className="font-bold">To-do</span> <span className="font-thin">App</span></>, image: todo, liveUrl: "https://github.com/simonakom/todo-list-app", githubUrl: "https://github.com/simonakom/todo-list-app", tech: "Node.js, Nginx, Bootstrap, CSS, HTML" }
                     ].map((project, index) => (
                         <div key={index} className={`group relative overflow-hidden rounded-2xl border transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] ${isDarkMode ? 'bg-gray-800/50 border-gray-700 hover:border-blue-500/50' : 'bg-white/80 border-gray-200 hover:border-blue-400/50 shadow-lg'}`}>
                             <div className='relative overflow-hidden'>
@@ -363,15 +363,6 @@ export default function FullProjectArchive({ isDarkMode }) {
                                     </div>
                                     
                                     <div className='flex gap-2'>
-                                        <a 
-                                            href={project.liveUrl} 
-                                            target="_blank" 
-                                            rel="noopener noreferrer"
-                                            className={`group/btn inline-flex items-center gap-2 px-3 py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15' : 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15'}`}
-                                        >
-                                            <FaExternalLinkAlt className="text-xs" />
-                                            Live Demo
-                                        </a>
                                         <a 
                                             href={project.githubUrl} 
                                             target="_blank" 

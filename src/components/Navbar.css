@@ -20,7 +20,7 @@
     width: 40px;
 }
 .header.light-mode .nav-item a::before {
-    background-color: #5a84cc;
+    background-color: #709ae2;
     box-shadow: 0px 0px 5px rgba(175, 175, 177, 0.539);
 }
 .header .nav-item a.active::before,
