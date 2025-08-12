@@ -7,6 +7,23 @@ import './Navbar.css';
 
 export default function Navbar({ isDarkMode }) {
     const [fixedSection, setFixedSection] = useState(null);
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+    useEffect(() => {
+        // Function to check screen size
+        const checkScreenSize = () => {
+            setIsSmallScreen(window.innerWidth <= 1024);
+        };
+
+        // Check initial screen size
+        checkScreenSize();
+
+        // Add event listener for screen size changes
+        window.addEventListener('resize', checkScreenSize);
+
+        // Cleanup
+        return () => window.removeEventListener('resize', checkScreenSize);
+    }, []);
 
     useEffect(() => {
         let timeoutId;
@@ -27,8 +44,8 @@ export default function Navbar({ isDarkMode }) {
                 const scrollTop = window.scrollY;
                 const screenWidth = window.innerWidth;
                 
-                // Add threshold for better detection timing
-                const threshold = 100;
+                // Adjust threshold based on screen size for better detection
+                const threshold = screenWidth <= 1024 ? 150 : 100;
     
                 if (scrollTop >= aboutOffsetTop - threshold && scrollTop < skillsOffsetTop - threshold && screenWidth <= 1024) {
                     setFixedSection('about');
@@ -90,7 +107,7 @@ export default function Navbar({ isDarkMode }) {
                             to="about" 
                             spy={true} 
                             smooth={true} 
-                            offset={-10} 
+                            offset={isSmallScreen ? -80 : -10} 
                             duration={500} 
                             >About
                         </Link>
@@ -100,7 +117,7 @@ export default function Navbar({ isDarkMode }) {
                             to="experience" 
                             spy={true} 
                             smooth={true} 
-                            offset={-40} 
+                            offset={isSmallScreen ? -140 : -40} 
                             duration={500} 
                             >Experience
                         </Link>
@@ -110,7 +127,7 @@ export default function Navbar({ isDarkMode }) {
                             to="skills" 
                             spy={true} 
                             smooth={true} 
-                            offset={-40} 
+                            offset={isSmallScreen ? -140 : -40} 
                             duration={500} 
                             >Skills
                         </Link>
@@ -120,7 +137,7 @@ export default function Navbar({ isDarkMode }) {
                             to="qaprojects" 
                             spy={true} 
                             smooth={true} 
-                            offset={-40} 
+                            offset={isSmallScreen ? -10 : -40} 
                             duration={500} 
                             >QA Projects
                         </Link>
@@ -130,7 +147,7 @@ export default function Navbar({ isDarkMode }) {
                             to="projects" 
                             spy={true} 
                             smooth={true} 
-                            offset={30} 
+                            offset={isSmallScreen ? -160 : 30} 
                             duration={500} 
                             >Web Projects
                         </Link>

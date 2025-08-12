@@ -35,6 +35,8 @@
 @media screen and (max-width:1023px) {
     .header {
         position: relative;
+        /* Ensure proper spacing and prevent layout shifts */
+        margin-bottom: 0;
     }
     .nav-item.fixed {
         backdrop-filter: blur(5px); 
@@ -47,6 +49,12 @@
         width: 100%;
         z-index: 1000; 
         transition: top 0.3s ease;
+        /* Add background for better visibility */
+        background: rgba(15, 23, 42, 0.95);
+        backdrop-filter: blur(10px);
+    }
+    .header.light-mode .navbar .nav-item.fixed {
+        background: rgba(235, 238, 245, 0.95);
     }
     .icons {
         margin-top: 50px !important;

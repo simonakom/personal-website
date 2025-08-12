@@ -53,7 +53,7 @@ export default function Experience ({isDarkMode}) {
     return (
         <div className='experience' id="experience">
             <div className='max-w-3xl mx-auto px-14 sm:px-10 md:px-10 lg:px-5'>
-                <p className='mt-14 mb-10 text-xl font-bold'>Technologies I have worked with:</p>
+                <p className='mt-8 sm:mt-14 mb-10 text-xl font-bold'>Technologies I have worked with:</p>
                 
                 <div className='space-y-8 pb-14'>
                 <div className={`p-6 rounded-xl ${isDarkMode ? 'bg-slate-800/50 border border-slate-700' : 'bg-white/50 border border-slate-200'} shadow-lg hover:shadow-xl transition-shadow duration-300`}>

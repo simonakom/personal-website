@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Improve scroll behavior for navigation */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 20px;
+}
+
+/* Responsive scroll padding for smaller screens */
+@media screen and (max-width: 1023px) {
+  html {
+    scroll-padding-top: 40px;
+  }
+}
+
+/* Ensure proper section positioning */
+.about, .experience, .skills, .qaprojects, .projects {
+  scroll-margin-top: 20px;
+}
+
+@media screen and (max-width: 1023px) {
+  .about, .experience, .skills, .qaprojects, .projects {
+    scroll-margin-top: 40px;
+  }
+}
+
 /* Gradient Left Border */
 .gradient-border-left {
   position: relative;
