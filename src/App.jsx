@@ -28,11 +28,11 @@ export default function App() {
   return (
     <>
       <div className={`container mx-auto px-1 sm:px-20 ${isDarkMode ? 'text-[#cbd5e7] font-thin' : 'text-[#272828ef] font-light'}`}>
-        <div className="flex flex-col lg:flex-row">
-          <div className='test width w-[100%] md:w-1/2 font-light me-14'>
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-32 xl:gap-16">
+          <div className='test width w-full lg:w-1/2 font-light'>
             <Navbar isDarkMode={isDarkMode} />
           </div>
-          <div className="width w-[100%] md:w-1/2 mt-12">
+          <div className="width w-full lg:w-1/2 lg:mt-0 mt-12">
             <About isDarkMode={isDarkMode}/>
             <Experience isDarkMode={isDarkMode}/>
             <Skills isDarkMode={isDarkMode}/>

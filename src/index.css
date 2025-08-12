@@ -135,11 +135,33 @@
   margin-top: -100px;
 } */
 
-@media screen and (max-width: 1028px) {
+/* Responsive breakpoints for better column spacing */
+@media screen and (max-width: 1023px) {
   .width {
     width: 100% !important;
   }
   .space {
     margin-top: -100px !important;
+  }
+}
+
+/* Specific fix for screens around 1279px */
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .container {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  
+  /* Ensure proper gap between columns at this breakpoint */
+  .flex-row {
+    gap: 3rem !important;
+  }
+}
+
+/* Additional responsive improvements */
+@media screen and (min-width: 1281px) {
+  .container {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
   }
 }
