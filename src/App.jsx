@@ -28,7 +28,7 @@ export default function App() {
   return (
     <>
       <div className={`container mx-auto px-1 sm:px-20 ${isDarkMode ? 'text-[#cbd5e7] font-thin' : 'text-[#272828ef] font-light'}`}>
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-32 xl:gap-16">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16">
           <div className='test width w-full lg:w-1/2 font-light'>
             <Navbar isDarkMode={isDarkMode} />
           </div>
@@ -39,27 +39,27 @@ export default function App() {
             <QAProjects isDarkMode={isDarkMode}/>
             <Projects isDarkMode={isDarkMode}/>
           </div>
-          <div className="theme-toggle-container">
-            <button
-              onClick={toggleBackground}
-              className={`theme-toggle-btn ${isDarkMode ? 'dark' : 'light'}`}
-              aria-label={`Switch to ${isDarkMode ? 'light' : 'dark'} mode`}
-            >
-              <div className="toggle-content">
-                {isDarkMode ? (
-                  <>
-                    <MdOutlineWbSunny className="toggle-icon" />
-                    <span className="toggle-text">Light</span>
-                  </>
-                ) : (
-                  <>
-                    <IoMoonOutline className="toggle-icon" />
-                    <span className="toggle-text">Dark</span>
-                  </>
-                )}
-              </div>
-            </button>
-          </div>
+        </div>
+        <div className="theme-toggle-container">
+          <button
+            onClick={toggleBackground}
+            className={`theme-toggle-btn ${isDarkMode ? 'dark' : 'light'}`}
+            aria-label={`Switch to ${isDarkMode ? 'light' : 'dark'} mode`}
+          >
+            <div className="toggle-content">
+              {isDarkMode ? (
+                <>
+                  <MdOutlineWbSunny className="toggle-icon" />
+                  <span className="toggle-text">Light</span>
+                </>
+              ) : (
+                <>
+                  <IoMoonOutline className="toggle-icon" />
+                  <span className="toggle-text">Dark</span>
+                </>
+              )}
+            </div>
+          </button>
         </div>
       </div>
     </>
