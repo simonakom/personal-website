@@ -63,7 +63,7 @@ export default function Navbar({ isDarkMode }) {
     }, []);
     
     return (
-        <div className={`header p-10 ${isDarkMode ? '' : 'light-mode'}`}>
+        <div className={`header p-20 sm:p-10 ${isDarkMode ? '' : 'light-mode'}`}>
             <div className='mt-14'>
                 <p className={`text-5xl mb-4 name ${isDarkMode ? 'text-[#cbd5e7]' : 'text-[#3a3a9d]'}`}>
                     <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 opacity-70" style={{backgroundSize: '200% 100%'}}>Simona Komarovska</span>

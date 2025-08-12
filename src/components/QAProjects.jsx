@@ -60,7 +60,7 @@ export default function Projects({isDarkMode}) {
 
     return (
         <div className='qaprojects' id="qaprojects">
-            <div className='px-9 max-w-3xl mx-auto'>
+            <div className='max-w-3xl mx-auto px-14 sm:px-10 md:px-10 lg:px-5'>
                 <div className='mb-10'>
                     <p className={`mt-14 mb-3 text-xl font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>QA Projects</p>
                     <p className={`text-md ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Quality assurance projects showcasing automated testing expertise across various technologies:</p>
@@ -70,29 +70,33 @@ export default function Projects({isDarkMode}) {
                     {qaProjects.map((project, index) => (
                         <div key={index} className={`group relative overflow-hidden rounded-xl border transition-all duration-500 hover:shadow-lg hover:scale-[1.01] ${isDarkMode ? 'bg-gray-800/50 border-gray-700 hover:border-blue-500/50' : 'bg-white/80 border-gray-200 hover:border-blue-400/50 shadow-md'}`}>
                             <div className='px-4 py-3'>
-                                <div className='flex items-center justify-between gap-4'>
-                                    {/* Technology Icon */}
-                                    <div className={`flex-shrink-0 p-2 rounded-lg ${isDarkMode ? 'bg-gray-700/50' : 'bg-gray-100/50'}`}>
-                                        <img 
-                                            src={project.icon} 
-                                            alt="technology icon" 
-                                            className='w-8 h-8 rounded-lg' 
-                                        />
-                                    </div>
-                                    
-                                    {/* Project Content */}
-                                    <div className='flex-1 min-w-0'>
-                                        <h3 className={`text-lg font-bold mb-2 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
-                                            {project.title}
-                                        </h3>
+                                {/* Content and Button Container */}
+                                <div className='flex flex-col items-center gap-4 sm:flex-row sm:items-center sm:justify-between lg:flex-col lg:items-center xl:flex-row xl:items-center xl:justify-between'>
+                                    {/* Technology Icon and Content */}
+                                    <div className='flex items-center gap-4 flex-1 w-full'>
+                                        {/* Technology Icon */}
+                                        <div className={`flex-shrink-0 p-2 rounded-lg ${isDarkMode ? 'bg-gray-700/50' : 'bg-gray-100/50'}`}>
+                                            <img 
+                                                src={project.icon} 
+                                                alt="technology icon" 
+                                                className='w-8 h-8 rounded-lg' 
+                                            />
+                                        </div>
                                         
-                                        <p className={`text-sm leading-relaxed ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                                            {project.description}
-                                        </p>
+                                        {/* Project Content */}
+                                        <div className='flex-1 min-w-0'>
+                                            <h3 className={`text-lg font-bold mb-2 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
+                                                {project.title}
+                                            </h3>
+                                            
+                                            <p className={`text-sm leading-relaxed ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                                                {project.description}
+                                            </p>
+                                        </div>
                                     </div>
                                     
-                                    {/* View Code Button - Right side, centered */}
-                                    <div className='flex-shrink-0 flex items-center justify-center min-w-[120px]'>
+                                    {/* View Code Button - Bottom center on small screens, below content from 1024px-1279px (centered), right side for other sizes */}
+                                    <div className='flex-shrink-0 flex items-center justify-center min-w-[120px] lg:min-w-[140px] lg:mt-3 xl:mt-0'>
                                         <a
                                             href={project.githubUrl}
                                             target="_blank"

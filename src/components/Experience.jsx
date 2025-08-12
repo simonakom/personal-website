@@ -52,7 +52,7 @@ import slack from '../assets/images/slack.png';
 export default function Experience ({isDarkMode}) {
     return (
         <div className='experience' id="experience">
-            <div className='px-9 max-w-3xl mx-auto'>
+            <div className='max-w-3xl mx-auto px-14 sm:px-10 md:px-10 lg:px-5'>
                 <p className='mt-14 mb-10 text-xl font-bold'>Technologies I have worked with:</p>
                 
                 <div className='space-y-8 pb-14'>

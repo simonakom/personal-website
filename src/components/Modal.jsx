@@ -48,7 +48,7 @@ export default function FullProjectArchive({ isDarkMode }) {
     };
     
     return (
-        <div className={`mx-6 mb-8 mt-6 relative ${isDarkMode ? 'text-gray-200' : 'text-gray-800'}`}>
+        <div className={`mx-9 mb-8 mt-6 relative ${isDarkMode ? 'text-gray-200' : 'text-gray-800'}`}>
             {/* Header */}
             <div className="text-center mb-12 mt-10">
                 <h1 className={`font-bold text-3xl mb-3 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
