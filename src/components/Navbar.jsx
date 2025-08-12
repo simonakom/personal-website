@@ -44,27 +44,37 @@ export default function Navbar({ isDarkMode }) {
                 const scrollTop = window.scrollY;
                 const screenWidth = window.innerWidth;
                 
-                // Adjust threshold based on screen size for better detection
-                const threshold = screenWidth <= 1024 ? 150 : 100;
-    
-                if (scrollTop >= aboutOffsetTop - threshold && scrollTop < skillsOffsetTop - threshold && screenWidth <= 1024) {
-                    setFixedSection('about');
-                } else if (scrollTop >= skillsOffsetTop - threshold && scrollTop < experienceOffsetTop - threshold && screenWidth <= 1024) {
-                    setFixedSection('skills');
-                } else if (scrollTop >= experienceOffsetTop - threshold && scrollTop < qaprojectsOffsetTop - threshold && screenWidth <= 1024) {
-                    setFixedSection('experience');
-                } else if (scrollTop >= qaprojectsOffsetTop - threshold && scrollTop < projectsOffsetTop - threshold && screenWidth <= 1024) {
-                    setFixedSection('qaprojects');
-                } else if (scrollTop >= projectsOffsetTop - threshold && screenWidth <= 1024) {
-                    setFixedSection('projects');
+                // Only apply sticky behavior on small screens
+                if (screenWidth <= 1024) {
+                    // Use a smaller threshold for more accurate detection
+                    const threshold = 80;
+                    
+                    // Add a small buffer to prevent overlap
+                    const buffer = 20;
+                    
+                    // Check each section with proper boundaries and buffer
+                    if (scrollTop >= aboutOffsetTop - threshold && scrollTop < experienceOffsetTop - threshold - buffer) {
+                        setFixedSection('about');
+                    } else if (scrollTop >= experienceOffsetTop - threshold - buffer && scrollTop < skillsOffsetTop - threshold - buffer) {
+                        setFixedSection('experience');
+                    } else if (scrollTop >= skillsOffsetTop - threshold - buffer && scrollTop < qaprojectsOffsetTop - threshold - buffer) {
+                        setFixedSection('skills');
+                    } else if (scrollTop >= qaprojectsOffsetTop - threshold - buffer && scrollTop < projectsOffsetTop - threshold - buffer) {
+                        setFixedSection('qaprojects');
+                    } else if (scrollTop >= projectsOffsetTop - threshold - buffer) {
+                        setFixedSection('projects');
+                    } else {
+                        setFixedSection(null);
+                    }
                 } else {
+                    // Clear fixed section on larger screens
                     setFixedSection(null);
                 }
             }
         }
         
-        // Call handleScroll immediately to set initial state
-        handleScroll();
+        // Call handleScroll after a small delay to ensure DOM is ready
+        setTimeout(handleScroll, 100);
         
         // Debounced scroll handler for better performance
         function debouncedScrollHandler() {
@@ -132,7 +142,7 @@ export default function Navbar({ isDarkMode }) {
                             >Skills
                         </Link>
                     </li>
-                    <li className={`nav-item pt-7 ${fixedSection === 'projects' ? 'fixed projects' : ''}`}>
+                    <li className={`nav-item pt-7 ${fixedSection === 'qaprojects' ? 'fixed qaprojects' : ''}`}>
                         <Link 
                             to="qaprojects" 
                             spy={true} 
