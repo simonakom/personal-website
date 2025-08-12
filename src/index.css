@@ -126,45 +126,20 @@
   }
 }
 
-/* Global Button Styles */
-.github-button {
-  @apply text-base px-3 py-1.5 rounded-2xl bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 text-white opacity-70 transition-all duration-300;
-  background-size: 200% 100%;
-}
+/* Essential utility classes */
+/* .width {
+  width: 100%;
+} */
 
-.github-button:hover {
-  background-position: right center;
-  opacity: 1;
-}
+/* .space {
+  margin-top: -100px;
+} */
 
-/* Brighter version for dark mode contexts */
-.github-button-bright {
-  @apply text-base px-3 py-1.5 rounded-2xl bg-gradient-to-r from-blue-300 via-blue-400 to-blue-500 text-white opacity-90 transition-all duration-300;
-  background-size: 200% 100%;
-  filter: brightness(0.9) contrast(1.1);
-}
-
-.github-button-bright:hover {
-  background-position: right center;
-  opacity: 1;
-  filter: brightness(1.1) contrast(1);
-}
-
-/* Global Title Styles */
-.title-blue {
-  @apply text-blue-600 dark:text-blue-400;
-}
-
-.container {
-    max-width: 1300px; 
-    width: 100%;
-    margin: 0 auto; 
-}
-@media screen and (max-width:1028px) {
-    .width{
-        width: 100% !important
-    }
-    .space {
-        margin-top: -100px !important;
-    }
+@media screen and (max-width: 1028px) {
+  .width {
+    width: 100% !important;
+  }
+  .space {
+    margin-top: -100px !important;
+  }
 }
