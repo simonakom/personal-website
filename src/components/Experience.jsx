@@ -1,5 +1,5 @@
 import { IoColorPaletteOutline } from "react-icons/io5";
-import { FaLaptopCode } from "react-icons/fa6";
+import { FaLaptopCode, FaHandshakeAngle } from "react-icons/fa6";
 import { PiTestTubeFill } from "react-icons/pi";
 import { TbDatabaseCog } from "react-icons/tb";
 import { VscTools } from "react-icons/vsc";
@@ -157,7 +157,7 @@ export default function Experience ({isDarkMode}) {
 
                 <div className={`p-4 rounded-xl ${isDarkMode ? 'bg-slate-800/50 border border-slate-700' : 'bg-white/50 border border-slate-200'} shadow-lg hover:shadow-xl transition-shadow duration-300`}>
                     <h3 className="text-base font-semibold mb-6 flex items-center gap-2">
-                        <IoColorPaletteOutline className={`text-2xl ${isDarkMode ? 'text-gray-300' : 'text-black'}`} />
+                        <TbDatabaseCog className={`text-2xl ${isDarkMode ? 'text-gray-300' : 'text-black'}`} />
                         Databases & Data Tools
                     </h3>
                     <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3'>
@@ -186,7 +186,7 @@ export default function Experience ({isDarkMode}) {
 
                 <div className={`p-4 rounded-xl ${isDarkMode ? 'bg-slate-800/50 border border-slate-700' : 'bg-white/50 border border-slate-200'} shadow-lg hover:shadow-xl transition-shadow duration-300`}>
                     <h3 className="text-base font-semibold mb-6 flex items-center gap-2">
-                        <IoColorPaletteOutline className={`text-2xl ${isDarkMode ? 'text-gray-300' : 'text-black'}`} />
+                        <VscTools className={`text-2xl ${isDarkMode ? 'text-gray-300' : 'text-black'}`} />
                         Development Tools
                     </h3>
                     <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3'>
@@ -211,7 +211,7 @@ export default function Experience ({isDarkMode}) {
 
                 <div className={`p-4 rounded-xl ${isDarkMode ? 'bg-slate-800/50 border border-slate-700' : 'bg-white/50 border border-slate-200'} shadow-lg hover:shadow-xl transition-shadow duration-300`}>
                     <h3 className="text-base font-semibold mb-6 flex items-center gap-2">
-                        <IoColorPaletteOutline className={`text-2xl ${isDarkMode ? 'text-gray-300' : 'text-black'}`} />
+                        <FaHandshakeAngle className={`text-2xl ${isDarkMode ? 'text-gray-300' : 'text-black'}`} />
                         Project Management
                     </h3>
                     <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3'>
@@ -248,7 +248,7 @@ export default function Experience ({isDarkMode}) {
 
                 <div className={`p-4 rounded-xl ${isDarkMode ? 'bg-slate-800/50 border border-slate-700' : 'bg-white/50 border border-slate-200'} shadow-lg hover:shadow-xl transition-shadow duration-300`}>
                     <h3 className="text-base font-semibold mb-6 flex items-center gap-2">
-                        <IoColorPaletteOutline className={`text-2xl ${isDarkMode ? 'text-gray-300' : 'text-black'}`} />
+                        <TbReportSearch className={`text-2xl ${isDarkMode ? 'text-gray-300' : 'text-black'}`} />
                         Analytics
                     </h3>
                     <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3'>
