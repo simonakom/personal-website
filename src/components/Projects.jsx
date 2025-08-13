@@ -68,42 +68,42 @@ export default function Projects({isDarkMode}) {
         {
             title: "Cocktail Recipes",
             image: coctails,
-            liveUrl: "https://github.com/simonakom/coctails-api",
+            liveUrl: "https://simonakom.github.io/coctails-api/coctails.html",
             githubUrl: "https://github.com/simonakom/coctails-api",
             type: "API app"
         },
         {
             title: "Google Timer & Stopwatch",
             image: timer,
-            liveUrl: "https://github.com/simonakom/google-timer-stopwatch",
+            liveUrl: "https://simonakom.github.io/google-timer-stopwatch/dist/index.html",
             githubUrl: "https://github.com/simonakom/google-timer-stopwatch",
             type: "React app"
         },
         {
             title: "Kolt Scooters",
             image: kolt,
-            liveUrl: "https://github.com/simonakom/kolt-scooters-app",
+            liveUrl: "https://simonakom.github.io/kolt-scooters-app/dist/index.html",
             githubUrl: "https://github.com/simonakom/kolt-scooters-app",
             type: "CRUD app"
         },
         {
             title: "Data Table",
             image: product,
-            liveUrl: "https://github.com/simonakom/data-table-app",
+            liveUrl: "https://simonakom.github.io/data-table-app/admin.html",
             githubUrl: "https://github.com/simonakom/data-table-app",
             type: "CRUD app"
         },
         {
             title: "BMI Calculator",
             image: bmi,
-            liveUrl: "https://github.com/simonakom/bmi-calculator",
+            liveUrl: "https://simonakom.github.io/bmi-calculator/index.html",
             githubUrl: "https://github.com/simonakom/bmi-calculator",
             type: "JavaScript app"
         },
         {
             title: "Contact Form",
             image: contact,
-            liveUrl: "https://github.com/simonakom/contact-form",
+            liveUrl: "https://simonakom.github.io/contact-form/contact-form-responsive.html",
             githubUrl: "https://github.com/simonakom/contact-form",
             type: "CSS project"
         }
