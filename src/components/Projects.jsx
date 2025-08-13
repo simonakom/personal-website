@@ -112,12 +112,12 @@ export default function Projects({isDarkMode}) {
     return (
         <div className='projects' id="projects">
             <div className='max-w-3xl mx-auto px-10 sm:px-10 md:px-10 lg:px-5'>
-                <div className={`mb-10 py-4 ${isDarkMode ? 'bg-[#0f172a]/95 backdrop-blur-sm' : 'bg-[#ebeef5]/95 backdrop-blur-sm'}`}>
-                    <h2 className={`mt-8 sm:mt-14 mb-3 text-xl font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>Web Projects</h2>
+                <div className={`mb-10 ${isDarkMode ? 'bg-[#0f172a]/95 backdrop-blur-sm' : 'bg-[#ebeef5]/95 backdrop-blur-sm'}`}>
+                    <h2 className={`mt-14 mb-3 text-xl font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>Web Projects</h2>
                     <p className={`text-md ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`} style={{textAlign: 'justify', textAlignLast: 'left', hyphens: 'auto'}}>A collection of my web development projects showcasing various technologies and skills:</p>
                 </div>
                 
-                <div className='grid grid-cols-1 gap-8 pb-16'>
+                <div className='grid grid-cols-1 gap-8 pb-14'>
                     {projects.map((project, index) => (
                         <div key={index} className={`group relative overflow-hidden rounded-2xl border transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] ${isDarkMode ? 'bg-gray-800/50 border-gray-700 hover:border-blue-500/50' : 'bg-white/80 border-gray-200 hover:border-blue-400/50 shadow-lg'}`}>
                             {/* Project Image Container */}

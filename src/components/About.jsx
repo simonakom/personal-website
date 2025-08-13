@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 export default function About ({isDarkMode}) {
     return (
         <div className='about' id='about'>
-            <div className='space text-left pt-16 sm:pt-20 mb-14 max-w-3xl mx-auto px-10 sm:px-10 md:px-10 lg:px-5'>
+            <div className='space text-left pt-16 sm:pt-20 md:pt-28 mb-14 max-w-3xl mx-auto px-10 sm:px-10 md:px-10 lg:px-5'>
                 <div className="mb-1">
                     <p className="text-base leading-relaxed mb-8" style={{textAlign: 'justify', textAlignLast: 'left', hyphens: 'auto'}}>Hey! I am <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 opacity-70" style={{display: 'inline'}}>Simona</span>, a digital product specialist with experience in Quality Assurance and full-stack web development. I am passionate about building cutting-edge applications that combine great design, seamless functionality, and deliver real value to users and businesses. With a sharp eye for detail and strong communication skills, I enjoy solving complex problems and continuously growing my expertise in the field of product development!</p>
                 </div>
@@ -43,7 +43,7 @@ export default function About ({isDarkMode}) {
                 </div>
                 
                 <div className="mt-16">
-                    <p className="text-base leading-relaxed mb-8" style={{textAlign: 'justify', textAlignLast: 'left', hyphens: 'auto'}}>When I am not at the computer, you will probably find me cycling, exploring new hiking trails, or traveling the world! <span className="animated-magic ml-2 inline-block">🌍</span></p>
+                    <p className="text-base leading-relaxed" style={{textAlign: 'justify', textAlignLast: 'left', hyphens: 'auto'}}>When I am not at the computer, you will probably find me cycling, exploring new hiking trails, or traveling the world! <span className="animated-magic ml-2 inline-block">🌍</span></p>
                 </div>
             </div>
             <hr className={`border-t-1 ${isDarkMode ? 'border-[#cbd5e7]' : 'border-[#878788]' }`} />

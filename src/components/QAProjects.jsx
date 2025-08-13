@@ -62,11 +62,11 @@ export default function Projects({isDarkMode}) {
         <div className='qaprojects' id="qaprojects">
             <div className='max-w-3xl mx-auto px-10 sm:px-10 md:px-10 lg:px-5'>
                 <div className='mb-10'>
-                    <p className={`mt-8 sm:mt-14 mb-3 text-xl font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>QA Projects</p>
+                    <p className={`mt-14 mb-3 text-xl font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>QA Projects</p>
                     <p className={`text-md ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`} style={{textAlign: 'justify', textAlignLast: 'left', hyphens: 'auto'}}>Quality assurance projects showcasing automated testing expertise across various technologies:</p>
                 </div>
                 
-                <div className='grid gap-4'>
+                <div className='grid gap-4 mb-16'>
                     {qaProjects.map((project, index) => (
                         <div key={index} className={`group relative overflow-hidden rounded-xl border transition-all duration-500 hover:shadow-lg hover:scale-[1.01] ${isDarkMode ? 'bg-gray-800/50 border-gray-700 hover:border-blue-500/50' : 'bg-white/80 border-gray-200 hover:border-blue-400/50 shadow-md'}`}>
                             <div className='px-4 py-3'>
@@ -113,7 +113,7 @@ export default function Projects({isDarkMode}) {
                     ))}
                 </div>
             </div>
-            <hr className={`border-t-1 mt-8 sm:mt-14 ${isDarkMode ? 'border-[#cbd5e7]' : 'border-[#878788]' }`} />
+            <hr className={`border-t-1 ${isDarkMode ? 'border-[#cbd5e7]' : 'border-[#878788]' }`} />
         </div>
     )
 }
