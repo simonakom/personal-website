@@ -141,7 +141,7 @@ export default function Experience ({isDarkMode}) {
                             <p className='mt-0 text-sm'><span className="font-light">JMeter</span></p>
                         </div>
                         <div>
-                            <img src={jenkins} alt="jenkins" className='w-[37px] rounded-xl mt-1 ms-1' />
+                            <img src={jenkins} alt="jenkins" className='w-[36px] rounded-xl mt-1 ms-1' />
                             <p className='mt-1 text-sm'><span className="font-light">Jenkins</span></p>
                         </div>
                         <div>
