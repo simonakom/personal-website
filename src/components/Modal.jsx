@@ -99,12 +99,12 @@ export default function FullProjectArchive({ isDarkMode }) {
                                         </span>
                                     </div>
                                     
-                                    <div className='flex gap-2'>
+                                    <div className='flex gap-1 sm:gap-2'>
                                         <a 
                                             href={project.liveUrl} 
                                             target="_blank" 
                                             rel="noopener noreferrer"
-                                            className={`group/btn inline-flex items-center gap-2 px-3 py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15' : 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15'}`}
+                                            className={`group/btn inline-flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15' : 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15'} whitespace-nowrap`}
                                         >
                                             <FaExternalLinkAlt className="text-xs" />
                                             Live Demo
@@ -113,7 +113,7 @@ export default function FullProjectArchive({ isDarkMode }) {
                                             href={project.githubUrl} 
                                             target="_blank" 
                                             rel="noopener noreferrer"
-                                            className={`group/btn inline-flex items-center gap-2 px-3 py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15' : 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15'}`}
+                                            className={`group/btn inline-flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15' : 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15'} whitespace-nowrap`}
                                         >
                                             <FaGithub className="text-xs" />
                                             View Code
@@ -162,12 +162,12 @@ export default function FullProjectArchive({ isDarkMode }) {
                                         </span>
                                     </div>
                                     
-                                    <div className='flex gap-2'>
+                                    <div className='flex gap-1 sm:gap-2'>
                                         <a 
                                             href={project.liveUrl} 
                                             target="_blank" 
                                             rel="noopener noreferrer"
-                                            className={`group/btn inline-flex items-center gap-2 px-3 py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15' : 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15'}`}
+                                            className={`group/btn inline-flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15' : 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15'} whitespace-nowrap`}
                                         >
                                             <FaExternalLinkAlt className="text-xs" />
                                             Live Demo
@@ -176,7 +176,7 @@ export default function FullProjectArchive({ isDarkMode }) {
                                             href={project.githubUrl} 
                                             target="_blank" 
                                             rel="noopener noreferrer"
-                                            className={`group/btn inline-flex items-center gap-2 px-3 py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15' : 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15'}`}
+                                            className={`group/btn inline-flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15' : 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15'} whitespace-nowrap`}
                                         >
                                             <FaGithub className="text-xs" />
                                             View Code
@@ -226,12 +226,12 @@ export default function FullProjectArchive({ isDarkMode }) {
                                         </span>
                                     </div>
                                     
-                                    <div className='flex gap-2'>
+                                    <div className='flex gap-1 sm:gap-2'>
                                         <a 
                                             href={project.liveUrl} 
                                             target="_blank" 
                                             rel="noopener noreferrer"
-                                            className={`group/btn inline-flex items-center gap-2 px-3 py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15' : 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15'}`}
+                                            className={`group/btn inline-flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15' : 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15'} whitespace-nowrap`}
                                         >
                                             <FaExternalLinkAlt className="text-xs" />
                                             Live Demo
@@ -240,7 +240,7 @@ export default function FullProjectArchive({ isDarkMode }) {
                                             href={project.githubUrl} 
                                             target="_blank" 
                                             rel="noopener noreferrer"
-                                            className={`group/btn inline-flex items-center gap-2 px-3 py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15' : 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15'}`}
+                                            className={`group/btn inline-flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15' : 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15'} whitespace-nowrap`}
                                         >
                                             <FaGithub className="text-xs" />
                                             View Code
@@ -299,12 +299,12 @@ export default function FullProjectArchive({ isDarkMode }) {
                                         </span>
                                     </div>
                                     
-                                    <div className='flex gap-2'>
+                                    <div className='flex gap-1 sm:gap-2'>
                                         <a 
                                             href={project.liveUrl} 
                                             target="_blank" 
                                             rel="noopener noreferrer"
-                                            className={`group/btn inline-flex items-center gap-2 px-3 py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15' : 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15'}`}
+                                            className={`group/btn inline-flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15' : 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15'} whitespace-nowrap`}
                                         >
                                             <FaExternalLinkAlt className="text-xs" />
                                             Live Demo
@@ -313,7 +313,7 @@ export default function FullProjectArchive({ isDarkMode }) {
                                             href={project.githubUrl} 
                                             target="_blank" 
                                             rel="noopener noreferrer"
-                                            className={`group/btn inline-flex items-center gap-2 px-3 py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15' : 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15'}`}
+                                            className={`group/btn inline-flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15' : 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15'} whitespace-nowrap`}
                                         >
                                             <FaGithub className="text-xs" />
                                             View Code
@@ -362,12 +362,12 @@ export default function FullProjectArchive({ isDarkMode }) {
                                         </span>
                                     </div>
                                     
-                                    <div className='flex gap-2'>
+                                    <div className='flex gap-1 sm:gap-2'>
                                         <a 
                                             href={project.githubUrl} 
                                             target="_blank" 
                                             rel="noopener noreferrer"
-                                            className={`group/btn inline-flex items-center gap-2 px-3 py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15' : 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15'}`}
+                                            className={`group/btn inline-flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15' : 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15'} whitespace-nowrap`}
                                         >
                                             <FaGithub className="text-xs" />
                                             View Code
@@ -419,12 +419,12 @@ export default function FullProjectArchive({ isDarkMode }) {
                                         </span>
                                     </div>
                                     
-                                    <div className='flex gap-2'>
+                                    <div className='flex gap-1 sm:gap-2'>
                                         <a 
                                             href={project.liveUrl} 
                                             target="_blank" 
                                             rel="noopener noreferrer"
-                                            className={`group/btn inline-flex items-center gap-2 px-3 py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15' : 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15'}`}
+                                            className={`group/btn inline-flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15' : 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15'} whitespace-nowrap`}
                                         >
                                             <FaExternalLinkAlt className="text-xs" />
                                             Live Demo
@@ -433,7 +433,7 @@ export default function FullProjectArchive({ isDarkMode }) {
                                             href={project.githubUrl} 
                                             target="_blank" 
                                             rel="noopener noreferrer"
-                                            className={`group/btn inline-flex items-center gap-2 px-3 py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15' : 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15'}`}
+                                            className={`group/btn inline-flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 rounded-md font-medium text-xs transition-all duration-300 ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15' : 'bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15'} whitespace-nowrap`}
                                         >
                                             <FaGithub className="text-xs" />
                                             View Code
