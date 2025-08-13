@@ -7,7 +7,7 @@ import { MdAutoFixHigh } from "react-icons/md";
 export default function Skills ({isDarkMode}) {
     return (
         <div className='skills' id="skills">
-            <div className='max-w-3xl mx-auto px-14 sm:px-10 md:px-10 lg:px-5'>
+            <div className='max-w-3xl mx-auto px-10 sm:px-10 md:px-10 lg:px-5'>
                 <p className='mt-8 sm:mt-14 mb-10 text-xl font-bold'>Skills</p>
                 <div className='text-justify flex flex-col gap-5 pb-14'>
                     

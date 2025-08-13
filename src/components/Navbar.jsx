@@ -90,7 +90,7 @@ export default function Navbar({ isDarkMode }) {
     }, []);
     
     return (
-        <div className={`header p-20 sm:p-10 ${isDarkMode ? '' : 'light-mode'}`}>
+        <div className={`header px-12 py-10 sm:p-10 ${isDarkMode ? '' : 'light-mode'}`}>
             <div className='mt-14'>
                 <p className={`text-5xl mb-4 name ${isDarkMode ? 'text-[#cbd5e7]' : 'text-[#3a3a9d]'}`}>
                     <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 opacity-70" style={{backgroundSize: '200% 100%'}}>Simona Komarovska</span>
@@ -100,15 +100,7 @@ export default function Navbar({ isDarkMode }) {
                         <li className='first-response'><span className={`text-xl leading-relaxed ${isDarkMode ? '' : 'text-gray-600'}`}>Product Development & Quality Specialist</span></li>
                     </ul>
                 </div>
-                {/* <div className={`inline-elements slider mb-19 ${isDarkMode ? 'text-[#cbd5e7]' : 'text-[#272828ef]'}`}>
-                    I build
-                        <div className={`slide ${isDarkMode ? 'text-[#8ac2f0]' : 'text-[#3a3a9d]'}`}>
-                            <div><div>responsive</div></div>
-                            <div><div>engaging</div></div>
-                            <div><div>user-friendly</div></div>
-                        </div>
-                    digital experiences
-                </div> */}
+            
             </div>
             <nav className='navbar mt-10 cursor-pointer text-xl'>
                 <ul>

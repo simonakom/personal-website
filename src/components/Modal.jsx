@@ -67,7 +67,7 @@ export default function FullProjectArchive({ isDarkMode }) {
                     </h2>
                 </div>
                 
-                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mx-9'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mx-5'>
                     {[
                         { title: "Spotify", image: spotify, liveUrl: "https://simonakom.github.io/spotify-app/build/index.html", githubUrl: "https://github.com/simonakom/spotify-app", tech: "React, Tailwind, CSS" },
                         { title: "Netflix", image: netflix, liveUrl: "https://simonakom.github.io/netflix-page/index.html", githubUrl: "https://github.com/simonakom/netflix-page", tech: "JavaScript, Bootstrap, CSS, HTML" },

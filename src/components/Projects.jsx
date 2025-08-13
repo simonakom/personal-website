@@ -111,7 +111,7 @@ export default function Projects({isDarkMode}) {
 
     return (
         <div className='projects' id="projects">
-            <div className='max-w-3xl mx-auto px-14 sm:px-10 md:px-10 lg:px-5'>
+            <div className='max-w-3xl mx-auto px-10 sm:px-10 md:px-10 lg:px-5'>
                 <div className={`mb-10 py-4 ${isDarkMode ? 'bg-[#0f172a]/95 backdrop-blur-sm' : 'bg-[#ebeef5]/95 backdrop-blur-sm'}`}>
                     <h2 className={`mt-8 sm:mt-14 mb-3 text-xl font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>Web Projects</h2>
                     <p className={`text-md ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>A collection of my web development projects showcasing various technologies and skills:</p>
