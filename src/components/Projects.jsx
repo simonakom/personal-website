@@ -151,7 +151,7 @@ export default function Projects({isDarkMode}) {
                                                 href={project.liveUrl} 
                                                 target="_blank" 
                                                 rel="noopener noreferrer"
-                                                className={`group/btn inline-flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg font-medium text-xs sm:text-sm transition-all duration-300 bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15 whitespace-nowrap`}
+                                                className={`group/btn inline-flex items-center gap-1 sm:gap-2 px-3 sm:px-4 py-2.5 sm:py-2 rounded-lg font-medium text-xs sm:text-sm transition-all duration-300 bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15 whitespace-nowrap`}
                                             >
                                                 <FaExternalLinkAlt className="text-xs sm:text-sm" />
                                                 Live Demo
@@ -161,7 +161,7 @@ export default function Projects({isDarkMode}) {
                                             href={project.githubUrl} 
                                             target="_blank" 
                                             rel="noopener noreferrer"
-                                            className={`group/btn inline-flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg font-medium text-xs sm:text-sm transition-all duration-300 bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15 whitespace-nowrap`}
+                                            className={`group/btn inline-flex items-center gap-1 sm:gap-2 px-3 sm:px-4 py-2.5 sm:py-2 rounded-lg font-medium text-xs sm:text-sm transition-all duration-300 bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15 whitespace-nowrap`}
                                         >
                                             <FaGithub className="text-xs sm:text-sm" />
                                             View Code
