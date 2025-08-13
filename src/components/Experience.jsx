@@ -79,12 +79,12 @@ export default function Experience ({isDarkMode}) {
                             <p className='mt-1 ms-1 text-sm'><span className="font-light">React</span></p>
                         </div>
                         <div>
-                            <img src={vite} alt="vite" className='w-[49px] rounded-xl' />
+                            <img src={vite} alt="vite" className='w-[50px] rounded-xl' />
                             <p className='mt-1 ms-4 text-sm'><span className="font-light">Vite</span></p>
                         </div>
                         <div>
-                            <img src={bootstrap} alt="bootstrap" className='w-[45px] rounded-xl mt-1 ms-2' />
-                            <p className='mt-4 text-sm'><span className="font-light">Bootstrap</span></p>
+                            <img src={bootstrap} alt="bootstrap" className='w-[47px] rounded-xl mt-1 ms-2' />
+                            <p className='mt-3 text-sm'><span className="font-light">Bootstrap</span></p>
                         </div>
                         <div>
                             <img src={tailwind} alt="tailwind" className='w-[52px] rounded-xl mt-2 ms-1' />
