@@ -114,7 +114,7 @@ export default function Projects({isDarkMode}) {
             <div className='max-w-3xl mx-auto px-10 sm:px-10 md:px-10 lg:px-5'>
                 <div className={`mb-10 py-4 ${isDarkMode ? 'bg-[#0f172a]/95 backdrop-blur-sm' : 'bg-[#ebeef5]/95 backdrop-blur-sm'}`}>
                     <h2 className={`mt-8 sm:mt-14 mb-3 text-xl font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>Web Projects</h2>
-                    <p className={`text-md ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>A collection of my web development projects showcasing various technologies and skills:</p>
+                    <p className={`text-md ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`} style={{textAlign: 'justify', textAlignLast: 'left', hyphens: 'auto'}}>A collection of my web development projects showcasing various technologies and skills:</p>
                 </div>
                 
                 <div className='grid grid-cols-1 gap-8 pb-16'>
@@ -145,15 +145,15 @@ export default function Projects({isDarkMode}) {
                                     </div>
                                     
                                     {/* Action Buttons */}
-                                    <div className='flex gap-4'>
+                                    <div className='flex gap-2 sm:gap-4'>
                                         {index !== 2 && index !== 3 && (
                                             <a 
                                                 href={project.liveUrl} 
                                                 target="_blank" 
                                                 rel="noopener noreferrer"
-                                                className={`group/btn inline-flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300 bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15`}
+                                                className={`group/btn inline-flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg font-medium text-xs sm:text-sm transition-all duration-300 bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15 whitespace-nowrap`}
                                             >
-                                                <FaExternalLinkAlt className="text-sm" />
+                                                <FaExternalLinkAlt className="text-xs sm:text-sm" />
                                                 Live Demo
                                             </a>
                                         )}
@@ -161,9 +161,9 @@ export default function Projects({isDarkMode}) {
                                             href={project.githubUrl} 
                                             target="_blank" 
                                             rel="noopener noreferrer"
-                                            className={`group/btn inline-flex items-center gap-2 px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300 bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15`}
+                                            className={`group/btn inline-flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg font-medium text-xs sm:text-sm transition-all duration-300 bg-gray-700 hover:bg-gray-600 text-gray-200 border border-gray-600 hover:border-gray-500 group-hover:bg-blue-600/20 group-hover:text-white group-hover:border-blue-500/40 hover:!bg-blue-600/60 hover:!text-white hover:!border-blue-500/50 hover:!shadow-lg hover:!shadow-blue-500/15 whitespace-nowrap`}
                                         >
-                                            <FaGithub className="text-sm" />
+                                            <FaGithub className="text-xs sm:text-sm" />
                                             View Code
                                         </a>
                                     </div>
