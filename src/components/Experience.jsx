@@ -75,16 +75,16 @@ export default function Experience ({isDarkMode}) {
                             <p className='mt-1 ms-2 text-sm'><span className="font-light">CSS3</span></p>
                         </div>
                         <div>
-                            <img src={react} alt="react" className='w-[49px] rounded-xl' />
+                            <img src={react} alt="react" className='w-[50px] rounded-xl' />
                             <p className='mt-1 ms-1 text-sm'><span className="font-light">React</span></p>
                         </div>
                         <div>
-                            <img src={vite} alt="vite" className='w-[50px] rounded-xl' />
+                            <img src={vite} alt="vite" className='w-[51px] rounded-xl' />
                             <p className='mt-1 ms-4 text-sm'><span className="font-light">Vite</span></p>
                         </div>
                         <div>
-                            <img src={bootstrap} alt="bootstrap" className='w-[47px] rounded-xl mt-1 ms-2' />
-                            <p className='mt-3 text-sm'><span className="font-light">Bootstrap</span></p>
+                            <img src={bootstrap} alt="bootstrap" className='w-[48px] rounded-xl mt-2 ms-2' />
+                            <p className='mt-2 text-sm'><span className="font-light">Bootstrap</span></p>
                         </div>
                         <div>
                             <img src={tailwind} alt="tailwind" className='w-[52px] rounded-xl mt-2 ms-1' />
@@ -133,15 +133,15 @@ export default function Experience ({isDarkMode}) {
                             <p className='mt-2 text-sm'><span className="font-light">Postman</span></p>
                         </div>
                         <div>
-                            <img src={jest} alt="jest" className='w-[55px] rounded-xl' />
+                            <img src={jest} alt="jest" className='w-[56px] rounded-xl' />
                             <p className='mt-2 ms-3 text-sm'><span className="font-light">Jest</span></p>
                         </div>
                         <div>
-                            <img src={apache} alt="apache" className='w-[32px] rounded-xl ms-4' />
+                            <img src={apache} alt="apache" className='w-[33px] rounded-xl ms-4' />
                             <p className='mt-0 text-sm'><span className="font-light">JMeter</span></p>
                         </div>
                         <div>
-                            <img src={jenkins} alt="jenkins" className='w-[38px] rounded-xl mt-1' />
+                            <img src={jenkins} alt="jenkins" className='w-[37px] rounded-xl mt-1 ms-1' />
                             <p className='mt-1 text-sm'><span className="font-light">Jenkins</span></p>
                         </div>
                         <div>
@@ -203,7 +203,7 @@ export default function Experience ({isDarkMode}) {
                             <p className='mt-3 text-sm'><span className="font-light">DevTools</span></p>
                         </div>
                         <div>
-                            <img src={cursor} alt="cursor" className='w-[51px] rounded-xl' />
+                            <img src={cursor} alt="cursor" className='w-[52px] rounded-xl' />
                             <p className='mt-2 ms-2 text-sm'><span className="font-light">Cursor</span></p>
                         </div>
                     </div>
@@ -216,7 +216,7 @@ export default function Experience ({isDarkMode}) {
                     </h3>
                     <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-6 gap-3'>
                         <div>
-                            <img src={jira} alt="jira" className='h-[51px] rounded-xl ms-2 mt-1' />
+                            <img src={jira} alt="jira" className='h-[50px] rounded-xl ms-2 mt-1' />
                             <p className='ms-5 mt-1 text-sm'><span className="font-light">Jira</span></p>
                         </div>
                         <div>
@@ -232,15 +232,15 @@ export default function Experience ({isDarkMode}) {
                             <p className='ms-3 mt-1 text-sm'><span className="font-light">Trello</span></p>
                         </div>
                         <div>
-                            <img src={slack} alt="slack" className='w-[50px] rounded-xl mt-1' />
-                            <p className='mt-1 ms-1 text-sm'><span className="font-light">Slack</span></p>
+                            <img src={slack} alt="slack" className='w-[46px] rounded-xl mt-1' />
+                            <p className='mt-2 ms-1 text-sm'><span className="font-light">Slack</span></p>
                         </div>
                         <div>
-                            <img src={office} alt="office" className='w-[50px] rounded-xl mt-3' />
-                            <p className='mt-5 text-sm'><span className="font-light">MS Office</span></p>
+                            <img src={office} alt="office" className='w-[56px] rounded-xl mt-4 ms-1' />
+                            <p className='mt-4 text-sm'><span className="font-light">MS Office</span></p>
                         </div>
                         <div>
-                            <img src={salesforce} alt="office" className='w-[50px] rounded-xl mt-2' />
+                            <img src={salesforce} alt="office" className='w-[50px] rounded-xl mt-2 ms-2' />
                             <p className='mt-3 text-sm'><span className="font-light">SalesForce</span></p>
                         </div>
                     </div>
