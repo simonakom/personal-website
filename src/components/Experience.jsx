@@ -48,6 +48,7 @@ import hotjar from '../assets/images/hotjar.png';
 import basedash from '../assets/images/basedash.png';
 import devtools from '../assets/images/chrome-devtools.svg';
 import slack from '../assets/images/slack.png';
+import vscode from '../assets/images/vscode.png';
 
 export default function Experience ({isDarkMode}) {
     return (
@@ -201,6 +202,10 @@ export default function Experience ({isDarkMode}) {
                         <div>
                             <img src={devtools} alt="devtools" className='w-[48px] rounded-xl ms-1' />
                             <p className='mt-3 text-sm'><span className="font-light">DevTools</span></p>
+                        </div>
+                        <div>
+                            <img src={vscode} alt="vscode" className='w-[52px] rounded-xl' />
+                            <p className='mt-2 ms-2 text-sm'><span className="font-light">VS Code</span></p>
                         </div>
                         <div>
                             <img src={cursor} alt="cursor" className='w-[52px] rounded-xl' />

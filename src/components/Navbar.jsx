@@ -97,7 +97,7 @@ export default function Navbar({ isDarkMode }) {
                 </p>
                 <div className={`mb-16 my-2 position-title wrapper ${isDarkMode ? '' : 'light-mode'}`}>
                     <ul className={`dynamic-txts ${isDarkMode ? 'text-[#d3dfefef]' : 'text-[#272828ef]'}`}>
-                        <li className='first-response'><span className={`text-xl leading-relaxed ${isDarkMode ? '' : 'text-gray-600'}`}>Product Development & Quality Specialist</span></li>
+                        <li className='first-response'><span className={`text-xl leading-relaxed ${isDarkMode ? '' : 'text-gray-600'}`}>Quality Assurance & Product Specialist</span></li>
                     </ul>
                 </div>
             

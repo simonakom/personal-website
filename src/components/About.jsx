@@ -9,11 +9,11 @@ export default function About ({isDarkMode}) {
         <div className='about' id='about'>
             <div className='space text-left pt-16 sm:pt-20 md:pt-28 mb-14 max-w-3xl mx-auto px-10 sm:px-10 md:px-10 lg:px-5'>
                 <div className="mb-1">
-                    <p className="text-base leading-relaxed mb-8" style={{textAlign: 'justify', textAlignLast: 'left', hyphens: 'auto'}}>Hey! I am <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 opacity-70" style={{display: 'inline'}}>Simona</span>, a digital product specialist with experience in Quality Assurance and full-stack web development. I am passionate about building cutting-edge applications that combine great design, seamless functionality, and deliver real value to users and businesses. With a sharp eye for detail and strong communication skills, I enjoy solving complex problems and continuously growing my expertise in the field of product development!</p>
+                    <p className="text-base leading-relaxed mb-8" style={{textAlign: 'justify', textAlignLast: 'left', hyphens: 'auto'}}>Hey! I am <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 opacity-70" style={{display: 'inline'}}>Simona</span>, a digital product engineer with experience in quality assurance, test automation, and full-stack web development. I am passionate about building cutting-edge applications that combine thoughtful design with seamless functionality, delivering high-quality user experiences and real value to businesses. With a sharp eye for detail and strong communication skills, I enjoy solving complex problems, creating reliable solutions, and continuously expanding my expertise in product development!</p>
                 </div>
                 
                 <div className="mb-12">
-                    <p className="text-base leading-relaxed" style={{textAlign: 'justify', textAlignLast: 'left', hyphens: 'auto'}}>I aspire toward a career where I can combine my technical skills, business mindset, and detail-oriented approach to drive product development and deliver exceptional user experiences with high-quality standards.</p>
+                    <p className="text-base leading-relaxed" style={{textAlign: 'justify', textAlignLast: 'left', hyphens: 'auto'}}>I aspire to a career where I can leverage my technical skills, detail-oriented approach, and business insight to contribute to product development and deliver exceptional, high-quality user experiences.</p>
                 </div>
 
                 <div className="space-y-8">
