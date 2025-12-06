@@ -109,7 +109,7 @@ export default function Navbar({ isDarkMode }) {
                             to="about" 
                             spy={true} 
                             smooth={true} 
-                            offset={isSmallScreen ? -80 : 40} 
+                            offset={isSmallScreen ? -80 : -40} 
                             duration={500} 
                             >About
                         </Link>
