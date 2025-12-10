@@ -49,6 +49,10 @@ import basedash from '../assets/images/basedash.png';
 import devtools from '../assets/images/chrome-devtools.svg';
 import slack from '../assets/images/slack.png';
 import vscode from '../assets/images/vscode.png';
+import browserstack from '../assets/images/browserstack.png';
+import xray from '../assets/images/xray.png';
+import fullstory from '../assets/images/fullstory.png';
+
 
 export default function Experience ({isDarkMode}) {
     return (
@@ -134,8 +138,12 @@ export default function Experience ({isDarkMode}) {
                             <p className='mt-2 text-sm'><span className="font-light">Postman</span></p>
                         </div>
                         <div>
-                            <img src={jest} alt="jest" className='w-[56px] rounded-xl' />
-                            <p className='mt-2 ms-3 text-sm'><span className="font-light">Jest</span></p>
+                            <img src={browserstack} alt="postman" className='w-[54px] rounded-xl ms-4' />
+                            <p className='mt-1 text-sm'><span className="font-light">Browserstack</span></p>
+                        </div>
+                        <div>
+                            <img src={jest} alt="jest" className='w-[55px] rounded-xl ms-3' />
+                            <p className='mt-2 ms-6 text-sm'><span className="font-light">Jest</span></p>
                         </div>
                         <div>
                             <img src={apache} alt="apache" className='w-[33px] rounded-xl ms-4' />
@@ -146,11 +154,15 @@ export default function Experience ({isDarkMode}) {
                             <p className='mt-1 text-sm'><span className="font-light">Jenkins</span></p>
                         </div>
                         <div>
-                            <img src={qase} alt="qase" className='w-[63px] rounded-xl mt-6' />
-                            <p className='mt-4 ms-2 text-sm'><span className="font-light">Qase</span></p>
+                            <img src={xray} alt="jenkins" className='w-[48px] rounded-xl' />
+                            <p className='ms-2 mt-1 text-sm'><span className="font-light">XRAY</span></p>
                         </div>
                         <div>
-                            <img src={testomat} alt="testomat" className='w-[48px] rounded-xl mt-1 ms-2' />
+                            <img src={qase} alt="qase" className='w-[67px] rounded-xl mt-5' />
+                            <p className='mt-4 ms-3 text-sm'><span className="font-light">Qase</span></p>
+                        </div>
+                        <div>
+                            <img src={testomat} alt="testomat" className='w-[46px] rounded-xl mt-1 ms-2' />
                             <p className='mt-2 ms-1 text-sm'><span className="font-light">Testomat</span></p>
                         </div>
                     </div>
@@ -260,6 +272,10 @@ export default function Experience ({isDarkMode}) {
                         <div>
                             <img src={mixpanel} alt="mixpanel" className='w-[50px] rounded-xl ms-1' />
                             <p className='mt-1 text-sm'><span className="font-light">Mixpanel</span></p>
+                        </div>
+                        <div>
+                            <img src={fullstory} alt="mixpanel" className='w-[50px] rounded-xl' />
+                            <p className='mt-1 text-sm'><span className="font-light">FullStory</span></p>
                         </div>
                         <div>
                             <img src={sentry} alt="sentry" className='w-[50px] rounded-xl ms-1' />

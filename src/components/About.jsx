@@ -17,6 +17,14 @@ export default function About ({isDarkMode}) {
                 </div>
 
                 <div className="space-y-8">
+                <div className="gradient-border-left gradient-border-blue pl-6">
+                        <h3 className="text-base font-semibold mb-3 flex items-center gap-2">
+                            <PiTestTubeFill className="text-xl text-blue-600 dark:text-blue-400" />
+                            Quality Assurance
+                        </h3>
+                        <p className="text-base leading-relaxed" style={{textAlign: 'justify', textAlignLast: 'left', hyphens: 'auto'}}>With a detail-oriented approach, I bring a strong focus to ensuring that every product meets the highest standards of <span className="font-medium text-blue-600 dark:text-blue-400">functionality</span>, <span className="font-medium text-blue-600 dark:text-blue-400">usability</span>, and <span className="font-medium text-blue-600 dark:text-blue-400">performance</span>. My experience spans both manual and automated testing, where I leverage tools such as <span className="font-medium text-blue-600 dark:text-blue-400">Playwright</span> and <span className="font-medium text-blue-600 dark:text-blue-400">Cypress</span> for end-to-end testing, and <span className="font-medium text-blue-400">Postman</span> for API testing.</p>
+                    </div>
+
                     <div className="gradient-border-left gradient-border-blue pl-6">
                         <h3 className="text-base font-semibold mb-3 flex items-center gap-2">
                             <FaCode className="text-xl text-blue-600 dark:text-blue-400" />
@@ -32,18 +40,10 @@ export default function About ({isDarkMode}) {
                         </h3>
                         <p className="text-base leading-relaxed" style={{textAlign: 'justify', textAlignLast: 'left', hyphens: 'auto'}}>With a business-oriented mindset, I support the alignment of product strategies with <span className="font-medium text-blue-600 dark:text-blue-400">company goals</span> and <span className="font-medium text-blue-600 dark:text-blue-400">user needs</span>. I assist in gathering and prioritizing requirements and collaborate closely with <span className="font-medium text-blue-600 dark:text-blue-400">cross-functional</span> teams to drive projects from concept to launch, emphasizing timely delivery and continuous improvement.</p>
                     </div>
-                    
-                    <div className="gradient-border-left gradient-border-blue pl-6">
-                        <h3 className="text-base font-semibold mb-3 flex items-center gap-2">
-                            <PiTestTubeFill className="text-xl text-blue-600 dark:text-blue-400" />
-                            Quality Assurance
-                        </h3>
-                        <p className="text-base leading-relaxed" style={{textAlign: 'justify', textAlignLast: 'left', hyphens: 'auto'}}>With a detail-oriented approach, I bring a strong focus to ensuring that every product meets the highest standards of <span className="font-medium text-blue-600 dark:text-blue-400">functionality</span>, <span className="font-medium text-blue-600 dark:text-blue-400">usability</span>, and <span className="font-medium text-blue-600 dark:text-blue-400">performance</span>. My experience spans both manual and automated testing, where I leverage tools such as <span className="font-medium text-blue-600 dark:text-blue-400">Playwright</span> and <span className="font-medium text-blue-600 dark:text-blue-400">Cypress</span> for end-to-end testing, and <span className="font-medium text-blue-400">Postman</span> for API testing.</p>
-                    </div>
                 </div>
                 
                 <div className="mt-16">
-                    <p className="text-base leading-relaxed" style={{textAlign: 'justify', textAlignLast: 'left', hyphens: 'auto'}}>When I am not at the computer, you will probably find me cycling, exploring new hiking trails, or traveling the world! <span className="animated-magic ml-2 inline-block">🌍</span></p>
+                    <p className="text-base leading-relaxed" style={{textAlign: 'justify', textAlignLast: 'left', hyphens: 'auto'}}>When I am not at the computer, you will probably find me surfing, exploring new hiking trails, or traveling the world! <span className="animated-magic ml-2 inline-block">🌍</span></p>
                 </div>
             </div>
             <hr className={`border-t-1 ${isDarkMode ? 'border-[#cbd5e7]' : 'border-[#878788]' }`} />
