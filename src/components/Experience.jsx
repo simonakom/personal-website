@@ -110,7 +110,7 @@ export default function Experience ({isDarkMode}) {
                         </div>
                         <div>
                             <img src={express} alt="express" className='w-[53px] rounded-xl brightness-150 ms-1' />
-                            <p className='mt-2 text-sm'><span className="font-light">ExpressJS</span></p>
+                            <p className='mt-2 text-sm'><span className="font-light">Express.js</span></p>
                         </div>
                         <div>
                             <img src={swagger} alt="swagger" className='w-[49px] rounded-xl mt-1 ms-3' />
